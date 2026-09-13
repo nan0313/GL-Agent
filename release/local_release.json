@@ -1,0 +1,13 @@
+{
+  "agent_commit": "5ba985ae8cffd4cfa8e842b2386d630ec9cd4664",
+  "agent_source_hash": "a6e837d0a3bac5d0e5416eef7d408a7067b3baeaccea2d20bc17e97310185642",
+  "api_schema_version": "1.2",
+  "build_time": "2026-08-20T09:03:06Z",
+  "conversation_schema_version": "1",
+  "official_webgl_entry": "ApplicationVue/dist/index_agent.html",
+  "rag_schema_version": "3",
+  "release_id": "ev-agent-a6e837d0a3ba-4c5b9bd88b1d",
+  "runtime_profile": "local_release",
+  "webgl_artifact_hash": "4c5b9bd88b1d15eb4abc93aeb86a5f72e012b74694ce58d9d1155a90cc0383a8",
+  "webgl_commit": "494cf34eaa2aae6ac1cb241fe2eacd925c91dae6"
+}

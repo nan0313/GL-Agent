@@ -1,0 +1,5304 @@
+[
+  {
+    "case_id": "rag_ans_001",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:bdd8d1af16ca:chk_fbab058c7f4d3b8bd344",
+    "query": "三维模型数字文件移交如何分类？",
+    "answerable": true,
+    "question_type": "classification",
+    "difficulty": "easy",
+    "gold_answer": "三维模型数字文件移交应采用规定的文件夹结构，总体文件按XX变电站（换流站）工程、输电线路工程、电缆线路工程分开，第二级文件夹分为各设计阶段文件夹：初步设计阶段、施工图设计阶段、竣工图编制阶段。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "三维模型数字文件移交应采用规定的文件夹结构，总体文件按XX变电站（换流站）工程、输电线路工程、电缆线路工程分开，第二级文件夹分为各设计阶段文件夹：初步设计阶段、施工图设计阶段、竣工图编制阶段。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交.docx",
+            "source_sha256": "bdd8d1af16cad7332b924d84d4a581338d2156fdcdf92cfd8eb68bf19f3da78a",
+            "chunk_id": "chk_fbab058c7f4d3b8bd344",
+            "chunk_content_hash": "af660202905a5d5b61279eb2a145291a4c3730f831469791081198891a36fc22",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交"
+            ],
+            "quote": "三维模型数字文件移交应采用规定的文件夹结构，总体文件按XX变电站（换流站）工程、输电线路工程、电缆线路工程分开，第二级文件夹分为各设计阶段文件夹：初步设计阶段、施工图设计阶段、竣工图编制阶段。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "三维模型数字文件移交",
+      "应采用规定的文件夹结构，总体文件按X",
+      "分为各设计阶段文件夹：初步设计阶段"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "classification",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_002",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:bdd8d1af16ca:chk_ca55ef92631deac9a706",
+    "query": "输变电工程编码包括哪些内容？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "easy",
+    "gold_answer": "5.7输变电工程编码应包括标识系统编码、物料编码，分别按照NB/T11198-2023及中国南方电网有限责任公司输变电工程相关文件进行编码。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "5.7输变电工程编码应包括标识系统编码、物料编码，分别按照NB/T11198-2023及中国南方电网有限责任公司输变电工程相关文件进行编码。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交.docx",
+            "source_sha256": "bdd8d1af16cad7332b924d84d4a581338d2156fdcdf92cfd8eb68bf19f3da78a",
+            "chunk_id": "chk_ca55ef92631deac9a706",
+            "chunk_content_hash": "29e0c4cbbb02cdceae70277c91ecf5aedf78dc79cee6eec5b5397f51839fb8a8",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交"
+            ],
+            "quote": "5.7输变电工程编码应包括标识系统编码、物料编码，分别按照NB/T11198-2023及中国南方电网有限责任公司输变电工程相关文件进行编码。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "输变电工程编码",
+      "应包括标识系统编码、物料编码，分别按"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_003",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:bdd8d1af16ca:chk_efd6eb8dd7f3612d5ebc",
+    "query": "二次系统数字化模型的文件存储结构、格式和命名应遵循哪项标准？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "medium",
+    "gold_answer": "8.4.1二次系统数字化模型的文件存储结构、格式与命名规则应符合《35kV及以上输变电工程三维模型数字文件移交标准》的要求。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "8.4.1二次系统数字化模型的文件存储结构、格式与命名规则应符合《35kV及以上输变电工程三维模型数字文件移交标准》的要求。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交.docx",
+            "source_sha256": "bdd8d1af16cad7332b924d84d4a581338d2156fdcdf92cfd8eb68bf19f3da78a",
+            "chunk_id": "chk_efd6eb8dd7f3612d5ebc",
+            "chunk_content_hash": "58cae882adf68d93e844e3a6a9472d27af36d1b501c0fa5231b779fc30d63b3f",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交"
+            ],
+            "quote": "8.4.1二次系统数字化模型的文件存储结构、格式与命名规则应符合《35kV及以上输变电工程三维模型数字文件移交标准》的要求。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "二次系统数字化模型的文件存储结构、格式与命名规则",
+      "35kV"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_004",
+    "dataset_version": "rag_gold_v1",
+    "split": "dev",
+    "family_id": "rag:bdd8d1af16ca:chk_913e5b5897ce3f191421",
+    "query": "各阶段移交的地理信息数据精度应满足哪些层级的标准？",
+    "answerable": true,
+    "question_type": "numeric",
+    "difficulty": "easy",
+    "gold_answer": "8.1地理信息数据是数字化成果的基础，各阶段移交数据的精度应满足国家、行业和企业标准的要求。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "8.1地理信息数据是数字化成果的基础，各阶段移交数据的精度应满足国家、行业和企业标准的要求。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交.docx",
+            "source_sha256": "bdd8d1af16cad7332b924d84d4a581338d2156fdcdf92cfd8eb68bf19f3da78a",
+            "chunk_id": "chk_913e5b5897ce3f191421",
+            "chunk_content_hash": "70171bb51f64b0c8e564e6d6c95c26dd9936f559525ce95143e9aad75f27bb41",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交"
+            ],
+            "quote": "8.1地理信息数据是数字化成果的基础，各阶段移交数据的精度应满足国家、行业和企业标准的要求。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "地理信息数据"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "numeric",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_005",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:bdd8d1af16ca:chk_7866d6944488e854310c",
+    "query": "电网专题数据包括哪些内容？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "easy",
+    "gold_answer": "7.1.4电网专题数据包括风、覆冰、污秽、地震、舞动、雷害、鸟害等区划数据。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "7.1.4电网专题数据包括风、覆冰、污秽、地震、舞动、雷害、鸟害等区划数据。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交.docx",
+            "source_sha256": "bdd8d1af16cad7332b924d84d4a581338d2156fdcdf92cfd8eb68bf19f3da78a",
+            "chunk_id": "chk_7866d6944488e854310c",
+            "chunk_content_hash": "149d9663695e11d802c38c427e189035cbc9ea96d0a4b7991dd2f5896d413c9d",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交"
+            ],
+            "quote": "7.1.4电网专题数据包括风、覆冰、污秽、地震、舞动、雷害、鸟害等区划数据。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "电网专题数据"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_006",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:bdd8d1af16ca:chk_083865ed12327d471367",
+    "query": "装配模型描述哪些实际尺寸、安装或加工信息？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "medium",
+    "gold_answer": "描述工程建（构）筑物、设备、材料及其他设施等物理对象的实际尺寸、安装、加工等信息的模型，包括设备材料安装、混凝土配筋、钢结构加工/放样等信息。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "描述工程建（构）筑物、设备、材料及其他设施等物理对象的实际尺寸、安装、加工等信息的模型，包括设备材料安装、混凝土配筋、钢结构加工/放样等信息。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交.docx",
+            "source_sha256": "bdd8d1af16cad7332b924d84d4a581338d2156fdcdf92cfd8eb68bf19f3da78a",
+            "chunk_id": "chk_083865ed12327d471367",
+            "chunk_content_hash": "56fd9899aab96d4e622acd1f53905df02bf97852189c699889db00ad6da5f0e5",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交"
+            ],
+            "quote": "描述工程建（构）筑物、设备、材料及其他设施等物理对象的实际尺寸、安装、加工等信息的模型，包括设备材料安装、混凝土配筋、钢结构加工/放样等信息。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "描述工程建（构）筑物、设备、材料及其他设施等"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_007",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:bdd8d1af16ca:chk_48fecd789828533041d6",
+    "query": "交流电压等级应采用什么方式或格式？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "easy",
+    "gold_answer": "交流电压等级采用“AC-电压-单位”，直流电压等级采用“DC-电压-单位”的方式表述。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "交流电压等级采用“AC-电压-单位”，直流电压等级采用“DC-电压-单位”的方式表述。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交.docx",
+            "source_sha256": "bdd8d1af16cad7332b924d84d4a581338d2156fdcdf92cfd8eb68bf19f3da78a",
+            "chunk_id": "chk_48fecd789828533041d6",
+            "chunk_content_hash": "9fd0795fa2e319b641a2848d80bffc34920451c1d88b9311eb92f5d2ab9698b3",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交"
+            ],
+            "quote": "交流电压等级采用“AC-电压-单位”，直流电压等级采用“DC-电压-单位”的方式表述。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "交流电压等级"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_008",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:bdd8d1af16ca:chk_7d06ea314fd6fe7756d6",
+    "query": "未注明日期的引用文件应使用哪个版本？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "easy",
+    "gold_answer": "凡是不注日期的引用文件，其最新版本（包括所有的修改单）适用于本标准。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "凡是不注日期的引用文件，其最新版本（包括所有的修改单）适用于本标准。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交.docx",
+            "source_sha256": "bdd8d1af16cad7332b924d84d4a581338d2156fdcdf92cfd8eb68bf19f3da78a",
+            "chunk_id": "chk_7d06ea314fd6fe7756d6",
+            "chunk_content_hash": "6801510657fcd2d7605c518bf0b732e361e27ec871caeab57a00bb13b94f5e3b",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交"
+            ],
+            "quote": "凡是不注日期的引用文件，其最新版本（包括所有的修改单）适用于本标准。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "凡是不注日期的引用文件"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_009",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:bdd8d1af16ca:chk_ca55ef92631deac9a706",
+    "query": "《三维模型数字文件移交标准第一分册》对“三维模型数字文件移交”和“移交数据的来源、保存、传递及应用”分别作了什么规定？",
+    "answerable": true,
+    "question_type": "multi_evidence",
+    "difficulty": "hard",
+    "gold_answer": "4.2三维模型数字文件移交应满足国家、行业及南方电网有限责任公司相关规程、规范要求。\n4.1移交数据的来源、保存、传递及应用应符合现行的国家相关法律法规，遵守国家信息安全相关要求。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "4.2三维模型数字文件移交应满足国家、行业及南方电网有限责任公司相关规程、规范要求。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交.docx",
+            "source_sha256": "bdd8d1af16cad7332b924d84d4a581338d2156fdcdf92cfd8eb68bf19f3da78a",
+            "chunk_id": "chk_ca55ef92631deac9a706",
+            "chunk_content_hash": "29e0c4cbbb02cdceae70277c91ecf5aedf78dc79cee6eec5b5397f51839fb8a8",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交"
+            ],
+            "quote": "4.2三维模型数字文件移交应满足国家、行业及南方电网有限责任公司相关规程、规范要求。"
+          }
+        ]
+      },
+      {
+        "unit_id": "u2",
+        "fact": "4.1移交数据的来源、保存、传递及应用应符合现行的国家相关法律法规，遵守国家信息安全相关要求。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交.docx",
+            "source_sha256": "bdd8d1af16cad7332b924d84d4a581338d2156fdcdf92cfd8eb68bf19f3da78a",
+            "chunk_id": "chk_ca55ef92631deac9a706",
+            "chunk_content_hash": "29e0c4cbbb02cdceae70277c91ecf5aedf78dc79cee6eec5b5397f51839fb8a8",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交"
+            ],
+            "quote": "4.1移交数据的来源、保存、传递及应用应符合现行的国家相关法律法规，遵守国家信息安全相关要求。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "三维模型数字文件移交",
+      "移交数据的来源、保存、传递及应用"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交.docx"
+    ],
+    "retrieval_span": "multi_evidence",
+    "tags": [
+      "multi_evidence",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_010",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:bdd8d1af16ca:chk_fbab058c7f4d3b8bd344",
+    "query": "《三维模型数字文件移交标准第一分册》对“三维设计模型的文件存储结构、格式与命名规则”和“三维设计模型”分别作了什么规定？",
+    "answerable": true,
+    "question_type": "multi_evidence",
+    "difficulty": "hard",
+    "gold_answer": "8.3.1三维设计模型的文件存储结构、格式与命名规则应符合《35kV及以上输变电工程三维模型数字文件移交标准》的要求。\n7.2.4三维设计模型应满足本标准第二分册、第三分册、第四分册的要求。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "8.3.1三维设计模型的文件存储结构、格式与命名规则应符合《35kV及以上输变电工程三维模型数字文件移交标准》的要求。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交.docx",
+            "source_sha256": "bdd8d1af16cad7332b924d84d4a581338d2156fdcdf92cfd8eb68bf19f3da78a",
+            "chunk_id": "chk_fbab058c7f4d3b8bd344",
+            "chunk_content_hash": "af660202905a5d5b61279eb2a145291a4c3730f831469791081198891a36fc22",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交"
+            ],
+            "quote": "8.3.1三维设计模型的文件存储结构、格式与命名规则应符合《35kV及以上输变电工程三维模型数字文件移交标准》的要求。"
+          }
+        ]
+      },
+      {
+        "unit_id": "u2",
+        "fact": "7.2.4三维设计模型应满足本标准第二分册、第三分册、第四分册的要求。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交.docx",
+            "source_sha256": "bdd8d1af16cad7332b924d84d4a581338d2156fdcdf92cfd8eb68bf19f3da78a",
+            "chunk_id": "chk_fbab058c7f4d3b8bd344",
+            "chunk_content_hash": "af660202905a5d5b61279eb2a145291a4c3730f831469791081198891a36fc22",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交"
+            ],
+            "quote": "7.2.4三维设计模型应满足本标准第二分册、第三分册、第四分册的要求。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "三维设计模型的文件存储结构、格式与命名规则",
+      "35kV",
+      "三维设计模型"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交.docx"
+    ],
+    "retrieval_span": "multi_evidence",
+    "tags": [
+      "multi_evidence",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_011",
+    "dataset_version": "rag_gold_v1",
+    "split": "dev",
+    "family_id": "rag:99c581ee332f:chk_b3359568a38150f0bb93",
+    "query": "输电工程三维设计模型、激光点云数据应采用什么方式或格式？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "easy",
+    "gold_answer": "输电工程三维设计模型、激光点云数据应采用统一的坐标系、高程基准和数据格式。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "输电工程三维设计模型、激光点云数据应采用统一的坐标系、高程基准和数据格式。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路.docx",
+            "source_sha256": "99c581ee332f622e6b321acfae1d759fdd8a03996f35beab4fd2e11c26941ac1",
+            "chunk_id": "chk_b3359568a38150f0bb93",
+            "chunk_content_hash": "31dfb5be5d4e5826f76bd21d05c48972fb21689dcc9d5c2403df61941b3c8f1b",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路"
+            ],
+            "quote": "输电工程三维设计模型、激光点云数据应采用统一的坐标系、高程基准和数据格式。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "输电工程三维设计模型、激光点云数据",
+      "应采用统一的坐标系、高程基准和数据格"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_012",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:99c581ee332f:chk_ffb2e575a0e3073ae351",
+    "query": "架空线路GIM文件的存储域应包含哪些类别文件，如何排列？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "medium",
+    "gold_answer": "b)存储域应包括CBM、DEV、PHM和MOD中的所有文件，紧跟文件头连续存储。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "b)存储域应包括CBM、DEV、PHM和MOD中的所有文件，紧跟文件头连续存储。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路.docx",
+            "source_sha256": "99c581ee332f622e6b321acfae1d759fdd8a03996f35beab4fd2e11c26941ac1",
+            "chunk_id": "chk_ffb2e575a0e3073ae351",
+            "chunk_content_hash": "a44c8ae33c621bea10b1cea934ad1d505a06eddb81751b8b69f551ec52218fdc",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路"
+            ],
+            "quote": "b)存储域应包括CBM、DEV、PHM和MOD中的所有文件，紧跟文件头连续存储。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "存储域应包括CBM、DEV、PHM和",
+      "应包括CBM、DEV、PHM和MOD"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_013",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:99c581ee332f:chk_67890f49569e5476397e",
+    "query": "通用模型和产品模型包括哪些内容？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "easy",
+    "gold_answer": "a）通用模型和产品模型采用参数化模型，包括杆塔节点、杆件、挂点，不能采用参数化表达的部分应结合装配模型进行关联移交。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "a）通用模型和产品模型采用参数化模型，包括杆塔节点、杆件、挂点，不能采用参数化表达的部分应结合装配模型进行关联移交。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路.docx",
+            "source_sha256": "99c581ee332f622e6b321acfae1d759fdd8a03996f35beab4fd2e11c26941ac1",
+            "chunk_id": "chk_67890f49569e5476397e",
+            "chunk_content_hash": "5bad39b226d3d7f7b77bcc838b82f774fb7c2fbbb14cc0d8cbd4e2060b3b2697",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路"
+            ],
+            "quote": "a）通用模型和产品模型采用参数化模型，包括杆塔节点、杆件、挂点，不能采用参数化表达的部分应结合装配模型进行关联移交。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "通用模型和产品模型"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_014",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:99c581ee332f:chk_75771b53dcaf674649da",
+    "query": "架空线路调度编码应遵循什么要求？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "easy",
+    "gold_answer": "调度编码应满足SD240的要求，对未涵盖的部分应按各省（市）公司调度编号惯例执行。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "调度编码应满足SD240的要求，对未涵盖的部分应按各省（市）公司调度编号惯例执行。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路.docx",
+            "source_sha256": "99c581ee332f622e6b321acfae1d759fdd8a03996f35beab4fd2e11c26941ac1",
+            "chunk_id": "chk_75771b53dcaf674649da",
+            "chunk_content_hash": "8142481af1a7de9d86d8be79681039cc77ab971da91ab88a678d0b565b32e75e",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路"
+            ],
+            "quote": "调度编码应满足SD240的要求，对未涵盖的部分应按各省（市）公司调度编号惯例执行。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "调度编码"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_015",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:99c581ee332f:chk_b04e4aa6bc461001e130",
+    "query": "依据《三维模型数字文件移交标准第三分册》，对于长短腿应满足什么要求？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "medium",
+    "gold_answer": "对于长短腿，Leg数据段为共用部分，其子腿数据必须在此Leg段后面顺序输出；",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "对于长短腿，Leg数据段为共用部分，其子腿数据必须在此Leg段后面顺序输出；",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路.docx",
+            "source_sha256": "99c581ee332f622e6b321acfae1d759fdd8a03996f35beab4fd2e11c26941ac1",
+            "chunk_id": "chk_b04e4aa6bc461001e130",
+            "chunk_content_hash": "6ed2a1c21a28764eaded02ef28d8459896d04cbb54232d6a832fe20c25199a55",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路"
+            ],
+            "quote": "对于长短腿，Leg数据段为共用部分，其子腿数据必须在此Leg段后面顺序输出；"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "对于长短腿",
+      "必须在此Leg段后面顺序输出"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_016",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:99c581ee332f:chk_4eeb2d13ddeabffb4972",
+    "query": "塔脚板定位坐标系的x轴方向向量有什么要求？",
+    "answerable": true,
+    "question_type": "numeric",
+    "difficulty": "easy",
+    "gold_answer": "坐标系x轴x、坐标系x轴y、坐标系x轴z为塔脚板放置到具体位置的坐标系x轴方向向量，该向量必须为单位向量。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "坐标系x轴x、坐标系x轴y、坐标系x轴z为塔脚板放置到具体位置的坐标系x轴方向向量，该向量必须为单位向量。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路.docx",
+            "source_sha256": "99c581ee332f622e6b321acfae1d759fdd8a03996f35beab4fd2e11c26941ac1",
+            "chunk_id": "chk_4eeb2d13ddeabffb4972",
+            "chunk_content_hash": "b213b58d93fc63852ce67a8341b22138432b9c8e3b5769f7c8d41463b26d92f4",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路"
+            ],
+            "quote": "坐标系x轴x、坐标系x轴y、坐标系x轴z为塔脚板放置到具体位置的坐标系x轴方向向量，该向量必须为单位向量。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "坐标系x轴x、坐标系x轴y、坐标系x轴z为塔",
+      "必须为单位向量"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "numeric",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_017",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:99c581ee332f:chk_c209c624a9e19ad42459",
+    "query": "架空线路设备模型的CBM文件夹入口文件是什么，格式依据是什么？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "easy",
+    "gold_answer": "A.4.2CBM文件夹中包含一个入口文件*.cbm，该文件是整个设备模型文件的入口，文件存储格式应符合表A.4.2的要求。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "A.4.2CBM文件夹中包含一个入口文件*.cbm，该文件是整个设备模型文件的入口，文件存储格式应符合表A.4.2的要求。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路.docx",
+            "source_sha256": "99c581ee332f622e6b321acfae1d759fdd8a03996f35beab4fd2e11c26941ac1",
+            "chunk_id": "chk_c209c624a9e19ad42459",
+            "chunk_content_hash": "4b2641580f81577c77b19511cc99633522c817db79a9e258e79b4a780ba05341",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路"
+            ],
+            "quote": "A.4.2CBM文件夹中包含一个入口文件*.cbm，该文件是整个设备模型文件的入口，文件存储格式应符合表A.4.2的要求。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "CBM文件夹中"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_018",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:99c581ee332f:chk_be1359d0704788d207f6",
+    "query": "依据《三维模型数字文件移交标准第三分册》，电网专题数据包括哪些内容？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "medium",
+    "gold_answer": "电网专题数据包括风、覆冰、污秽、地震、舞动、雷害、鸟害等区划数据，文件格式为*.shp和*.tab。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "电网专题数据包括风、覆冰、污秽、地震、舞动、雷害、鸟害等区划数据，文件格式为*.shp和*.tab。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路.docx",
+            "source_sha256": "99c581ee332f622e6b321acfae1d759fdd8a03996f35beab4fd2e11c26941ac1",
+            "chunk_id": "chk_be1359d0704788d207f6",
+            "chunk_content_hash": "9a21bc31efd64b022dbb139168293066068bbba91d0d6c244c33633e40d170b1",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路"
+            ],
+            "quote": "电网专题数据包括风、覆冰、污秽、地震、舞动、雷害、鸟害等区划数据，文件格式为*.shp和*.tab。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "电网专题数据"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_019",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:99c581ee332f:chk_4eeb2d13ddeabffb4972",
+    "query": "《三维模型数字文件移交标准第三分册》对“坐标系y轴x、坐标系y轴y、坐标系y轴z为塔…”和“坐标系z轴x、坐标系z轴y、坐标系z轴z为塔…”分别作了什么规定？",
+    "answerable": true,
+    "question_type": "multi_evidence",
+    "difficulty": "hard",
+    "gold_answer": "坐标系y轴x、坐标系y轴y、坐标系y轴z为塔脚板放置到具体位置的坐标系y轴方向向量，该向量必须为单位向量。\n坐标系z轴x、坐标系z轴y、坐标系z轴z为塔脚板放置到具体位置的坐标系z轴方向向量，该向量必须为单位向量。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "坐标系y轴x、坐标系y轴y、坐标系y轴z为塔脚板放置到具体位置的坐标系y轴方向向量，该向量必须为单位向量。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路.docx",
+            "source_sha256": "99c581ee332f622e6b321acfae1d759fdd8a03996f35beab4fd2e11c26941ac1",
+            "chunk_id": "chk_4eeb2d13ddeabffb4972",
+            "chunk_content_hash": "b213b58d93fc63852ce67a8341b22138432b9c8e3b5769f7c8d41463b26d92f4",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路"
+            ],
+            "quote": "坐标系y轴x、坐标系y轴y、坐标系y轴z为塔脚板放置到具体位置的坐标系y轴方向向量，该向量必须为单位向量。"
+          }
+        ]
+      },
+      {
+        "unit_id": "u2",
+        "fact": "坐标系z轴x、坐标系z轴y、坐标系z轴z为塔脚板放置到具体位置的坐标系z轴方向向量，该向量必须为单位向量。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路.docx",
+            "source_sha256": "99c581ee332f622e6b321acfae1d759fdd8a03996f35beab4fd2e11c26941ac1",
+            "chunk_id": "chk_4eeb2d13ddeabffb4972",
+            "chunk_content_hash": "b213b58d93fc63852ce67a8341b22138432b9c8e3b5769f7c8d41463b26d92f4",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路"
+            ],
+            "quote": "坐标系z轴x、坐标系z轴y、坐标系z轴z为塔脚板放置到具体位置的坐标系z轴方向向量，该向量必须为单位向量。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "坐标系y轴x、坐标系y轴y、坐标系y轴z为塔",
+      "必须为单位向量",
+      "坐标系z轴x、坐标系z轴y、坐标系z轴z为塔"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路.docx"
+    ],
+    "retrieval_span": "multi_evidence",
+    "tags": [
+      "multi_evidence",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_020",
+    "dataset_version": "rag_gold_v1",
+    "split": "dev",
+    "family_id": "rag:99c581ee332f:chk_b3359568a38150f0bb93",
+    "query": "《三维模型数字文件移交标准第三分册》对“通用模型和产品模型”和“通用模型”分别作了什么规定？",
+    "answerable": true,
+    "question_type": "multi_evidence",
+    "difficulty": "hard",
+    "gold_answer": "通用模型和产品模型应采用统一的配色标准，模型配色表见附录G。\n通用模型采用*.mod文件，产品模型采用*.mod或*.stl或*.fbx文件。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "通用模型和产品模型应采用统一的配色标准，模型配色表见附录G。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路.docx",
+            "source_sha256": "99c581ee332f622e6b321acfae1d759fdd8a03996f35beab4fd2e11c26941ac1",
+            "chunk_id": "chk_b3359568a38150f0bb93",
+            "chunk_content_hash": "31dfb5be5d4e5826f76bd21d05c48972fb21689dcc9d5c2403df61941b3c8f1b",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路"
+            ],
+            "quote": "通用模型和产品模型应采用统一的配色标准，模型配色表见附录G。"
+          }
+        ]
+      },
+      {
+        "unit_id": "u2",
+        "fact": "通用模型采用*.mod文件，产品模型采用*.mod或*.stl或*.fbx文件。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路.docx",
+            "source_sha256": "99c581ee332f622e6b321acfae1d759fdd8a03996f35beab4fd2e11c26941ac1",
+            "chunk_id": "chk_b3359568a38150f0bb93",
+            "chunk_content_hash": "31dfb5be5d4e5826f76bd21d05c48972fb21689dcc9d5c2403df61941b3c8f1b",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路"
+            ],
+            "quote": "通用模型采用*.mod文件，产品模型采用*.mod或*.stl或*.fbx文件。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "通用模型和产品模型",
+      "应采用统一的配色标准，模型配色表见附",
+      "通用模型"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路.docx"
+    ],
+    "retrieval_span": "multi_evidence",
+    "tags": [
+      "multi_evidence",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_021",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:2e55965bf43e:chk_96cae39dde57d602c829",
+    "query": "依据《三维模型数字文件移交标准第二分册》，变电站（换流站）工程三维设计模型、激光点云应采用什么方式或格式？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "medium",
+    "gold_answer": "4.8变电站（换流站）工程三维设计模型、激光点云应采用统一的坐标系、高程基准和数据格式。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "4.8变电站（换流站）工程三维设计模型、激光点云应采用统一的坐标系、高程基准和数据格式。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第二分册：变电站（换流站）.docx",
+            "source_sha256": "2e55965bf43e94852254cbc7b0c6243dc4ad76e1f6e9587fc974f8e1e63da17d",
+            "chunk_id": "chk_96cae39dde57d602c829",
+            "chunk_content_hash": "951e3a5f69ee6cd29a25b8cd59d990b06fa50d5fbbf70bab171560adae2a1359",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "一般规定"
+            ],
+            "quote": "4.8变电站（换流站）工程三维设计模型、激光点云应采用统一的坐标系、高程基准和数据格式。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "变电站（换流站）工程三维设计模型、激光点云",
+      "应采用统一的坐标系、高程基准和数据格"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第二分册：变电站（换流站）.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_022",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:2e55965bf43e:chk_a7e268ee579df635081e",
+    "query": "变电站GIM文件的存储域应包含哪些文件类型，如何排列？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "easy",
+    "gold_answer": "6.3.2存储域应包括CBM、DEV、PHM和MOD中的所有文件，紧跟文件头连续存储。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "6.3.2存储域应包括CBM、DEV、PHM和MOD中的所有文件，紧跟文件头连续存储。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第二分册：变电站（换流站）.docx",
+            "source_sha256": "2e55965bf43e94852254cbc7b0c6243dc4ad76e1f6e9587fc974f8e1e63da17d",
+            "chunk_id": "chk_a7e268ee579df635081e",
+            "chunk_content_hash": "fa11c0932eb9ad219b0a0c7be16c16c69868b6a085757d96cd4c234c22e2ccb6",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "三维设计模型文件存储结构"
+            ],
+            "quote": "6.3.2存储域应包括CBM、DEV、PHM和MOD中的所有文件，紧跟文件头连续存储。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "存储域应包括CBM、DEV、PHM和",
+      "应包括CBM、DEV、PHM和MOD"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第二分册：变电站（换流站）.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_023",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:2e55965bf43e:chk_37c8823909c9c2a7aed0",
+    "query": "工程模型层级管理如何分类？",
+    "answerable": true,
+    "question_type": "classification",
+    "difficulty": "easy",
+    "gold_answer": "7.1工程模型层级管理采用面向工程对象管理的原则应分为5级，变电站（换流站）1级为工程级，2级为专业级，3级为系统（区域）级，4级为设备（含材料、建构筑物、设施级）级，5级为部件级。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "7.1工程模型层级管理采用面向工程对象管理的原则应分为5级，变电站（换流站）1级为工程级，2级为专业级，3级为系统（区域）级，4级为设备（含材料、建构筑物、设施级）级，5级为部件级。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第二分册：变电站（换流站）.docx",
+            "source_sha256": "2e55965bf43e94852254cbc7b0c6243dc4ad76e1f6e9587fc974f8e1e63da17d",
+            "chunk_id": "chk_37c8823909c9c2a7aed0",
+            "chunk_content_hash": "5025a049cca9d703fb1e9bc0077184dfb79fa756c61765988c19eccd3e1ffd75",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "工程模型的层级管理"
+            ],
+            "quote": "7.1工程模型层级管理采用面向工程对象管理的原则应分为5级，变电站（换流站）1级为工程级，2级为专业级，3级为系统（区域）级，4级为设备（含材料、建构筑物、设施级）级，5级为部件级。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "工程模型层级管理",
+      "分为5级，变电站（换流站）1级为工程"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第二分册：变电站（换流站）.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "classification",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_024",
+    "dataset_version": "rag_gold_v1",
+    "split": "dev",
+    "family_id": "rag:2e55965bf43e:chk_c31e81bf640165664ba5",
+    "query": "依据《三维模型数字文件移交标准第二分册》，电压等级参数的赋值应采用什么方式或格式？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "medium",
+    "gold_answer": "A.1.3电压等级参数的赋值应采用统一描述方法，详见《35kV及以上输变电工程三维模型数字文件移交标准第一分册：成果移交》中附录C。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "A.1.3电压等级参数的赋值应采用统一描述方法，详见《35kV及以上输变电工程三维模型数字文件移交标准第一分册：成果移交》中附录C。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第二分册：变电站（换流站）.docx",
+            "source_sha256": "2e55965bf43e94852254cbc7b0c6243dc4ad76e1f6e9587fc974f8e1e63da17d",
+            "chunk_id": "chk_c31e81bf640165664ba5",
+            "chunk_content_hash": "9f975b7ab9620ad5503b0ec9b14eef032bac1ba75d56f4b335104a36acccbf61",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "建模要求和方法"
+            ],
+            "quote": "A.1.3电压等级参数的赋值应采用统一描述方法，详见《35kV及以上输变电工程三维模型数字文件移交标准第一分册：成果移交》中附录C。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "电压等级参数的赋值",
+      "35kV",
+      "应采用统一描述方法，详见《35kV及"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第二分册：变电站（换流站）.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_025",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:2e55965bf43e:chk_98b4280510923b2a1ee9",
+    "query": "建构筑物及设施模型应采用什么方式或格式？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "easy",
+    "gold_answer": "10.2.1建构筑物及设施模型应采用统一的配色原则，见附录D。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "10.2.1建构筑物及设施模型应采用统一的配色原则，见附录D。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第二分册：变电站（换流站）.docx",
+            "source_sha256": "2e55965bf43e94852254cbc7b0c6243dc4ad76e1f6e9587fc974f8e1e63da17d",
+            "chunk_id": "chk_98b4280510923b2a1ee9",
+            "chunk_content_hash": "31230fe61cc86338886112c26af952246861fc87e48b454efb8643c306a2e9a5",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "土建建模"
+            ],
+            "quote": "10.2.1建构筑物及设施模型应采用统一的配色原则，见附录D。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "建构筑物及设施模型",
+      "应采用统一的配色原则，见附录D"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第二分册：变电站（换流站）.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_026",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:2e55965bf43e:chk_294154a3af41d6df8b08",
+    "query": "基本图元应采用什么方式或格式？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "easy",
+    "gold_answer": "A.1.7基本图元应采用“对象+参数”的方式进行描述，对象用对应的英文，首字母大写，参数之间采用1个空格分开，对象和参数之间采用1个空格分开。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "A.1.7基本图元应采用“对象+参数”的方式进行描述，对象用对应的英文，首字母大写，参数之间采用1个空格分开，对象和参数之间采用1个空格分开。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第二分册：变电站（换流站）.docx",
+            "source_sha256": "2e55965bf43e94852254cbc7b0c6243dc4ad76e1f6e9587fc974f8e1e63da17d",
+            "chunk_id": "chk_294154a3af41d6df8b08",
+            "chunk_content_hash": "2700e6ecb2a124de04a0e3bfb71f0413b97b1cad6749e1fbadae3a46019cee11",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "建模要求和方法"
+            ],
+            "quote": "A.1.7基本图元应采用“对象+参数”的方式进行描述，对象用对应的英文，首字母大写，参数之间采用1个空格分开，对象和参数之间采用1个空格分开。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "基本图元",
+      "应采用“对象+参数”的方式进行描述"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第二分册：变电站（换流站）.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_027",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:2e55965bf43e:chk_d7ecd4f2422d7c574da9",
+    "query": "依据《三维模型数字文件移交标准第二分册》，SDD可视化图形文件包括哪些内容？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "medium",
+    "gold_answer": "b)SDD可视化图形文件应包括全站屏柜间的全回路可视化，包括回路原理图、屏柜布置图、柜内元件图、装置背板插件图和端子排图等。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "b)SDD可视化图形文件应包括全站屏柜间的全回路可视化，包括回路原理图、屏柜布置图、柜内元件图、装置背板插件图和端子排图等。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第二分册：变电站（换流站）.docx",
+            "source_sha256": "2e55965bf43e94852254cbc7b0c6243dc4ad76e1f6e9587fc974f8e1e63da17d",
+            "chunk_id": "chk_d7ecd4f2422d7c574da9",
+            "chunk_content_hash": "8a1afa260a0b11fd0365facf3f81fed47cc8c557ab6cc25661828057e224f413",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "一般规定"
+            ],
+            "quote": "b)SDD可视化图形文件应包括全站屏柜间的全回路可视化，包括回路原理图、屏柜布置图、柜内元件图、装置背板插件图和端子排图等。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "SDD可视化图形文件",
+      "应包括全站屏柜间的全回路可视化，包括"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第二分册：变电站（换流站）.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_028",
+    "dataset_version": "rag_gold_v1",
+    "split": "dev",
+    "family_id": "rag:2e55965bf43e:chk_3cf92093c855c192c39a",
+    "query": "模型扩展时应采用什么方式或格式？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "easy",
+    "gold_answer": "模型扩展时应采用private扩展方式，private扩展的语法和规则应遵循XML定义。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "模型扩展时应采用private扩展方式，private扩展的语法和规则应遵循XML定义。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第二分册：变电站（换流站）.docx",
+            "source_sha256": "2e55965bf43e94852254cbc7b0c6243dc4ad76e1f6e9587fc974f8e1e63da17d",
+            "chunk_id": "chk_3cf92093c855c192c39a",
+            "chunk_content_hash": "4d84cd8025ebedd3eb9d0b592df1ad10d6fcfd6e66317b88b9af7e390dccb5f3",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "总体要求"
+            ],
+            "quote": "模型扩展时应采用private扩展方式，private扩展的语法和规则应遵循XML定义。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "模型扩展时",
+      "应采用private扩展方式，pri"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第二分册：变电站（换流站）.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_029",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:2e55965bf43e:chk_96cae39dde57d602c829",
+    "query": "《三维模型数字文件移交标准第二分册》对“主要电气设备三维模型应以本规范中规定的基本图…”和“装配模型”分别作了什么规定？",
+    "answerable": true,
+    "question_type": "multi_evidence",
+    "difficulty": "hard",
+    "gold_answer": "4.14主要电气设备三维模型应以本规范中规定的基本图元来完成建模，除特别说明外，不应采用其它形式。\n4.11装配模型应采用模型关联的方式关联到相应的产品模型上。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "4.14主要电气设备三维模型应以本规范中规定的基本图元来完成建模，除特别说明外，不应采用其它形式。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第二分册：变电站（换流站）.docx",
+            "source_sha256": "2e55965bf43e94852254cbc7b0c6243dc4ad76e1f6e9587fc974f8e1e63da17d",
+            "chunk_id": "chk_96cae39dde57d602c829",
+            "chunk_content_hash": "951e3a5f69ee6cd29a25b8cd59d990b06fa50d5fbbf70bab171560adae2a1359",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "一般规定"
+            ],
+            "quote": "4.14主要电气设备三维模型应以本规范中规定的基本图元来完成建模，除特别说明外，不应采用其它形式。"
+          }
+        ]
+      },
+      {
+        "unit_id": "u2",
+        "fact": "4.11装配模型应采用模型关联的方式关联到相应的产品模型上。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第二分册：变电站（换流站）.docx",
+            "source_sha256": "2e55965bf43e94852254cbc7b0c6243dc4ad76e1f6e9587fc974f8e1e63da17d",
+            "chunk_id": "chk_96cae39dde57d602c829",
+            "chunk_content_hash": "951e3a5f69ee6cd29a25b8cd59d990b06fa50d5fbbf70bab171560adae2a1359",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "一般规定"
+            ],
+            "quote": "4.11装配模型应采用模型关联的方式关联到相应的产品模型上。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "主要电气设备三维模型应以本规范中规定的基本图",
+      "应采用其它形式",
+      "装配模型",
+      "应采用模型关联的方式关联到相应的产品"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第二分册：变电站（换流站）.docx"
+    ],
+    "retrieval_span": "multi_evidence",
+    "tags": [
+      "multi_evidence",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_030",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:2e55965bf43e:chk_0bb09aa923935f56fe31",
+    "query": "常开触点CKCD和常闭触点CBCD元件各包含几个连接点？",
+    "answerable": true,
+    "question_type": "multi_evidence",
+    "difficulty": "hard",
+    "gold_answer": "常开触点CKCD元件功能，元件功能包含2个连接点，见表J.3.19.6。\n常闭触点CBCD元件功能，元件功能包含2个连接点，见表J.3.19.7。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "常开触点CKCD元件功能，元件功能包含2个连接点，见表J.3.19.6。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第二分册：变电站（换流站）.docx",
+            "source_sha256": "2e55965bf43e94852254cbc7b0c6243dc4ad76e1f6e9587fc974f8e1e63da17d",
+            "chunk_id": "chk_0bb09aa923935f56fe31",
+            "chunk_content_hash": "c217cb50ee32fff1a10686f280cc39b1c6b3ae5f2c59868833a5a38731795093",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "建模要求和方法"
+            ],
+            "quote": "常开触点CKCD元件功能，元件功能包含2个连接点，见表J.3.19.6。"
+          }
+        ]
+      },
+      {
+        "unit_id": "u2",
+        "fact": "常闭触点CBCD元件功能，元件功能包含2个连接点，见表J.3.19.7。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第二分册：变电站（换流站）.docx",
+            "source_sha256": "2e55965bf43e94852254cbc7b0c6243dc4ad76e1f6e9587fc974f8e1e63da17d",
+            "chunk_id": "chk_0bb09aa923935f56fe31",
+            "chunk_content_hash": "c217cb50ee32fff1a10686f280cc39b1c6b3ae5f2c59868833a5a38731795093",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "建模要求和方法"
+            ],
+            "quote": "常闭触点CBCD元件功能，元件功能包含2个连接点，见表J.3.19.7。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "常开触点CKCD元件功能",
+      "常闭触点CBCD元件功能"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第二分册：变电站（换流站）.docx"
+    ],
+    "retrieval_span": "multi_evidence",
+    "tags": [
+      "multi_evidence",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_031",
+    "dataset_version": "rag_gold_v1",
+    "split": "dev",
+    "family_id": "rag:e41e7ebd12d0:chk_7627a44279fae8f53d4a",
+    "query": "依据《三维模型数字文件移交标准第五分册》，输变电工程编码包括哪些内容？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "easy",
+    "gold_answer": "5.8输变电工程编码应包括标识系统编码、物料编码，分别按照NB/T11198-2023及中国南方电网有限责任公司输变电工程相关文件进行编码。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "5.8输变电工程编码应包括标识系统编码、物料编码，分别按照NB/T11198-2023及中国南方电网有限责任公司输变电工程相关文件进行编码。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第五分册：模型及文件管理.docx",
+            "source_sha256": "e41e7ebd12d0572b7293029ce1a1f41cc7570f99deee4316a2334ab4004019a8",
+            "chunk_id": "chk_7627a44279fae8f53d4a",
+            "chunk_content_hash": "2ac4868d8a716456e1909e578527392d0374fd9cd47e8c5b95a604f2dcbba4f3",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "5、一般规定"
+            ],
+            "quote": "5.8输变电工程编码应包括标识系统编码、物料编码，分别按照NB/T11198-2023及中国南方电网有限责任公司输变电工程相关文件进行编码。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "输变电工程编码",
+      "应包括标识系统编码、物料编码，分别按"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第五分册：模型及文件管理.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_032",
+    "dataset_version": "rag_gold_v1",
+    "split": "dev",
+    "family_id": "rag:e41e7ebd12d0:chk_e442e661a47449b56e6e",
+    "query": "一次移交包括哪些内容？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "easy",
+    "gold_answer": "一次移交：是指三维设计成果提供单位按移交技术导则要求制作输变电工程三维设计移交成果，包括：工程属性数据、工程地理信息系统数据、三维设计模型、文档资料等内容，再按工程各设计阶段的移交时间节点，将工程三维设计成果移交给接收单位；",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "一次移交：是指三维设计成果提供单位按移交技术导则要求制作输变电工程三维设计移交成果，包括：工程属性数据、工程地理信息系统数据、三维设计模型、文档资料等内容，再按工程各设计阶段的移交时间节点，将工程三维设计成果移交给接收单位；",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第五分册：模型及文件管理.docx",
+            "source_sha256": "e41e7ebd12d0572b7293029ce1a1f41cc7570f99deee4316a2334ab4004019a8",
+            "chunk_id": "chk_e442e661a47449b56e6e",
+            "chunk_content_hash": "470b9bd2ed7da1f1765f605b25554f5ebdef33293bd661e43df6f88810839a85",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "7.1 管理模式"
+            ],
+            "quote": "一次移交：是指三维设计成果提供单位按移交技术导则要求制作输变电工程三维设计移交成果，包括：工程属性数据、工程地理信息系统数据、三维设计模型、文档资料等内容，再按工程各设计阶段的移交时间节点，将工程三维设计成果移交给接收单位；"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "一次移交"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第五分册：模型及文件管理.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_033",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:e41e7ebd12d0:chk_34d75f695d9470c57877",
+    "query": "设计单位制作的工程三维设计移交成果应包括哪些内容？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "medium",
+    "gold_answer": "工程三维设计成果移交接收流程如下：设计单位按《35kV及以上输变电工程三维模型数字文件移交标准》要求制作输变电工程三维设计移交成果，包括：工程属性数据、工程地理信息系统、三维设计模型、厂商设备模型、文档资料等内容。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "工程三维设计成果移交接收流程如下：设计单位按《35kV及以上输变电工程三维模型数字文件移交标准》要求制作输变电工程三维设计移交成果，包括：工程属性数据、工程地理信息系统、三维设计模型、厂商设备模型、文档资料等内容。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第五分册：模型及文件管理.docx",
+            "source_sha256": "e41e7ebd12d0572b7293029ce1a1f41cc7570f99deee4316a2334ab4004019a8",
+            "chunk_id": "chk_34d75f695d9470c57877",
+            "chunk_content_hash": "33f56e8d93fe56b04f3e767501e097be222b227b158e928904409bdf9de0aa47",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "7.2.1 移交接收"
+            ],
+            "quote": "工程三维设计成果移交接收流程如下：设计单位按《35kV及以上输变电工程三维模型数字文件移交标准》要求制作输变电工程三维设计移交成果，包括：工程属性数据、工程地理信息系统、三维设计模型、厂商设备模型、文档资料等内容。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "工程三维设计成果移交接收流程如下",
+      "35kV"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第五分册：模型及文件管理.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_034",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:e41e7ebd12d0:chk_666497168cbeffef6459",
+    "query": "导地线的通用模型和产品模型应如何参数化描述，线上附件如何建模？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "easy",
+    "gold_answer": "要求通用模型和产品模型均采用参数化描述，分裂导线应按照每根线进行单独建模，建模参数包括导地线的型号、截面积、外径等相关的物理参数，线上附件包括间隔棒、防振锤等，采用图形化建模方式构建。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "要求通用模型和产品模型均采用参数化描述，分裂导线应按照每根线进行单独建模，建模参数包括导地线的型号、截面积、外径等相关的物理参数，线上附件包括间隔棒、防振锤等，采用图形化建模方式构建。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第五分册：模型及文件管理.docx",
+            "source_sha256": "e41e7ebd12d0572b7293029ce1a1f41cc7570f99deee4316a2334ab4004019a8",
+            "chunk_id": "chk_666497168cbeffef6459",
+            "chunk_content_hash": "e6e5765455cb04fe846151cd2006dd8914fbd53c4a3e7a6b100fb64f75c80938",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "7.2.3.2 三维模型解析处理"
+            ],
+            "quote": "要求通用模型和产品模型均采用参数化描述，分裂导线应按照每根线进行单独建模，建模参数包括导地线的型号、截面积、外径等相关的物理参数，线上附件包括间隔棒、防振锤等，采用图形化建模方式构建。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "通用模型和产品模型均"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第五分册：模型及文件管理.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_035",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:e41e7ebd12d0:chk_298991db0e787abeffd8",
+    "query": "数据质量结果报告包含哪些部分？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "easy",
+    "gold_answer": "7.2.2.5出具结果根据综合评分结果，结合数据质量评测方法，出具数据质量结果报告，包括评测报告、图形展示、问题概况、问题分布、趋势分析等。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "7.2.2.5出具结果根据综合评分结果，结合数据质量评测方法，出具数据质量结果报告，包括评测报告、图形展示、问题概况、问题分布、趋势分析等。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第五分册：模型及文件管理.docx",
+            "source_sha256": "e41e7ebd12d0572b7293029ce1a1f41cc7570f99deee4316a2334ab4004019a8",
+            "chunk_id": "chk_298991db0e787abeffd8",
+            "chunk_content_hash": "55579582c72e6cf56425247650c345da36725d9158b04264bb786935cba82d8d",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "7.2.2 数据审核"
+            ],
+            "quote": "7.2.2.5出具结果根据综合评分结果，结合数据质量评测方法，出具数据质量结果报告，包括评测报告、图形展示、问题概况、问题分布、趋势分析等。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "出具结果根据综合评分结果"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第五分册：模型及文件管理.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_036",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:e41e7ebd12d0:chk_40b63b1b703c9847b8bb",
+    "query": "入库后的工程三维设计成果应如何更新维护？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "medium",
+    "gold_answer": "6.1.6数据更新负责对入库后的工程三维设计成果数据进行定期或不定期的更新维护，针对不同类型数据采用不同的更新方式。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "6.1.6数据更新负责对入库后的工程三维设计成果数据进行定期或不定期的更新维护，针对不同类型数据采用不同的更新方式。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第五分册：模型及文件管理.docx",
+            "source_sha256": "e41e7ebd12d0572b7293029ce1a1f41cc7570f99deee4316a2334ab4004019a8",
+            "chunk_id": "chk_40b63b1b703c9847b8bb",
+            "chunk_content_hash": "7dc76cddb341c4fbad359f193e69553c6bfe607251a0e89dd41ffc1ff3040540",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "6.1 工作内容"
+            ],
+            "quote": "6.1.6数据更新负责对入库后的工程三维设计成果数据进行定期或不定期的更新维护，针对不同类型数据采用不同的更新方式。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "数据更新负责对入库后的工程三维设计成果数据进"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第五分册：模型及文件管理.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_037",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:e41e7ebd12d0:chk_5aed43efff26a2c45cc9",
+    "query": "三维设计模型按建模精细度分为哪两类？",
+    "answerable": true,
+    "question_type": "classification",
+    "difficulty": "easy",
+    "gold_answer": "6.2.2三维设计模型模型形式依据建模精细度划分为通用模型、产品模型两种。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "6.2.2三维设计模型模型形式依据建模精细度划分为通用模型、产品模型两种。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第五分册：模型及文件管理.docx",
+            "source_sha256": "e41e7ebd12d0572b7293029ce1a1f41cc7570f99deee4316a2334ab4004019a8",
+            "chunk_id": "chk_5aed43efff26a2c45cc9",
+            "chunk_content_hash": "211dca26c40f3ef9c977875011580a2d8d4b8cc23053d936e6feaf52ce44740e",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "6.2 管理对象"
+            ],
+            "quote": "6.2.2三维设计模型模型形式依据建模精细度划分为通用模型、产品模型两种。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "三维设计模型模型形式依据建模精细度划",
+      "分为通用模型、产品模型两种"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第五分册：模型及文件管理.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "classification",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_038",
+    "dataset_version": "rag_gold_v1",
+    "split": "dev",
+    "family_id": "rag:e41e7ebd12d0:chk_0c9184056729667077ab",
+    "query": "输配变电工程三维模型数字文件管理在执行时需要遵循哪些要求？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "easy",
+    "gold_answer": "输配变电工程三维模型数字文件管理应满足国家、行业及南方电网公司相关规程、规范要求。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "输配变电工程三维模型数字文件管理应满足国家、行业及南方电网公司相关规程、规范要求。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第五分册：模型及文件管理.docx",
+            "source_sha256": "e41e7ebd12d0572b7293029ce1a1f41cc7570f99deee4316a2334ab4004019a8",
+            "chunk_id": "chk_0c9184056729667077ab",
+            "chunk_content_hash": "4573e6932cd3cf4b7ea77f8dee744265f4d9392c8b3b6a22c599cb4ff2a9955d",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "3、术语和定义"
+            ],
+            "quote": "输配变电工程三维模型数字文件管理应满足国家、行业及南方电网公司相关规程、规范要求。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "输配变电工程三维模型数字文件管理"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第五分册：模型及文件管理.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_039",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:e41e7ebd12d0:chk_666497168cbeffef6459",
+    "query": "《三维模型数字文件移交标准第五分册》对“通用模型和产品模型”和“按照三维设计系列标准移交的三维模型”分别作了什么规定？",
+    "answerable": true,
+    "question_type": "multi_evidence",
+    "difficulty": "hard",
+    "gold_answer": "通用模型和产品模型采用参数化模型，制造模型采用图形化模型，包括杆塔杆件、节点板、螺栓、挂线板、塔脚板、登塔设施、检修装置等信息。\n按照三维设计系列标准移交的三维模型包括模型本身以及模型的属性表数据，通过交互式规范所规定的数据格式和数据组织形式，三维模型以GIM文件形式进行移交，GIM文件包括以下内容：CBM、DEV、PHM、MOD四级关系；",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "通用模型和产品模型采用参数化模型，制造模型采用图形化模型，包括杆塔杆件、节点板、螺栓、挂线板、塔脚板、登塔设施、检修装置等信息。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第五分册：模型及文件管理.docx",
+            "source_sha256": "e41e7ebd12d0572b7293029ce1a1f41cc7570f99deee4316a2334ab4004019a8",
+            "chunk_id": "chk_666497168cbeffef6459",
+            "chunk_content_hash": "e6e5765455cb04fe846151cd2006dd8914fbd53c4a3e7a6b100fb64f75c80938",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "7.2.3.2 三维模型解析处理"
+            ],
+            "quote": "通用模型和产品模型采用参数化模型，制造模型采用图形化模型，包括杆塔杆件、节点板、螺栓、挂线板、塔脚板、登塔设施、检修装置等信息。"
+          }
+        ]
+      },
+      {
+        "unit_id": "u2",
+        "fact": "按照三维设计系列标准移交的三维模型包括模型本身以及模型的属性表数据，通过交互式规范所规定的数据格式和数据组织形式，三维模型以GIM文件形式进行移交，GIM文件包括以下内容：CBM、DEV、PHM、MOD四级关系；",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第五分册：模型及文件管理.docx",
+            "source_sha256": "e41e7ebd12d0572b7293029ce1a1f41cc7570f99deee4316a2334ab4004019a8",
+            "chunk_id": "chk_666497168cbeffef6459",
+            "chunk_content_hash": "e6e5765455cb04fe846151cd2006dd8914fbd53c4a3e7a6b100fb64f75c80938",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "7.2.3.2 三维模型解析处理"
+            ],
+            "quote": "按照三维设计系列标准移交的三维模型包括模型本身以及模型的属性表数据，通过交互式规范所规定的数据格式和数据组织形式，三维模型以GIM文件形式进行移交，GIM文件包括以下内容：CBM、DEV、PHM、MOD四级关系；"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "通用模型和产品模型",
+      "按照三维设计系列标准移交的三维模型"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第五分册：模型及文件管理.docx"
+    ],
+    "retrieval_span": "multi_evidence",
+    "tags": [
+      "multi_evidence",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_040",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:e41e7ebd12d0:chk_30412d5f50b5225fe14e",
+    "query": "线路工程不同标段中央子午线可能不同时，移交过程应如何处理坐标？",
+    "answerable": true,
+    "question_type": "multi_evidence",
+    "difficulty": "hard",
+    "gold_answer": "三维设计相关标准中规定，坐标系统采用CGCS2000国家大地坐标系，但对于东西向较长的线路工程，不同标段采用的中央子午线不同，因此在移交过程中需做投影变化工作。\n三维设计相关标准中已明确规定，坐标系统采用CGCS2000国家大地坐标系，但由于在线路工程中不同标段采用的中央子午线仍极有可能不同，因此在移交过程中需做投影变化工作。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "三维设计相关标准中规定，坐标系统采用CGCS2000国家大地坐标系，但对于东西向较长的线路工程，不同标段采用的中央子午线不同，因此在移交过程中需做投影变化工作。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第五分册：模型及文件管理.docx",
+            "source_sha256": "e41e7ebd12d0572b7293029ce1a1f41cc7570f99deee4316a2334ab4004019a8",
+            "chunk_id": "chk_30412d5f50b5225fe14e",
+            "chunk_content_hash": "ab0179bc01c98273b3562cb780d3130e776053f2c54fbcfc3f600d36d25d6ad8",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "7.2.3.1 工程地理数据处理"
+            ],
+            "quote": "三维设计相关标准中规定，坐标系统采用CGCS2000国家大地坐标系，但对于东西向较长的线路工程，不同标段采用的中央子午线不同，因此在移交过程中需做投影变化工作。"
+          }
+        ]
+      },
+      {
+        "unit_id": "u2",
+        "fact": "三维设计相关标准中已明确规定，坐标系统采用CGCS2000国家大地坐标系，但由于在线路工程中不同标段采用的中央子午线仍极有可能不同，因此在移交过程中需做投影变化工作。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第五分册：模型及文件管理.docx",
+            "source_sha256": "e41e7ebd12d0572b7293029ce1a1f41cc7570f99deee4316a2334ab4004019a8",
+            "chunk_id": "chk_30412d5f50b5225fe14e",
+            "chunk_content_hash": "ab0179bc01c98273b3562cb780d3130e776053f2c54fbcfc3f600d36d25d6ad8",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "7.2.3.1 工程地理数据处理"
+            ],
+            "quote": "三维设计相关标准中已明确规定，坐标系统采用CGCS2000国家大地坐标系，但由于在线路工程中不同标段采用的中央子午线仍极有可能不同，因此在移交过程中需做投影变化工作。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "三维设计相关标准中规定",
+      "三维设计相关标准中已明确规定"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第五分册：模型及文件管理.docx"
+    ],
+    "retrieval_span": "multi_evidence",
+    "tags": [
+      "multi_evidence",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_041",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:009865b8dc37:chk_a4dcb3884b6b255bf12d",
+    "query": "初步设计路径优化报告包括哪些内容？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "easy",
+    "gold_answer": "a）初步设计路径优化报告应包括优化说明、本体主要工程量、房屋拆迁量、林区长度、交叉跨越数量、转角成果表等，路径优化成果应满足设计深度要求；",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "a）初步设计路径优化报告应包括优化说明、本体主要工程量、房屋拆迁量、林区长度、交叉跨越数量、转角成果表等，路径优化成果应满足设计深度要求；",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用.docx",
+            "source_sha256": "009865b8dc3722e444de43397d7a8bc93674f97898ba4e35adf5580d94cd9965",
+            "chunk_id": "chk_a4dcb3884b6b255bf12d",
+            "chunk_content_hash": "d3b451ad338c998b57857de11e70ddd0d8755da2b3f8a6dd301e2217b2cb1229",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用"
+            ],
+            "quote": "a）初步设计路径优化报告应包括优化说明、本体主要工程量、房屋拆迁量、林区长度、交叉跨越数量、转角成果表等，路径优化成果应满足设计深度要求；"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "初步设计路径优化报告",
+      "应包括优化说明、本体主要工程量、房屋"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_042",
+    "dataset_version": "rag_gold_v1",
+    "split": "dev",
+    "family_id": "rag:009865b8dc37:chk_bb1d0fc7d3accc37d9c4",
+    "query": "依据《三维模型数字文件移交标准第六分册》，施工图设计优化报告包括哪些内容？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "medium",
+    "gold_answer": "a）施工图设计优化报告应包括优化说明、转角坐标成果表、房屋拆迁量、林区长度、交叉跨越数量，路径优化成果应满足设计深度要求；",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "a）施工图设计优化报告应包括优化说明、转角坐标成果表、房屋拆迁量、林区长度、交叉跨越数量，路径优化成果应满足设计深度要求；",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用.docx",
+            "source_sha256": "009865b8dc3722e444de43397d7a8bc93674f97898ba4e35adf5580d94cd9965",
+            "chunk_id": "chk_bb1d0fc7d3accc37d9c4",
+            "chunk_content_hash": "800f78995bcdd58218e8f75954b778fee914e3c30e771f48f711550df90c0633",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用"
+            ],
+            "quote": "a）施工图设计优化报告应包括优化说明、转角坐标成果表、房屋拆迁量、林区长度、交叉跨越数量，路径优化成果应满足设计深度要求；"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "施工图设计优化报告",
+      "应包括优化说明、转角坐标成果表、房屋"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_043",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:009865b8dc37:chk_4cebdfb45bfca6235e47",
+    "query": "倾斜模型应采用什么方式进行精度校准？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "easy",
+    "gold_answer": "e）倾斜模型精度校准：空中三角测量精度以区域网平差后加密点的精度来衡量，应采用控制点检查的方式检查倾斜模型的精度，保证倾斜模型的准确性和可用性。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "e）倾斜模型精度校准：空中三角测量精度以区域网平差后加密点的精度来衡量，应采用控制点检查的方式检查倾斜模型的精度，保证倾斜模型的准确性和可用性。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用.docx",
+            "source_sha256": "009865b8dc3722e444de43397d7a8bc93674f97898ba4e35adf5580d94cd9965",
+            "chunk_id": "chk_4cebdfb45bfca6235e47",
+            "chunk_content_hash": "153fe745407fb19b896a90064b6053d259898977f284fffe30c447221da0a7f0",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用"
+            ],
+            "quote": "e）倾斜模型精度校准：空中三角测量精度以区域网平差后加密点的精度来衡量，应采用控制点检查的方式检查倾斜模型的精度，保证倾斜模型的准确性和可用性。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "倾斜模型精度校准",
+      "应采用控制点检查的方式检查倾斜模型的"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_044",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:009865b8dc37:chk_7d6134743d371e2365a7",
+    "query": "变电站高精度三维激光点云可由哪些设备采集，成果包含哪些设施位置信息？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "easy",
+    "gold_answer": "通过在无人直升机、多旋翼无人机上搭载激光雷达设备，户内变电（换流）站可采用地基雷达或背包雷达设备，采集变电设备高精度三维激光点云，进而获得高精度三维变电站设施设备空间信息，包括变压器、开关、刀闸、架构设施等位置信息，输出激光点云数据用于三维建模。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "通过在无人直升机、多旋翼无人机上搭载激光雷达设备，户内变电（换流）站可采用地基雷达或背包雷达设备，采集变电设备高精度三维激光点云，进而获得高精度三维变电站设施设备空间信息，包括变压器、开关、刀闸、架构设施等位置信息，输出激光点云数据用于三维建模。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用.docx",
+            "source_sha256": "009865b8dc3722e444de43397d7a8bc93674f97898ba4e35adf5580d94cd9965",
+            "chunk_id": "chk_7d6134743d371e2365a7",
+            "chunk_content_hash": "322abb8952b78881918a95bdeb37b32311698e10656b8e9d4ad2ef37325a464c",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用"
+            ],
+            "quote": "通过在无人直升机、多旋翼无人机上搭载激光雷达设备，户内变电（换流）站可采用地基雷达或背包雷达设备，采集变电设备高精度三维激光点云，进而获得高精度三维变电站设施设备空间信息，包括变压器、开关、刀闸、架构设施等位置信息，输出激光点云数据用于三维建模。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "通过在无人直升机、多旋翼无人机上搭载激光雷达"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_045",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:009865b8dc37:chk_2bbd83109afd9cc90da0",
+    "query": "数字采集处理中，应如何检查倾斜模型精度以保证准确性？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "medium",
+    "gold_answer": "c)倾斜模型精度校准：空中三角测量精度以区域网平差后加密点的精度来衡量，应采用控制点检查的方式检查倾斜模型的精度，保证倾斜模型的准确性和可用性。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "c)倾斜模型精度校准：空中三角测量精度以区域网平差后加密点的精度来衡量，应采用控制点检查的方式检查倾斜模型的精度，保证倾斜模型的准确性和可用性。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用.docx",
+            "source_sha256": "009865b8dc3722e444de43397d7a8bc93674f97898ba4e35adf5580d94cd9965",
+            "chunk_id": "chk_2bbd83109afd9cc90da0",
+            "chunk_content_hash": "0c205256f7edb8f13c02dbfef9327c8107e1aa97911cc5a1207a0a3c89cd89b4",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用"
+            ],
+            "quote": "c)倾斜模型精度校准：空中三角测量精度以区域网平差后加密点的精度来衡量，应采用控制点检查的方式检查倾斜模型的精度，保证倾斜模型的准确性和可用性。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "倾斜模型精度校准",
+      "应采用控制点检查的方式检查倾斜模型的"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_046",
+    "dataset_version": "rag_gold_v1",
+    "split": "dev",
+    "family_id": "rag:009865b8dc37:chk_32bf967c64dbb2589b7d",
+    "query": "点云精度校准应采用什么方式或格式？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "easy",
+    "gold_answer": "d)点云精度校准，应采用控制点检查的方式检查点云数据的精度，保证点云数据的准确性和可用性。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "d)点云精度校准，应采用控制点检查的方式检查点云数据的精度，保证点云数据的准确性和可用性。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用.docx",
+            "source_sha256": "009865b8dc3722e444de43397d7a8bc93674f97898ba4e35adf5580d94cd9965",
+            "chunk_id": "chk_32bf967c64dbb2589b7d",
+            "chunk_content_hash": "9642067b62e48a8018e287a5da140d03993abbde20434bb7f279bb1db2e00508",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用"
+            ],
+            "quote": "d)点云精度校准，应采用控制点检查的方式检查点云数据的精度，保证点云数据的准确性和可用性。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "点云精度校准",
+      "应采用控制点检查的方式检查点云数据的"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_047",
+    "dataset_version": "rag_gold_v1",
+    "split": "dev",
+    "family_id": "rag:009865b8dc37:chk_3a890feb20f6e2b8704c",
+    "query": "点云数据预处理完成后，精度校准需要完成哪些工作？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "easy",
+    "gold_answer": "b）点云精度校准，数据预处理完成后，应采用控制点检查的方式检查点云数据的精度，编写点云数据精度报告，保证点云数据的准确性和可用性；",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "b）点云精度校准，数据预处理完成后，应采用控制点检查的方式检查点云数据的精度，编写点云数据精度报告，保证点云数据的准确性和可用性；",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用.docx",
+            "source_sha256": "009865b8dc3722e444de43397d7a8bc93674f97898ba4e35adf5580d94cd9965",
+            "chunk_id": "chk_3a890feb20f6e2b8704c",
+            "chunk_content_hash": "3f8f00c5259bafe485aa67beba146cef9015f4465d85ebb7b4c9a47ddf895658",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用"
+            ],
+            "quote": "b）点云精度校准，数据预处理完成后，应采用控制点检查的方式检查点云数据的精度，编写点云数据精度报告，保证点云数据的准确性和可用性；"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "点云精度校准",
+      "应采用控制点检查的方式检查点云数据的"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_048",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:009865b8dc37:chk_b6968ebd46304b71688d",
+    "query": "依据《三维模型数字文件移交标准第六分册》，数据的来源、保存、传递及应用应满足什么要求？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "medium",
+    "gold_answer": "4.1数据的来源、保存、传递及应用应符合现行的国家相关法律法规，遵守国家信息安全相关要求。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "4.1数据的来源、保存、传递及应用应符合现行的国家相关法律法规，遵守国家信息安全相关要求。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用.docx",
+            "source_sha256": "009865b8dc3722e444de43397d7a8bc93674f97898ba4e35adf5580d94cd9965",
+            "chunk_id": "chk_b6968ebd46304b71688d",
+            "chunk_content_hash": "74ec6456b4e3a9bfbbee1e0dd39c45d0b6558ac095e834fb9beda10dc6e4ed79",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用"
+            ],
+            "quote": "4.1数据的来源、保存、传递及应用应符合现行的国家相关法律法规，遵守国家信息安全相关要求。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "数据的来源、保存、传递及应用"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_049",
+    "dataset_version": "rag_gold_v1",
+    "split": "dev",
+    "family_id": "rag:009865b8dc37:chk_32bf967c64dbb2589b7d",
+    "query": "《三维模型数字文件移交标准第六分册》对“激光点云数据模型文件”和“生成DEM模型”分别作了什么规定？",
+    "answerable": true,
+    "question_type": "multi_evidence",
+    "difficulty": "hard",
+    "gold_answer": "激光点云数据模型文件应采用*.las格式，采用CGCS2000坐标系，1985国家高程基准。\nh）生成DEM模型，DEM格网间隔不应大于10m，应满足设计深度要求。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "激光点云数据模型文件应采用*.las格式，采用CGCS2000坐标系，1985国家高程基准。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用.docx",
+            "source_sha256": "009865b8dc3722e444de43397d7a8bc93674f97898ba4e35adf5580d94cd9965",
+            "chunk_id": "chk_32bf967c64dbb2589b7d",
+            "chunk_content_hash": "9642067b62e48a8018e287a5da140d03993abbde20434bb7f279bb1db2e00508",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用"
+            ],
+            "quote": "激光点云数据模型文件应采用*.las格式，采用CGCS2000坐标系，1985国家高程基准。"
+          }
+        ]
+      },
+      {
+        "unit_id": "u2",
+        "fact": "h）生成DEM模型，DEM格网间隔不应大于10m，应满足设计深度要求。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用.docx",
+            "source_sha256": "009865b8dc3722e444de43397d7a8bc93674f97898ba4e35adf5580d94cd9965",
+            "chunk_id": "chk_32bf967c64dbb2589b7d",
+            "chunk_content_hash": "9642067b62e48a8018e287a5da140d03993abbde20434bb7f279bb1db2e00508",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用"
+            ],
+            "quote": "h）生成DEM模型，DEM格网间隔不应大于10m，应满足设计深度要求。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "激光点云数据模型文件",
+      "应采用*.las格式，采用CGCS2",
+      "生成DEM模型",
+      "10m"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用.docx"
+    ],
+    "retrieval_span": "multi_evidence",
+    "tags": [
+      "multi_evidence",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_050",
+    "dataset_version": "rag_gold_v1",
+    "split": "dev",
+    "family_id": "rag:009865b8dc37:chk_3a890feb20f6e2b8704c",
+    "query": "《三维模型数字文件移交标准第六分册》对“生成DEM模型”和“DOM分辨率优于0.1m”分别作了什么规定？",
+    "answerable": true,
+    "question_type": "multi_evidence",
+    "difficulty": "hard",
+    "gold_answer": "d）生成DEM模型，DEM格网间隔不应大于2.5m，应满足设计深度要求。\ne）DOM分辨率优于0.1m，影像数据范围应满足设计深度要求。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "d）生成DEM模型，DEM格网间隔不应大于2.5m，应满足设计深度要求。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用.docx",
+            "source_sha256": "009865b8dc3722e444de43397d7a8bc93674f97898ba4e35adf5580d94cd9965",
+            "chunk_id": "chk_3a890feb20f6e2b8704c",
+            "chunk_content_hash": "3f8f00c5259bafe485aa67beba146cef9015f4465d85ebb7b4c9a47ddf895658",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用"
+            ],
+            "quote": "d）生成DEM模型，DEM格网间隔不应大于2.5m，应满足设计深度要求。"
+          }
+        ]
+      },
+      {
+        "unit_id": "u2",
+        "fact": "e）DOM分辨率优于0.1m，影像数据范围应满足设计深度要求。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用.docx",
+            "source_sha256": "009865b8dc3722e444de43397d7a8bc93674f97898ba4e35adf5580d94cd9965",
+            "chunk_id": "chk_3a890feb20f6e2b8704c",
+            "chunk_content_hash": "3f8f00c5259bafe485aa67beba146cef9015f4465d85ebb7b4c9a47ddf895658",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用"
+            ],
+            "quote": "e）DOM分辨率优于0.1m，影像数据范围应满足设计深度要求。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "生成DEM模型",
+      "2.5m",
+      "DOM分辨率优于0.1m",
+      "0.1m"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用.docx"
+    ],
+    "retrieval_span": "multi_evidence",
+    "tags": [
+      "multi_evidence",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_051",
+    "dataset_version": "rag_gold_v1",
+    "split": "dev",
+    "family_id": "rag:45ad9a6bb0d9:chk_2059eab6e3b06c463ab1",
+    "query": "依据《三维模型数字文件移交标准第四分册》，基本图元应采用什么方式或格式？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "medium",
+    "gold_answer": "A.1.6基本图元应采用“对象+参数”的方式进行描述，对象用对应的英文，首字母大写，参数之间采用1个空格分开，对象和参数之间采用1个空格分开。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "A.1.6基本图元应采用“对象+参数”的方式进行描述，对象用对应的英文，首字母大写，参数之间采用1个空格分开，对象和参数之间采用1个空格分开。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路.docx",
+            "source_sha256": "45ad9a6bb0d9ec3030dd06b06f495af491013d357fb99d5392e99f00d8a55a01",
+            "chunk_id": "chk_2059eab6e3b06c463ab1",
+            "chunk_content_hash": "f3650e5cd8c40f030bb09287640b6e6b76767a094b3cd462b32e79a430b7598b",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路"
+            ],
+            "quote": "A.1.6基本图元应采用“对象+参数”的方式进行描述，对象用对应的英文，首字母大写，参数之间采用1个空格分开，对象和参数之间采用1个空格分开。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "基本图元",
+      "应采用“对象+参数”的方式进行描述"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_052",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:45ad9a6bb0d9:chk_39171f2e29198f981408",
+    "query": "通用模型和产品模型应采用什么方式或格式？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "easy",
+    "gold_answer": "通用模型和产品模型应采用统一的配色标准，模型配色表见附录E。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "通用模型和产品模型应采用统一的配色标准，模型配色表见附录E。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路.docx",
+            "source_sha256": "45ad9a6bb0d9ec3030dd06b06f495af491013d357fb99d5392e99f00d8a55a01",
+            "chunk_id": "chk_39171f2e29198f981408",
+            "chunk_content_hash": "80b0190d0c9599a210b043acda10af092187128f7ac295caff4be106a82eb29a",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路"
+            ],
+            "quote": "通用模型和产品模型应采用统一的配色标准，模型配色表见附录E。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "通用模型和产品模型",
+      "应采用统一的配色标准，模型配色表见附"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_053",
+    "dataset_version": "rag_gold_v1",
+    "split": "dev",
+    "family_id": "rag:45ad9a6bb0d9:chk_ed147523d85c200d1007",
+    "query": "电缆线路中的避雷器模型应如何建模，参照哪一分册？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "easy",
+    "gold_answer": "避雷器模型采用基本图元建模，建模内容及几何要求参照《35kV及以上输变电工程三维模型数字文件移交标准第二分册：变电站（换流站）》。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "避雷器模型采用基本图元建模，建模内容及几何要求参照《35kV及以上输变电工程三维模型数字文件移交标准第二分册：变电站（换流站）》。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路.docx",
+            "source_sha256": "45ad9a6bb0d9ec3030dd06b06f495af491013d357fb99d5392e99f00d8a55a01",
+            "chunk_id": "chk_ed147523d85c200d1007",
+            "chunk_content_hash": "0f4894dd8070c54d1c561d936ae0d6c9e620aa0c4f5e33dc6786bdc10d7e2c31",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路"
+            ],
+            "quote": "避雷器模型采用基本图元建模，建模内容及几何要求参照《35kV及以上输变电工程三维模型数字文件移交标准第二分册：变电站（换流站）》。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "避雷器模型",
+      "35kV"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_054",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:45ad9a6bb0d9:chk_386407cf53894984d275",
+    "query": "依据《三维模型数字文件移交标准第四分册》，影像和数字高程模型应采用什么方式或格式？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "medium",
+    "gold_answer": "影像和数字高程模型宜采用航空摄影测量手段制作，数据分辨率和精度要求依据DL/T5138，若项目合同中已定义数据分辨率和精度要求，且大于DL/T5138的要求，则按照合同执行；",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "影像和数字高程模型宜采用航空摄影测量手段制作，数据分辨率和精度要求依据DL/T5138，若项目合同中已定义数据分辨率和精度要求，且大于DL/T5138的要求，则按照合同执行；",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路.docx",
+            "source_sha256": "45ad9a6bb0d9ec3030dd06b06f495af491013d357fb99d5392e99f00d8a55a01",
+            "chunk_id": "chk_386407cf53894984d275",
+            "chunk_content_hash": "2f0001c03e9db4d4a7617156cc7e789b2e3f6524f9aed38bb542ca418aaaf0b3",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路"
+            ],
+            "quote": "影像和数字高程模型宜采用航空摄影测量手段制作，数据分辨率和精度要求依据DL/T5138，若项目合同中已定义数据分辨率和精度要求，且大于DL/T5138的要求，则按照合同执行；"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "影像和数字高程模型"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_055",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:45ad9a6bb0d9:chk_08d6fe5eee8585795029",
+    "query": "电缆线路工程材料、设备、设施及交叉跨越物应采用什么方式或格式？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "easy",
+    "gold_answer": "电缆线路工程材料、设备、设施及交叉跨越物采用参数化、基本图元或*.stl文件进行交互，模型编码采用NB/T11198-2023。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "电缆线路工程材料、设备、设施及交叉跨越物采用参数化、基本图元或*.stl文件进行交互，模型编码采用NB/T11198-2023。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路.docx",
+            "source_sha256": "45ad9a6bb0d9ec3030dd06b06f495af491013d357fb99d5392e99f00d8a55a01",
+            "chunk_id": "chk_08d6fe5eee8585795029",
+            "chunk_content_hash": "be7a0d1dc2d3cb4b1c4a9c55943f7d8ec663d7398caa14727bfa8cb970c25151",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路"
+            ],
+            "quote": "电缆线路工程材料、设备、设施及交叉跨越物采用参数化、基本图元或*.stl文件进行交互，模型编码采用NB/T11198-2023。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "电缆线路工程材料、设备、设施及交叉跨越物"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_056",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:45ad9a6bb0d9:chk_f2b04d496a1ab8bb7794",
+    "query": "接地箱、护层保护箱和交叉互联箱的模型应如何建立？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "easy",
+    "gold_answer": "接地箱、护层保护箱、交叉互联箱通用模型和产品模型均采用参数化建模，描述箱体外形轮廓；",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "接地箱、护层保护箱、交叉互联箱通用模型和产品模型均采用参数化建模，描述箱体外形轮廓；",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路.docx",
+            "source_sha256": "45ad9a6bb0d9ec3030dd06b06f495af491013d357fb99d5392e99f00d8a55a01",
+            "chunk_id": "chk_f2b04d496a1ab8bb7794",
+            "chunk_content_hash": "94347a4538e0020978a799509d47b3ac04d5d0b7a93a70d67af50b99020df121",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路"
+            ],
+            "quote": "接地箱、护层保护箱、交叉互联箱通用模型和产品模型均采用参数化建模，描述箱体外形轮廓；"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "接地箱、护层保护箱、交叉互联箱通用模型和产品"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_057",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:45ad9a6bb0d9:chk_e31066bd18d4fe59abaa",
+    "query": "依据《三维模型数字文件移交标准第四分册》，对于本标准未列出的工作井应采用什么方式或格式？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "medium",
+    "gold_answer": "对于本标准未列出的工作井可采用基本图元或*.stl文件建模，其中墙壁、垫层可使用长方体建模，异型部分可使用圆形垫片或方形垫片建模。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "对于本标准未列出的工作井可采用基本图元或*.stl文件建模，其中墙壁、垫层可使用长方体建模，异型部分可使用圆形垫片或方形垫片建模。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路.docx",
+            "source_sha256": "45ad9a6bb0d9ec3030dd06b06f495af491013d357fb99d5392e99f00d8a55a01",
+            "chunk_id": "chk_e31066bd18d4fe59abaa",
+            "chunk_content_hash": "2c34f2d932a8e02b43485900d9de5944e1d13c8664b717bbed8a695100f3770a",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路"
+            ],
+            "quote": "对于本标准未列出的工作井可采用基本图元或*.stl文件建模，其中墙壁、垫层可使用长方体建模，异型部分可使用圆形垫片或方形垫片建模。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "对于本标准未列出的工作井"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_058",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:45ad9a6bb0d9:chk_bdc7eb7a5e373c6fd352",
+    "query": "电缆通道模型包括哪些内容？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "easy",
+    "gold_answer": "电缆通道模型包括排管敷设（拉管敷设）、电缆沟敷设、电缆隧道敷设、桥架敷设等。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "电缆通道模型包括排管敷设（拉管敷设）、电缆沟敷设、电缆隧道敷设、桥架敷设等。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路.docx",
+            "source_sha256": "45ad9a6bb0d9ec3030dd06b06f495af491013d357fb99d5392e99f00d8a55a01",
+            "chunk_id": "chk_bdc7eb7a5e373c6fd352",
+            "chunk_content_hash": "894aa6ab13dcbec03070991cf71df67884e5b614f502f14b9198d08a37c538d8",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路"
+            ],
+            "quote": "电缆通道模型包括排管敷设（拉管敷设）、电缆沟敷设、电缆隧道敷设、桥架敷设等。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "电缆通道模型"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路.docx"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_059",
+    "dataset_version": "rag_gold_v1",
+    "split": "dev",
+    "family_id": "rag:45ad9a6bb0d9:chk_96e8f749db54ab8ce5b6",
+    "query": "《三维模型数字文件移交标准第四分册》对“接线端子板的尺寸、角度及开孔尺寸”和“终端塔(杆、站)建模主要”分别作了什么规定？",
+    "answerable": true,
+    "question_type": "multi_evidence",
+    "difficulty": "hard",
+    "gold_answer": "接线端子板的尺寸、角度及开孔尺寸必须准确，接线板应包含材质信息。\n终端塔(杆、站)建模主要包括终端塔（杆）、终端站、终端平台以及柱式终端。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "接线端子板的尺寸、角度及开孔尺寸必须准确，接线板应包含材质信息。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路.docx",
+            "source_sha256": "45ad9a6bb0d9ec3030dd06b06f495af491013d357fb99d5392e99f00d8a55a01",
+            "chunk_id": "chk_96e8f749db54ab8ce5b6",
+            "chunk_content_hash": "ce2a1c7bc104aa6af12839dc5b7bedf5ca442e7a45e0e649f56b0f6c5b2b886f",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路"
+            ],
+            "quote": "接线端子板的尺寸、角度及开孔尺寸必须准确，接线板应包含材质信息。"
+          }
+        ]
+      },
+      {
+        "unit_id": "u2",
+        "fact": "终端塔(杆、站)建模主要包括终端塔（杆）、终端站、终端平台以及柱式终端。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路.docx",
+            "source_sha256": "45ad9a6bb0d9ec3030dd06b06f495af491013d357fb99d5392e99f00d8a55a01",
+            "chunk_id": "chk_96e8f749db54ab8ce5b6",
+            "chunk_content_hash": "ce2a1c7bc104aa6af12839dc5b7bedf5ca442e7a45e0e649f56b0f6c5b2b886f",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路"
+            ],
+            "quote": "终端塔(杆、站)建模主要包括终端塔（杆）、终端站、终端平台以及柱式终端。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "接线端子板的尺寸、角度及开孔尺寸",
+      "应包含材质信息",
+      "必须准确，接线板应包含材质信息",
+      "终端塔(杆、站)建模主要"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路.docx"
+    ],
+    "retrieval_span": "multi_evidence",
+    "tags": [
+      "multi_evidence",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_060",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:45ad9a6bb0d9:chk_39171f2e29198f981408",
+    "query": "电缆线路设施模型标识符和地理坐标系精度分别有什么要求？",
+    "answerable": true,
+    "question_type": "multi_evidence",
+    "difficulty": "hard",
+    "gold_answer": "材料、设备、构筑物及附属设施模型的标识符应符合表1的规定。\n地理坐标系使用2000国家大地坐标系（CGCS2000），单位宜采用小数度，保留到小数点后8位。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "材料、设备、构筑物及附属设施模型的标识符应符合表1的规定。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路.docx",
+            "source_sha256": "45ad9a6bb0d9ec3030dd06b06f495af491013d357fb99d5392e99f00d8a55a01",
+            "chunk_id": "chk_39171f2e29198f981408",
+            "chunk_content_hash": "80b0190d0c9599a210b043acda10af092187128f7ac295caff4be106a82eb29a",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路"
+            ],
+            "quote": "材料、设备、构筑物及附属设施模型的标识符应符合表1的规定。"
+          }
+        ]
+      },
+      {
+        "unit_id": "u2",
+        "fact": "地理坐标系使用2000国家大地坐标系（CGCS2000），单位宜采用小数度，保留到小数点后8位。",
+        "acceptable_spans": [
+          {
+            "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路.docx",
+            "source_sha256": "45ad9a6bb0d9ec3030dd06b06f495af491013d357fb99d5392e99f00d8a55a01",
+            "chunk_id": "chk_39171f2e29198f981408",
+            "chunk_content_hash": "80b0190d0c9599a210b043acda10af092187128f7ac295caff4be106a82eb29a",
+            "page_start": null,
+            "page_end": null,
+            "section_path": [
+              "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路"
+            ],
+            "quote": "地理坐标系使用2000国家大地坐标系（CGCS2000），单位宜采用小数度，保留到小数点后8位。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "材料、设备、构筑物及附属设施模型的标识符",
+      "地理坐标系使用2000国家大地坐标系（CGC"
+    ],
+    "expected_sources": [
+      "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路.docx"
+    ],
+    "retrieval_span": "multi_evidence",
+    "tags": [
+      "multi_evidence",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_061",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:588c3138edca:chk_900c17e34a5d64a3c155",
+    "query": "如何用Parameter元素描述Equipment或SubEquipment设备对象的属性？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "easy",
+    "gold_answer": "6.2.9模型应采用Parameter元素描述Equipment或SubEquipment设备对象的属性信息，元素属性定义应符合表6的规定，属性信息细度应遵循NB/T11199的规定。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "6.2.9模型应采用Parameter元素描述Equipment或SubEquipment设备对象的属性信息，元素属性定义应符合表6的规定，属性信息细度应遵循NB/T11199的规定。",
+        "acceptable_spans": [
+          {
+            "source_name": "DL／T 2765-2024 《输变电工程逻辑模型规范》.pdf",
+            "source_sha256": "588c3138edca687436f906824426174e49df2daa314e77439bea4b16d635ec64",
+            "chunk_id": "chk_900c17e34a5d64a3c155",
+            "chunk_content_hash": "1d49578586d4531e82ae8ea2ea61910ebd706f0e9411263c52973d87ec4439da",
+            "page_start": 10,
+            "page_end": 10,
+            "section_path": [
+              "Page 10"
+            ],
+            "quote": "6.2.9模型应采用Parameter元素描述Equipment或SubEquipment设备对象的属性信息，元素属性定义应符合表6的规定，属性信息细度应遵循NB/T11199的规定。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "模型应采用Parameter元素描述",
+      "应采用Parameter元素描述Eq"
+    ],
+    "expected_sources": [
+      "DL／T 2765-2024 《输变电工程逻辑模型规范》.pdf"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_062",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:588c3138edca:chk_72621593701d03545bb0",
+    "query": "电气图形元素应在何处定义，其属性和样例分别参照哪里？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "easy",
+    "gold_answer": "6.3.2电气图形元素表示电气设备的图形符号，应满足下列规定：a）电气图形元素应在defs节点的Symbol元素中定义，属性定义应符合表8的规定，图形符号样例参见附录C。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "6.3.2电气图形元素表示电气设备的图形符号，应满足下列规定：a）电气图形元素应在defs节点的Symbol元素中定义，属性定义应符合表8的规定，图形符号样例参见附录C。",
+        "acceptable_spans": [
+          {
+            "source_name": "DL／T 2765-2024 《输变电工程逻辑模型规范》.pdf",
+            "source_sha256": "588c3138edca687436f906824426174e49df2daa314e77439bea4b16d635ec64",
+            "chunk_id": "chk_72621593701d03545bb0",
+            "chunk_content_hash": "b7816ae2dd44327b663db09dba82710ab9236d28c3af914834dedd36a122510f",
+            "page_start": 11,
+            "page_end": 11,
+            "section_path": [
+              "Page 11"
+            ],
+            "quote": "6.3.2电气图形元素表示电气设备的图形符号，应满足下列规定：a）电气图形元素应在defs节点的Symbol元素中定义，属性定义应符合表8的规定，图形符号样例参见附录C。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "电气图形元素表示电气设备的图形符号"
+    ],
+    "expected_sources": [
+      "DL／T 2765-2024 《输变电工程逻辑模型规范》.pdf"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_063",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:588c3138edca:chk_496994c90e6cc0b5b14e",
+    "query": "成套类或组合类电气设备内的导线应如何表示？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "medium",
+    "gold_answer": "2）成套类或组合类电气设备内的导线应采用基本图元元素中polyline元素表示，并在polyline元素下增加groupGridId属性，该属性值应与其所属成套类或组合类电气设备对象对应的属性值一致。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "2）成套类或组合类电气设备内的导线应采用基本图元元素中polyline元素表示，并在polyline元素下增加groupGridId属性，该属性值应与其所属成套类或组合类电气设备对象对应的属性值一致。",
+        "acceptable_spans": [
+          {
+            "source_name": "DL／T 2765-2024 《输变电工程逻辑模型规范》.pdf",
+            "source_sha256": "588c3138edca687436f906824426174e49df2daa314e77439bea4b16d635ec64",
+            "chunk_id": "chk_496994c90e6cc0b5b14e",
+            "chunk_content_hash": "871d685943707e2869c87c1320b1cdc2b43cbd0259015e02c39531a96200e5a1",
+            "page_start": 12,
+            "page_end": 12,
+            "section_path": [
+              "Page 12"
+            ],
+            "quote": "2）成套类或组合类电气设备内的导线应采用基本图元元素中polyline元素表示，并在polyline元素下增加groupGridId属性，该属性值应与其所属成套类或组合类电气设备对象对应的属性值一致。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "成套类或组合类电气设备内的导线",
+      "应采用基本图元元素中polyline"
+    ],
+    "expected_sources": [
+      "DL／T 2765-2024 《输变电工程逻辑模型规范》.pdf"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_064",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:588c3138edca:chk_e36b361db9645b27ff67",
+    "query": "装置物理描述应表达哪些信息，模型结构依据什么？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "easy",
+    "gold_answer": "7.2装置物理描述7.2.1装置物理描述应表达设备端口、元件等物理属性及功能的信息，包括设备、子设备及其部件模板等，应满足下列规定：a）模型结构应按图3的规定确定。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "7.2装置物理描述7.2.1装置物理描述应表达设备端口、元件等物理属性及功能的信息，包括设备、子设备及其部件模板等，应满足下列规定：a）模型结构应按图3的规定确定。",
+        "acceptable_spans": [
+          {
+            "source_name": "DL／T 2765-2024 《输变电工程逻辑模型规范》.pdf",
+            "source_sha256": "588c3138edca687436f906824426174e49df2daa314e77439bea4b16d635ec64",
+            "chunk_id": "chk_e36b361db9645b27ff67",
+            "chunk_content_hash": "11e5dee80da3b5dac03ab99735329a4c9ac61b000882b406f588e674f0928ea1",
+            "page_start": 13,
+            "page_end": 13,
+            "section_path": [
+              "7 回路描述模型",
+              "Page 13"
+            ],
+            "quote": "7.2装置物理描述7.2.1装置物理描述应表达设备端口、元件等物理属性及功能的信息，包括设备、子设备及其部件模板等，应满足下列规定：a）模型结构应按图3的规定确定。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "装置物理描述应表达设备端口、元件等物理属性及"
+    ],
+    "expected_sources": [
+      "DL／T 2765-2024 《输变电工程逻辑模型规范》.pdf"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_065",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:588c3138edca:chk_6562cff3c22ec0afa5e7",
+    "query": "PartTemplate元素表示什么，它可以包含哪些子元素？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "easy",
+    "gold_answer": "7.2.11PartTemplate元素表示某个型号的部件模板，是设备部件物理属性及功能的集合，属性定义应符合表22的规定，并满足下列规定：a）PartTemplate元素包含0个或多个PinTempate元素、InPartTemplate元素、ComponentTemplate元素和InCoreTemplate元素。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "7.2.11PartTemplate元素表示某个型号的部件模板，是设备部件物理属性及功能的集合，属性定义应符合表22的规定，并满足下列规定：a）PartTemplate元素包含0个或多个PinTempate元素、InPartTemplate元素、ComponentTemplate元素和InCoreTemplate元素。",
+        "acceptable_spans": [
+          {
+            "source_name": "DL／T 2765-2024 《输变电工程逻辑模型规范》.pdf",
+            "source_sha256": "588c3138edca687436f906824426174e49df2daa314e77439bea4b16d635ec64",
+            "chunk_id": "chk_6562cff3c22ec0afa5e7",
+            "chunk_content_hash": "b8777b201a1b217c1adaafab622db9571a1593f7f53396db9df53f2e9bf48d1f",
+            "page_start": 18,
+            "page_end": 18,
+            "section_path": [
+              "Page 18"
+            ],
+            "quote": "7.2.11PartTemplate元素表示某个型号的部件模板，是设备部件物理属性及功能的集合，属性定义应符合表22的规定，并满足下列规定：a）PartTemplate元素包含0个或多个PinTempate元素、InPartTemplate元素、ComponentTemplate元素和InCoreTemplate元素。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "PartTemplate元素表示某个型号的部"
+    ],
+    "expected_sources": [
+      "DL／T 2765-2024 《输变电工程逻辑模型规范》.pdf"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_066",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:588c3138edca:chk_6a62a470b67c3b539a9a",
+    "query": "Component元素表示什么，可以包含多少个ComponentPin元素？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "medium",
+    "gold_answer": "7.2.6Component元素表示电气设备上的实现一个特定逻辑功能，属性定义应符合表18的规定，并满足下列规定：a）Component元素包含0个或多个ComponentPin元素。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "7.2.6Component元素表示电气设备上的实现一个特定逻辑功能，属性定义应符合表18的规定，并满足下列规定：a）Component元素包含0个或多个ComponentPin元素。",
+        "acceptable_spans": [
+          {
+            "source_name": "DL／T 2765-2024 《输变电工程逻辑模型规范》.pdf",
+            "source_sha256": "588c3138edca687436f906824426174e49df2daa314e77439bea4b16d635ec64",
+            "chunk_id": "chk_6a62a470b67c3b539a9a",
+            "chunk_content_hash": "c9d36ed030d6a7dedcfc55a752b6bbdc8f90e648f194a2528bc1438b4e021945",
+            "page_start": 16,
+            "page_end": 16,
+            "section_path": [
+              "Page 16"
+            ],
+            "quote": "7.2.6Component元素表示电气设备上的实现一个特定逻辑功能，属性定义应符合表18的规定，并满足下列规定：a）Component元素包含0个或多个ComponentPin元素。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "Component元素表示电气设备上的实现一"
+    ],
+    "expected_sources": [
+      "DL／T 2765-2024 《输变电工程逻辑模型规范》.pdf"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_067",
+    "dataset_version": "rag_gold_v1",
+    "split": "dev",
+    "family_id": "rag:588c3138edca:chk_ad84e119642fef3aeec3",
+    "query": "站级物理描述表达哪些连接关系，模型结构和示例参照哪里？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "easy",
+    "gold_answer": "7.4站级物理描述7.4.1站级物理描述表达一二次设备、屏柜之间光缆、电缆等的连接关系，用以标识一、二次设备、屏柜之间的物理回路连接逻辑，应满足下列规定：a）模型结构应按图5的规定确定，模型示例见附录F。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "7.4站级物理描述7.4.1站级物理描述表达一二次设备、屏柜之间光缆、电缆等的连接关系，用以标识一、二次设备、屏柜之间的物理回路连接逻辑，应满足下列规定：a）模型结构应按图5的规定确定，模型示例见附录F。",
+        "acceptable_spans": [
+          {
+            "source_name": "DL／T 2765-2024 《输变电工程逻辑模型规范》.pdf",
+            "source_sha256": "588c3138edca687436f906824426174e49df2daa314e77439bea4b16d635ec64",
+            "chunk_id": "chk_ad84e119642fef3aeec3",
+            "chunk_content_hash": "64ae7a5487210a1e7a01c4bc51e9e730ddf76ba2eb199538d776f5aaecbe5c4c",
+            "page_start": 27,
+            "page_end": 27,
+            "section_path": [
+              "Page 27"
+            ],
+            "quote": "7.4站级物理描述7.4.1站级物理描述表达一二次设备、屏柜之间光缆、电缆等的连接关系，用以标识一、二次设备、屏柜之间的物理回路连接逻辑，应满足下列规定：a）模型结构应按图5的规定确定，模型示例见附录F。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "站级物理描述表达一二次设备、屏柜之间光缆、电"
+    ],
+    "expected_sources": [
+      "DL／T 2765-2024 《输变电工程逻辑模型规范》.pdf"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_068",
+    "dataset_version": "rag_gold_v1",
+    "split": "dev",
+    "family_id": "rag:588c3138edca:chk_d9b38fc7876cd73688b2",
+    "query": "工程逻辑模型包括哪些内容？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "easy",
+    "gold_answer": "g）工程逻辑模型包含的描述性文件和设备配置文件应采用固定文件名作为唯一标识。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "g）工程逻辑模型包含的描述性文件和设备配置文件应采用固定文件名作为唯一标识。",
+        "acceptable_spans": [
+          {
+            "source_name": "DL／T 2765-2024 《输变电工程逻辑模型规范》.pdf",
+            "source_sha256": "588c3138edca687436f906824426174e49df2daa314e77439bea4b16d635ec64",
+            "chunk_id": "chk_d9b38fc7876cd73688b2",
+            "chunk_content_hash": "c978fb00810e603eb376141ec68531c5ad073b7d26b9490037cdc4acb30ee7b2",
+            "page_start": 32,
+            "page_end": 32,
+            "section_path": [
+              "Page 32"
+            ],
+            "quote": "g）工程逻辑模型包含的描述性文件和设备配置文件应采用固定文件名作为唯一标识。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "工程逻辑模型",
+      "应采用固定文件名作为唯一标识"
+    ],
+    "expected_sources": [
+      "DL／T 2765-2024 《输变电工程逻辑模型规范》.pdf"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_069",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:588c3138edca:chk_d5376704512441191e0d",
+    "query": "《DL/T 2765-2024》对“输变电工程逻辑模型中间隔、安装区域、设备的编…”和“输变电工程逻辑模型文件应具备开放性、兼容性”分别作了什么规定？",
+    "answerable": true,
+    "question_type": "multi_evidence",
+    "difficulty": "hard",
+    "gold_answer": "5.5输变电工程逻辑模型中间隔、安装区域、设备的编码规则应遵循NB/T11198的规定，工程设备可通过检索相同的编码，实现逻辑模型和三维物理模型的关联映射。\n5.3输变电工程逻辑模型文件应具备开放性、兼容性，应统一属性定义、统一建模规则、统一模型编码、规范命名描述，文件存储及交互应遵循NB/T11199的规定，满足数据交换的要求，实现数据共享。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "5.5输变电工程逻辑模型中间隔、安装区域、设备的编码规则应遵循NB/T11198的规定，工程设备可通过检索相同的编码，实现逻辑模型和三维物理模型的关联映射。",
+        "acceptable_spans": [
+          {
+            "source_name": "DL／T 2765-2024 《输变电工程逻辑模型规范》.pdf",
+            "source_sha256": "588c3138edca687436f906824426174e49df2daa314e77439bea4b16d635ec64",
+            "chunk_id": "chk_d5376704512441191e0d",
+            "chunk_content_hash": "09686414973ac1805e11e568d0af0b0723ebabd60760c070887fdeb0388ff67a",
+            "page_start": 6,
+            "page_end": 6,
+            "section_path": [
+              "4 缩略语",
+              "Page 6"
+            ],
+            "quote": "5.5输变电工程逻辑模型中间隔、安装区域、设备的编码规则应遵循NB/T11198的规定，工程设备可通过检索相同的编码，实现逻辑模型和三维物理模型的关联映射。"
+          }
+        ]
+      },
+      {
+        "unit_id": "u2",
+        "fact": "5.3输变电工程逻辑模型文件应具备开放性、兼容性，应统一属性定义、统一建模规则、统一模型编码、规范命名描述，文件存储及交互应遵循NB/T11199的规定，满足数据交换的要求，实现数据共享。",
+        "acceptable_spans": [
+          {
+            "source_name": "DL／T 2765-2024 《输变电工程逻辑模型规范》.pdf",
+            "source_sha256": "588c3138edca687436f906824426174e49df2daa314e77439bea4b16d635ec64",
+            "chunk_id": "chk_d5376704512441191e0d",
+            "chunk_content_hash": "09686414973ac1805e11e568d0af0b0723ebabd60760c070887fdeb0388ff67a",
+            "page_start": 6,
+            "page_end": 6,
+            "section_path": [
+              "4 缩略语",
+              "Page 6"
+            ],
+            "quote": "5.3输变电工程逻辑模型文件应具备开放性、兼容性，应统一属性定义、统一建模规则、统一模型编码、规范命名描述，文件存储及交互应遵循NB/T11199的规定，满足数据交换的要求，实现数据共享。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "输变电工程逻辑模型中间隔、安装区域、设备的编",
+      "输变电工程逻辑模型文件应具备开放性、兼容性"
+    ],
+    "expected_sources": [
+      "DL／T 2765-2024 《输变电工程逻辑模型规范》.pdf"
+    ],
+    "retrieval_span": "multi_evidence",
+    "tags": [
+      "multi_evidence",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_070",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:588c3138edca:chk_496994c90e6cc0b5b14e",
+    "query": "工程电气设备如何引用Symbol元素，间隔下的母线、导线和网络线如何表示？",
+    "answerable": true,
+    "question_type": "multi_evidence",
+    "difficulty": "hard",
+    "gold_answer": "3）工程电气设备应通过use元素对Symbol元素实例化引用表示，属性定义应符合表13的规定。\n2）模型应在对应间隔下建立母线、导线、网络线等动态对象，采用基本图元元素中polyline元素表示。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "3）工程电气设备应通过use元素对Symbol元素实例化引用表示，属性定义应符合表13的规定。",
+        "acceptable_spans": [
+          {
+            "source_name": "DL／T 2765-2024 《输变电工程逻辑模型规范》.pdf",
+            "source_sha256": "588c3138edca687436f906824426174e49df2daa314e77439bea4b16d635ec64",
+            "chunk_id": "chk_496994c90e6cc0b5b14e",
+            "chunk_content_hash": "871d685943707e2869c87c1320b1cdc2b43cbd0259015e02c39531a96200e5a1",
+            "page_start": 12,
+            "page_end": 12,
+            "section_path": [
+              "Page 12"
+            ],
+            "quote": "3）工程电气设备应通过use元素对Symbol元素实例化引用表示，属性定义应符合表13的规定。"
+          }
+        ]
+      },
+      {
+        "unit_id": "u2",
+        "fact": "2）模型应在对应间隔下建立母线、导线、网络线等动态对象，采用基本图元元素中polyline元素表示。",
+        "acceptable_spans": [
+          {
+            "source_name": "DL／T 2765-2024 《输变电工程逻辑模型规范》.pdf",
+            "source_sha256": "588c3138edca687436f906824426174e49df2daa314e77439bea4b16d635ec64",
+            "chunk_id": "chk_496994c90e6cc0b5b14e",
+            "chunk_content_hash": "871d685943707e2869c87c1320b1cdc2b43cbd0259015e02c39531a96200e5a1",
+            "page_start": 12,
+            "page_end": 12,
+            "section_path": [
+              "Page 12"
+            ],
+            "quote": "2）模型应在对应间隔下建立母线、导线、网络线等动态对象，采用基本图元元素中polyline元素表示。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "工程电气设备应通过use元素对Symbol元",
+      "模型应在对应间隔下建立母线、导线、网"
+    ],
+    "expected_sources": [
+      "DL／T 2765-2024 《输变电工程逻辑模型规范》.pdf"
+    ],
+    "retrieval_span": "multi_evidence",
+    "tags": [
+      "multi_evidence",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_071",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:5d28524a9507:chk_985e3abf5dfe5010e9db",
+    "query": "GDW 11809—2023规定三维设计成果采用什么地理坐标系统和高程基准？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "easy",
+    "gold_answer": "4.9输变电工程三维设计成果应基于统一的地理坐标系统和高程基准，地理坐标系统应采用2000国家大地坐标系（CGCS2000），高程应采用1985国家高程基准。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "4.9输变电工程三维设计成果应基于统一的地理坐标系统和高程基准，地理坐标系统应采用2000国家大地坐标系（CGCS2000），高程应采用1985国家高程基准。",
+        "acceptable_spans": [
+          {
+            "source_name": "GDW 11809—2023输变电工程三维设计模型数据交互规范.pdf",
+            "source_sha256": "5d28524a950798570f3f7c333c11f5269153b5d86d19c72c6a907a73c54c09fa",
+            "chunk_id": "chk_985e3abf5dfe5010e9db",
+            "chunk_content_hash": "336b61adbc72bf0ea60b204e1ff442ce991f1f184761a5a52c8fdb6c45095e9b",
+            "page_start": 6,
+            "page_end": 6,
+            "section_path": [
+              "4 总的要求",
+              "Page 6"
+            ],
+            "quote": "4.9输变电工程三维设计成果应基于统一的地理坐标系统和高程基准，地理坐标系统应采用2000国家大地坐标系（CGCS2000），高程应采用1985国家高程基准。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "输变电工程三维设计成果应基于统一的地理坐标系",
+      "应采用2000国家大地坐标系（CGC"
+    ],
+    "expected_sources": [
+      "GDW 11809—2023输变电工程三维设计模型数据交互规范.pdf"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_072",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:5d28524a9507:chk_37be1207f9a72eaf16c3",
+    "query": "输变电工程三维设计模型框架分为哪四个层次？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "medium",
+    "gold_answer": "5输变电工程三维设计模型架构5.1输变电工程三维设计模型框架应包括属性集、组件类、物理模型/逻辑模型、工程模型四个层次。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "5输变电工程三维设计模型架构5.1输变电工程三维设计模型框架应包括属性集、组件类、物理模型/逻辑模型、工程模型四个层次。",
+        "acceptable_spans": [
+          {
+            "source_name": "GDW 11809—2023输变电工程三维设计模型数据交互规范.pdf",
+            "source_sha256": "5d28524a950798570f3f7c333c11f5269153b5d86d19c72c6a907a73c54c09fa",
+            "chunk_id": "chk_37be1207f9a72eaf16c3",
+            "chunk_content_hash": "24419c2bb32803e48475cd14ba09c22e70d8ce7a0cb0c97dc4fc44becef263f8",
+            "page_start": 7,
+            "page_end": 7,
+            "section_path": [
+              "5 输变电工程三维设计模型架构",
+              "Page 7"
+            ],
+            "quote": "5输变电工程三维设计模型架构5.1输变电工程三维设计模型框架应包括属性集、组件类、物理模型/逻辑模型、工程模型四个层次。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "输变电工程三维设计模型框架",
+      "应包括属性集、组件类、物理模型/逻辑"
+    ],
+    "expected_sources": [
+      "GDW 11809—2023输变电工程三维设计模型数据交互规范.pdf"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_073",
+    "dataset_version": "rag_gold_v1",
+    "split": "dev",
+    "family_id": "rag:5d28524a9507:chk_3d10a3381fe9ed5cc2a7",
+    "query": "POINT0.MATRIX(n)矩阵应包括和排除哪些姿态参数？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "easy",
+    "gold_answer": "字段POINT0.MATRIX(n)是第一个端点相对于距离端点最近的杆塔塔位中心经纬度坐标的变换矩阵，该矩阵应包括绝缘子串的姿态参数（纬度、经度、高度、北方向偏角），不包含杆塔的姿态参数。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "字段POINT0.MATRIX(n)是第一个端点相对于距离端点最近的杆塔塔位中心经纬度坐标的变换矩阵，该矩阵应包括绝缘子串的姿态参数（纬度、经度、高度、北方向偏角），不包含杆塔的姿态参数。",
+        "acceptable_spans": [
+          {
+            "source_name": "GDW 11809—2023输变电工程三维设计模型数据交互规范.pdf",
+            "source_sha256": "5d28524a950798570f3f7c333c11f5269153b5d86d19c72c6a907a73c54c09fa",
+            "chunk_id": "chk_3d10a3381fe9ed5cc2a7",
+            "chunk_content_hash": "7270c4c954c9c6eedaa1bb3ab97566c5bfc34801eba9aa1174719ab8f91b488d",
+            "page_start": 85,
+            "page_end": 85,
+            "section_path": [
+              "Page 85"
+            ],
+            "quote": "字段POINT0.MATRIX(n)是第一个端点相对于距离端点最近的杆塔塔位中心经纬度坐标的变换矩阵，该矩阵应包括绝缘子串的姿态参数（纬度、经度、高度、北方向偏角），不包含杆塔的姿态参数。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "字段POINT0.MATRIX(n)",
+      "应包括绝缘子串的姿态参数（纬度、经度"
+    ],
+    "expected_sources": [
+      "GDW 11809—2023输变电工程三维设计模型数据交互规范.pdf"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_074",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:5d28524a9507:chk_180683b8db0a55b1ace7",
+    "query": "变电工程设备及安装材料的几何模型应如何构建和交互？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "easy",
+    "gold_answer": "本文件第4.4条中变电工程设备及安装材料的几何模型应采用基本图元进行构建和交互。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "本文件第4.4条中变电工程设备及安装材料的几何模型应采用基本图元进行构建和交互。",
+        "acceptable_spans": [
+          {
+            "source_name": "GDW 11809—2023输变电工程三维设计模型数据交互规范.pdf",
+            "source_sha256": "5d28524a950798570f3f7c333c11f5269153b5d86d19c72c6a907a73c54c09fa",
+            "chunk_id": "chk_180683b8db0a55b1ace7",
+            "chunk_content_hash": "f4784568873d39e9cf5f7b50938d59648a17aacf207a91006bc4c7b2a09785f8",
+            "page_start": 83,
+            "page_end": 83,
+            "section_path": [
+              "Page 83"
+            ],
+            "quote": "本文件第4.4条中变电工程设备及安装材料的几何模型应采用基本图元进行构建和交互。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "条中变电工程设备及安装材料的几何模型",
+      "应采用基本图元进行构建和交互"
+    ],
+    "expected_sources": [
+      "GDW 11809—2023输变电工程三维设计模型数据交互规范.pdf"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_075",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:5d28524a9507:chk_4904dc49a6efdf005f5b",
+    "query": "涉及电压等级的信息应如何统一描述？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "medium",
+    "gold_answer": "A.1.3所有涉及电压等级的应采用统一描述，详见附录D。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "A.1.3所有涉及电压等级的应采用统一描述，详见附录D。",
+        "acceptable_spans": [
+          {
+            "source_name": "GDW 11809—2023输变电工程三维设计模型数据交互规范.pdf",
+            "source_sha256": "5d28524a950798570f3f7c333c11f5269153b5d86d19c72c6a907a73c54c09fa",
+            "chunk_id": "chk_4904dc49a6efdf005f5b",
+            "chunk_content_hash": "51fff2eb182f6d27b6c203455ebf776044052d1f08801b2776ceea943140e8cb",
+            "page_start": 13,
+            "page_end": 13,
+            "section_path": [
+              "1 长方体",
+              "Page 13"
+            ],
+            "quote": "A.1.3所有涉及电压等级的应采用统一描述，详见附录D。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "所有涉及电压等级的",
+      "应采用统一描述，详见附录D"
+    ],
+    "expected_sources": [
+      "GDW 11809—2023输变电工程三维设计模型数据交互规范.pdf"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_076",
+    "dataset_version": "rag_gold_v1",
+    "split": "dev",
+    "family_id": "rag:5d28524a9507:chk_b75dddaaa23a037f495a",
+    "query": "变电工程模型按哪些层级分为5级？",
+    "answerable": true,
+    "question_type": "classification",
+    "difficulty": "easy",
+    "gold_answer": "7模型层级管理7.1变电工程模型层级按照工程、专业、系统（区域）、设备、部件层级分为5级。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "7模型层级管理7.1变电工程模型层级按照工程、专业、系统（区域）、设备、部件层级分为5级。",
+        "acceptable_spans": [
+          {
+            "source_name": "GDW 11809—2023输变电工程三维设计模型数据交互规范.pdf",
+            "source_sha256": "5d28524a950798570f3f7c333c11f5269153b5d86d19c72c6a907a73c54c09fa",
+            "chunk_id": "chk_b75dddaaa23a037f495a",
+            "chunk_content_hash": "2ed96da114c7da9f9447cc7ec211a6c9d6e8510e87ebe5db4f3cab95e3076a75",
+            "page_start": 10,
+            "page_end": 10,
+            "section_path": [
+              "7 模型层级管理",
+              "Page 10"
+            ],
+            "quote": "7模型层级管理7.1变电工程模型层级按照工程、专业、系统（区域）、设备、部件层级分为5级。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "变电工程模型层级按照工程、专业、系统（区域）",
+      "分为5级"
+    ],
+    "expected_sources": [
+      "GDW 11809—2023输变电工程三维设计模型数据交互规范.pdf"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "classification",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_077",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:5d28524a9507:chk_5261daec3656677b29af",
+    "query": "BLHA字段中纬度、经度、高程和北方向偏角分别保留几位小数？",
+    "answerable": true,
+    "question_type": "numeric",
+    "difficulty": "easy",
+    "gold_answer": "BLHA小号侧杆塔塔位中心经纬度坐标的纬度（十进制，保留八位小数）、经度（十进制，保留八位小数）、高程（m,保留三位小数）、北方向偏角（逆时针，十进制，保留六位小数），是必须存储项。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "BLHA小号侧杆塔塔位中心经纬度坐标的纬度（十进制，保留八位小数）、经度（十进制，保留八位小数）、高程（m,保留三位小数）、北方向偏角（逆时针，十进制，保留六位小数），是必须存储项。",
+        "acceptable_spans": [
+          {
+            "source_name": "GDW 11809—2023输变电工程三维设计模型数据交互规范.pdf",
+            "source_sha256": "5d28524a950798570f3f7c333c11f5269153b5d86d19c72c6a907a73c54c09fa",
+            "chunk_id": "chk_5261daec3656677b29af",
+            "chunk_content_hash": "15244fe627b80fe01e8018cc23b6ffbc0f0253ab1834b3d69e468eef686f9b43",
+            "page_start": 28,
+            "page_end": 28,
+            "section_path": [
+              "Page 28"
+            ],
+            "quote": "BLHA小号侧杆塔塔位中心经纬度坐标的纬度（十进制，保留八位小数）、经度（十进制，保留八位小数）、高程（m,保留三位小数）、北方向偏角（逆时针，十进制，保留六位小数），是必须存储项。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "BLHA小号侧杆塔塔位中心经纬度坐标的纬度（",
+      "必须存储项"
+    ],
+    "expected_sources": [
+      "GDW 11809—2023输变电工程三维设计模型数据交互规范.pdf"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "numeric",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_078",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:5d28524a9507:chk_dba64193b7512d08c9c7",
+    "query": "依据《GDW 11809—2023》，专业的分级应满足什么要求？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "medium",
+    "gold_answer": "专业的分级应符合《输变电工程三维设计模型分类与编码规则》NB/T11198专业码取值的规定，例如A（代表电气专业）。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "专业的分级应符合《输变电工程三维设计模型分类与编码规则》NB/T11198专业码取值的规定，例如A（代表电气专业）。",
+        "acceptable_spans": [
+          {
+            "source_name": "GDW 11809—2023输变电工程三维设计模型数据交互规范.pdf",
+            "source_sha256": "5d28524a950798570f3f7c333c11f5269153b5d86d19c72c6a907a73c54c09fa",
+            "chunk_id": "chk_dba64193b7512d08c9c7",
+            "chunk_content_hash": "f9db95d8ef9b7c27400e7dc97d4b8cead5940c71cc5dec4ba5af70cff582dc35",
+            "page_start": 15,
+            "page_end": 15,
+            "section_path": [
+              "Page 15"
+            ],
+            "quote": "专业的分级应符合《输变电工程三维设计模型分类与编码规则》NB/T11198专业码取值的规定，例如A（代表电气专业）。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "专业的分级"
+    ],
+    "expected_sources": [
+      "GDW 11809—2023输变电工程三维设计模型数据交互规范.pdf"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_079",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:5d28524a9507:chk_985e3abf5dfe5010e9db",
+    "query": "《GDW 11809—2023》对“输变电工程设备、材料、建（构）筑物及其它设施模型”和“地理信息模型数据格式”分别作了什么规定？",
+    "answerable": true,
+    "question_type": "multi_evidence",
+    "difficulty": "hard",
+    "gold_answer": "4.8输变电工程设备、材料、建（构）筑物及其它设施模型包括基本属性信息和工程属性信息，各类属性信息应满足Q/GDW11810.1、Q/GDW11810.2的要求。\n4.10地理信息模型数据格式应满足CH/T9015、CH/T9016、CH/T9017的相关要求。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "4.8输变电工程设备、材料、建（构）筑物及其它设施模型包括基本属性信息和工程属性信息，各类属性信息应满足Q/GDW11810.1、Q/GDW11810.2的要求。",
+        "acceptable_spans": [
+          {
+            "source_name": "GDW 11809—2023输变电工程三维设计模型数据交互规范.pdf",
+            "source_sha256": "5d28524a950798570f3f7c333c11f5269153b5d86d19c72c6a907a73c54c09fa",
+            "chunk_id": "chk_985e3abf5dfe5010e9db",
+            "chunk_content_hash": "336b61adbc72bf0ea60b204e1ff442ce991f1f184761a5a52c8fdb6c45095e9b",
+            "page_start": 6,
+            "page_end": 6,
+            "section_path": [
+              "4 总的要求",
+              "Page 6"
+            ],
+            "quote": "4.8输变电工程设备、材料、建（构）筑物及其它设施模型包括基本属性信息和工程属性信息，各类属性信息应满足Q/GDW11810.1、Q/GDW11810.2的要求。"
+          }
+        ]
+      },
+      {
+        "unit_id": "u2",
+        "fact": "4.10地理信息模型数据格式应满足CH/T9015、CH/T9016、CH/T9017的相关要求。",
+        "acceptable_spans": [
+          {
+            "source_name": "GDW 11809—2023输变电工程三维设计模型数据交互规范.pdf",
+            "source_sha256": "5d28524a950798570f3f7c333c11f5269153b5d86d19c72c6a907a73c54c09fa",
+            "chunk_id": "chk_985e3abf5dfe5010e9db",
+            "chunk_content_hash": "336b61adbc72bf0ea60b204e1ff442ce991f1f184761a5a52c8fdb6c45095e9b",
+            "page_start": 6,
+            "page_end": 6,
+            "section_path": [
+              "4 总的要求",
+              "Page 6"
+            ],
+            "quote": "4.10地理信息模型数据格式应满足CH/T9015、CH/T9016、CH/T9017的相关要求。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "输变电工程设备、材料、建（构）筑物及其它设施模型",
+      "地理信息模型数据格式"
+    ],
+    "expected_sources": [
+      "GDW 11809—2023输变电工程三维设计模型数据交互规范.pdf"
+    ],
+    "retrieval_span": "multi_evidence",
+    "tags": [
+      "multi_evidence",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_080",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:5d28524a9507:chk_37be1207f9a72eaf16c3",
+    "query": "GDW 11809—2023中的组件类包括哪些类别，工程模型由哪些信息构成？",
+    "answerable": true,
+    "question_type": "multi_evidence",
+    "difficulty": "hard",
+    "gold_answer": "5.3组件类包括设备类、材料类、建（构）筑物类、其他设施类。\n5.6工程模型是由工程中所有的设备、材料、建（构）筑物及其他设施模型和工程属性信息构成的信息集合，也包含设备之间的逻辑关系。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "5.3组件类包括设备类、材料类、建（构）筑物类、其他设施类。",
+        "acceptable_spans": [
+          {
+            "source_name": "GDW 11809—2023输变电工程三维设计模型数据交互规范.pdf",
+            "source_sha256": "5d28524a950798570f3f7c333c11f5269153b5d86d19c72c6a907a73c54c09fa",
+            "chunk_id": "chk_37be1207f9a72eaf16c3",
+            "chunk_content_hash": "24419c2bb32803e48475cd14ba09c22e70d8ce7a0cb0c97dc4fc44becef263f8",
+            "page_start": 7,
+            "page_end": 7,
+            "section_path": [
+              "5 输变电工程三维设计模型架构",
+              "Page 7"
+            ],
+            "quote": "5.3组件类包括设备类、材料类、建（构）筑物类、其他设施类。"
+          }
+        ]
+      },
+      {
+        "unit_id": "u2",
+        "fact": "5.6工程模型是由工程中所有的设备、材料、建（构）筑物及其他设施模型和工程属性信息构成的信息集合，也包含设备之间的逻辑关系。",
+        "acceptable_spans": [
+          {
+            "source_name": "GDW 11809—2023输变电工程三维设计模型数据交互规范.pdf",
+            "source_sha256": "5d28524a950798570f3f7c333c11f5269153b5d86d19c72c6a907a73c54c09fa",
+            "chunk_id": "chk_37be1207f9a72eaf16c3",
+            "chunk_content_hash": "24419c2bb32803e48475cd14ba09c22e70d8ce7a0cb0c97dc4fc44becef263f8",
+            "page_start": 7,
+            "page_end": 7,
+            "section_path": [
+              "5 输变电工程三维设计模型架构",
+              "Page 7"
+            ],
+            "quote": "5.6工程模型是由工程中所有的设备、材料、建（构）筑物及其他设施模型和工程属性信息构成的信息集合，也包含设备之间的逻辑关系。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "组件类包括设备类、材料类、建（构）筑",
+      "工程模型"
+    ],
+    "expected_sources": [
+      "GDW 11809—2023输变电工程三维设计模型数据交互规范.pdf"
+    ],
+    "retrieval_span": "multi_evidence",
+    "tags": [
+      "multi_evidence",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_081",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:f8e553b57284:chk_0f471388f992e3759020",
+    "query": "依据《GDW 11810.2—2023》，杆塔建模包括哪些内容？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "medium",
+    "gold_answer": "5.6.2杆塔建模应符合下列要求：a)杆塔通用模型应采用参数化建模，包括杆塔节点、节点间连线、挂点信息。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "5.6.2杆塔建模应符合下列要求：a)杆塔通用模型应采用参数化建模，包括杆塔节点、节点间连线、挂点信息。",
+        "acceptable_spans": [
+          {
+            "source_name": "GDW 11810.2—2023输变电工程三维设计建模规范第2部分：架空输电线路.pdf",
+            "source_sha256": "f8e553b57284505b2f54a68c1e7cfe77548dc599436e37df5d3297817cf297c3",
+            "chunk_id": "chk_0f471388f992e3759020",
+            "chunk_content_hash": "7e31c14f8dc397a958095359e85f92e4a910b313ed29e9b830e57bab5c670262",
+            "page_start": 9,
+            "page_end": 9,
+            "section_path": [
+              "Page 9"
+            ],
+            "quote": "5.6.2杆塔建模应符合下列要求：a)杆塔通用模型应采用参数化建模，包括杆塔节点、节点间连线、挂点信息。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "杆塔建模",
+      "应采用参数化建模，包括杆塔节点、节点"
+    ],
+    "expected_sources": [
+      "GDW 11810.2—2023输变电工程三维设计建模规范第2部分：架空输电线路.pdf"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_082",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:f8e553b57284:chk_15ce5ca708ba94b568bf",
+    "query": "物理模型细度包括哪些内容？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "easy",
+    "gold_answer": "4.7物理模型细度包括几何细度、属性细度，属性细度包括属性信息细度和工程信息细度，应符合本文件附录B的规定，属性细度文件采用*.fam文件。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "4.7物理模型细度包括几何细度、属性细度，属性细度包括属性信息细度和工程信息细度，应符合本文件附录B的规定，属性细度文件采用*.fam文件。",
+        "acceptable_spans": [
+          {
+            "source_name": "GDW 11810.2—2023输变电工程三维设计建模规范第2部分：架空输电线路.pdf",
+            "source_sha256": "f8e553b57284505b2f54a68c1e7cfe77548dc599436e37df5d3297817cf297c3",
+            "chunk_id": "chk_15ce5ca708ba94b568bf",
+            "chunk_content_hash": "7a9c66f63f122bb90e2e8ac14d8964f51a3eb9849cb7d2de49f4bc84d7481c08",
+            "page_start": 6,
+            "page_end": 6,
+            "section_path": [
+              "4 一般规定",
+              "Page 6"
+            ],
+            "quote": "4.7物理模型细度包括几何细度、属性细度，属性细度包括属性信息细度和工程信息细度，应符合本文件附录B的规定，属性细度文件采用*.fam文件。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "物理模型细度"
+    ],
+    "expected_sources": [
+      "GDW 11810.2—2023输变电工程三维设计建模规范第2部分：架空输电线路.pdf"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_083",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:f8e553b57284:chk_f0a5cc1c9b1ece3d5a79",
+    "query": "其他设施通用模型及产品模型应包括哪两类细度？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "easy",
+    "gold_answer": "6.4其他设施建模应符合下列要求：6.4.1其他设施通用模型及产品模型应包括几何细度和属性细度并符合本文件附录B的有关规定。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "6.4其他设施建模应符合下列要求：6.4.1其他设施通用模型及产品模型应包括几何细度和属性细度并符合本文件附录B的有关规定。",
+        "acceptable_spans": [
+          {
+            "source_name": "GDW 11810.2—2023输变电工程三维设计建模规范第2部分：架空输电线路.pdf",
+            "source_sha256": "f8e553b57284505b2f54a68c1e7cfe77548dc599436e37df5d3297817cf297c3",
+            "chunk_id": "chk_f0a5cc1c9b1ece3d5a79",
+            "chunk_content_hash": "2feaeba6c50147c56586dd64268e3cb300c4e7b264e0ded428ee5ce77e0237aa",
+            "page_start": 11,
+            "page_end": 11,
+            "section_path": [
+              "Page 11"
+            ],
+            "quote": "6.4其他设施建模应符合下列要求：6.4.1其他设施通用模型及产品模型应包括几何细度和属性细度并符合本文件附录B的有关规定。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "其他设施建模",
+      "应包括几何细度和属性细度并符合本文件"
+    ],
+    "expected_sources": [
+      "GDW 11810.2—2023输变电工程三维设计建模规范第2部分：架空输电线路.pdf"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_084",
+    "dataset_version": "rag_gold_v1",
+    "split": "dev",
+    "family_id": "rag:f8e553b57284:chk_173aac7d5e75d977d6f2",
+    "query": "依据《GDW 11810.2—2023》，架空输电线路工程三维设计模型应满足什么要求？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "medium",
+    "gold_answer": "4.12架空输电线路工程三维设计模型应满足统一的配色标准要求，模型配色表应符合本文件附录C的有关规定。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "4.12架空输电线路工程三维设计模型应满足统一的配色标准要求，模型配色表应符合本文件附录C的有关规定。",
+        "acceptable_spans": [
+          {
+            "source_name": "GDW 11810.2—2023输变电工程三维设计建模规范第2部分：架空输电线路.pdf",
+            "source_sha256": "f8e553b57284505b2f54a68c1e7cfe77548dc599436e37df5d3297817cf297c3",
+            "chunk_id": "chk_173aac7d5e75d977d6f2",
+            "chunk_content_hash": "2e17bb92fc55bd25811a1d39ba3c58339127f32b40bd6a58d274ae35ed722fbf",
+            "page_start": 7,
+            "page_end": 7,
+            "section_path": [
+              "5 材料及设备",
+              "Page 7"
+            ],
+            "quote": "4.12架空输电线路工程三维设计模型应满足统一的配色标准要求，模型配色表应符合本文件附录C的有关规定。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "架空输电线路工程三维设计模型"
+    ],
+    "expected_sources": [
+      "GDW 11810.2—2023输变电工程三维设计建模规范第2部分：架空输电线路.pdf"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_085",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:f8e553b57284:chk_69914768b17cf7c6aa2f",
+    "query": "杆塔产品模型推荐采用何种建模方式，应包含哪些信息？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "easy",
+    "gold_answer": "产品模型推荐采用参数化建模，也可采用图形化建模，应包括杆塔节点、杆件、挂点、接身接腿信息；",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "产品模型推荐采用参数化建模，也可采用图形化建模，应包括杆塔节点、杆件、挂点、接身接腿信息；",
+        "acceptable_spans": [
+          {
+            "source_name": "GDW 11810.2—2023输变电工程三维设计建模规范第2部分：架空输电线路.pdf",
+            "source_sha256": "f8e553b57284505b2f54a68c1e7cfe77548dc599436e37df5d3297817cf297c3",
+            "chunk_id": "chk_69914768b17cf7c6aa2f",
+            "chunk_content_hash": "e86b53c8c3432f868f7274b0467f107e1cb5a7ba467ae4dff084f0053fa2de43",
+            "page_start": 24,
+            "page_end": 24,
+            "section_path": [
+              "Page 24"
+            ],
+            "quote": "产品模型推荐采用参数化建模，也可采用图形化建模，应包括杆塔节点、杆件、挂点、接身接腿信息；"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "产品模型推荐",
+      "应包括杆塔节点、杆件、挂点、接身接腿"
+    ],
+    "expected_sources": [
+      "GDW 11810.2—2023输变电工程三维设计建模规范第2部分：架空输电线路.pdf"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_086",
+    "dataset_version": "rag_gold_v1",
+    "split": "dev",
+    "family_id": "rag:f8e553b57284:chk_0dada1ebeaed543b6628",
+    "query": "监测装置建模包括哪些内容？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "easy",
+    "gold_answer": "5.8.2监测装置建模采用基本图元建模或*.stl文件，模型包括外轮廓几何信息、属性信息。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "5.8.2监测装置建模采用基本图元建模或*.stl文件，模型包括外轮廓几何信息、属性信息。",
+        "acceptable_spans": [
+          {
+            "source_name": "GDW 11810.2—2023输变电工程三维设计建模规范第2部分：架空输电线路.pdf",
+            "source_sha256": "f8e553b57284505b2f54a68c1e7cfe77548dc599436e37df5d3297817cf297c3",
+            "chunk_id": "chk_0dada1ebeaed543b6628",
+            "chunk_content_hash": "840f1fcf3c1bddb3f54c63fbc29ace0eff30154c739a9d5d4664d6422c27f764",
+            "page_start": 10,
+            "page_end": 10,
+            "section_path": [
+              "6 其他设施",
+              "Page 10"
+            ],
+            "quote": "5.8.2监测装置建模采用基本图元建模或*.stl文件，模型包括外轮廓几何信息、属性信息。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "监测装置建模"
+    ],
+    "expected_sources": [
+      "GDW 11810.2—2023输变电工程三维设计建模规范第2部分：架空输电线路.pdf"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_087",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:f8e553b57284:chk_c51f326c8aadfbd276a9",
+    "query": "地理信息模型反映哪些要素信息，其空间范围包括和不包括什么？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "medium",
+    "gold_answer": "3.5地理信息模型geographicinformationmodel可视化反映地理要素在三维空间中的位置、几何形态、表面纹理及属性等信息，包括地上主要地理信息的外部及地下空间，不含地上建（构）筑物地理信息内部。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "3.5地理信息模型geographicinformationmodel可视化反映地理要素在三维空间中的位置、几何形态、表面纹理及属性等信息，包括地上主要地理信息的外部及地下空间，不含地上建（构）筑物地理信息内部。",
+        "acceptable_spans": [
+          {
+            "source_name": "GDW 11810.2—2023输变电工程三维设计建模规范第2部分：架空输电线路.pdf",
+            "source_sha256": "f8e553b57284505b2f54a68c1e7cfe77548dc599436e37df5d3297817cf297c3",
+            "chunk_id": "chk_c51f326c8aadfbd276a9",
+            "chunk_content_hash": "54a68764443b9ecdd1c3a018ddefcc01084f06727e1efb890ed3736c275d9089",
+            "page_start": 5,
+            "page_end": 5,
+            "section_path": [
+              "1 范围",
+              "Page 5"
+            ],
+            "quote": "3.5地理信息模型geographicinformationmodel可视化反映地理要素在三维空间中的位置、几何形态、表面纹理及属性等信息，包括地上主要地理信息的外部及地下空间，不含地上建（构）筑物地理信息内部。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "地理信息模型geographicinform"
+    ],
+    "expected_sources": [
+      "GDW 11810.2—2023输变电工程三维设计建模规范第2部分：架空输电线路.pdf"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_088",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:f8e553b57284:chk_8e2650de5deed47bab5b",
+    "query": "杆塔与基础连接构件模型包括哪些构件，参数不足时使用什么格式？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "easy",
+    "gold_answer": "图B.22基础坐标示意图B.4.20杆塔与基础连接构件模型包括地脚螺栓、插入角钢（钢管），采用参数化模型，对于参数欠缺或本文件未定义的连接型式采用*.stl文件；",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "图B.22基础坐标示意图B.4.20杆塔与基础连接构件模型包括地脚螺栓、插入角钢（钢管），采用参数化模型，对于参数欠缺或本文件未定义的连接型式采用*.stl文件；",
+        "acceptable_spans": [
+          {
+            "source_name": "GDW 11810.2—2023输变电工程三维设计建模规范第2部分：架空输电线路.pdf",
+            "source_sha256": "f8e553b57284505b2f54a68c1e7cfe77548dc599436e37df5d3297817cf297c3",
+            "chunk_id": "chk_8e2650de5deed47bab5b",
+            "chunk_content_hash": "301a0f3d61c0a4bf2f388a3b1c9ad92af2198e60a81bc991a8e82bf5eaaebf29",
+            "page_start": 39,
+            "page_end": 39,
+            "section_path": [
+              "Page 39"
+            ],
+            "quote": "图B.22基础坐标示意图B.4.20杆塔与基础连接构件模型包括地脚螺栓、插入角钢（钢管），采用参数化模型，对于参数欠缺或本文件未定义的连接型式采用*.stl文件；"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "杆塔与基础连接构件模型"
+    ],
+    "expected_sources": [
+      "GDW 11810.2—2023输变电工程三维设计建模规范第2部分：架空输电线路.pdf"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_089",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:f8e553b57284:chk_0f471388f992e3759020",
+    "query": "基础通用模型和产品模型分别应包含什么，采用什么建模方式？",
+    "answerable": true,
+    "question_type": "multi_evidence",
+    "difficulty": "hard",
+    "gold_answer": "5.7.2基础建模应符合下列要求：a)基础通用模型应采用参数化建模，模型应描述基础外轮廓尺寸信息。\nb)产品模型应包括基础外轮廓模型和杆塔与基础连接构件模型，采用参数化建模；",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "5.7.2基础建模应符合下列要求：a)基础通用模型应采用参数化建模，模型应描述基础外轮廓尺寸信息。",
+        "acceptable_spans": [
+          {
+            "source_name": "GDW 11810.2—2023输变电工程三维设计建模规范第2部分：架空输电线路.pdf",
+            "source_sha256": "f8e553b57284505b2f54a68c1e7cfe77548dc599436e37df5d3297817cf297c3",
+            "chunk_id": "chk_0f471388f992e3759020",
+            "chunk_content_hash": "7e31c14f8dc397a958095359e85f92e4a910b313ed29e9b830e57bab5c670262",
+            "page_start": 9,
+            "page_end": 9,
+            "section_path": [
+              "Page 9"
+            ],
+            "quote": "5.7.2基础建模应符合下列要求：a)基础通用模型应采用参数化建模，模型应描述基础外轮廓尺寸信息。"
+          }
+        ]
+      },
+      {
+        "unit_id": "u2",
+        "fact": "b)产品模型应包括基础外轮廓模型和杆塔与基础连接构件模型，采用参数化建模；",
+        "acceptable_spans": [
+          {
+            "source_name": "GDW 11810.2—2023输变电工程三维设计建模规范第2部分：架空输电线路.pdf",
+            "source_sha256": "f8e553b57284505b2f54a68c1e7cfe77548dc599436e37df5d3297817cf297c3",
+            "chunk_id": "chk_0f471388f992e3759020",
+            "chunk_content_hash": "7e31c14f8dc397a958095359e85f92e4a910b313ed29e9b830e57bab5c670262",
+            "page_start": 9,
+            "page_end": 9,
+            "section_path": [
+              "Page 9"
+            ],
+            "quote": "b)产品模型应包括基础外轮廓模型和杆塔与基础连接构件模型，采用参数化建模；"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "基础建模",
+      "应采用参数化建模，模型应描述基础外轮",
+      "产品模型",
+      "应包括基础外轮廓模型和杆塔与基础连接"
+    ],
+    "expected_sources": [
+      "GDW 11810.2—2023输变电工程三维设计建模规范第2部分：架空输电线路.pdf"
+    ],
+    "retrieval_span": "multi_evidence",
+    "tags": [
+      "multi_evidence",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_090",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:f8e553b57284:chk_15ce5ca708ba94b568bf",
+    "query": "参数化模型和基本图元采用什么文件格式，架空线路三维设计模型包含哪两类模型？",
+    "answerable": true,
+    "question_type": "multi_evidence",
+    "difficulty": "hard",
+    "gold_answer": "4.6参数化模型和基本图元采用*.mod文件，参数化模型*.mod文件格式应符合本文件附录A的有关规定，基本图元*.mod文件格式应符合Q/GDW11809的有关规定。\n4一般规定4.1架空输电线路三维设计模型应包括物理模型和工程地理信息模型。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "4.6参数化模型和基本图元采用*.mod文件，参数化模型*.mod文件格式应符合本文件附录A的有关规定，基本图元*.mod文件格式应符合Q/GDW11809的有关规定。",
+        "acceptable_spans": [
+          {
+            "source_name": "GDW 11810.2—2023输变电工程三维设计建模规范第2部分：架空输电线路.pdf",
+            "source_sha256": "f8e553b57284505b2f54a68c1e7cfe77548dc599436e37df5d3297817cf297c3",
+            "chunk_id": "chk_15ce5ca708ba94b568bf",
+            "chunk_content_hash": "7a9c66f63f122bb90e2e8ac14d8964f51a3eb9849cb7d2de49f4bc84d7481c08",
+            "page_start": 6,
+            "page_end": 6,
+            "section_path": [
+              "4 一般规定",
+              "Page 6"
+            ],
+            "quote": "4.6参数化模型和基本图元采用*.mod文件，参数化模型*.mod文件格式应符合本文件附录A的有关规定，基本图元*.mod文件格式应符合Q/GDW11809的有关规定。"
+          }
+        ]
+      },
+      {
+        "unit_id": "u2",
+        "fact": "4一般规定4.1架空输电线路三维设计模型应包括物理模型和工程地理信息模型。",
+        "acceptable_spans": [
+          {
+            "source_name": "GDW 11810.2—2023输变电工程三维设计建模规范第2部分：架空输电线路.pdf",
+            "source_sha256": "f8e553b57284505b2f54a68c1e7cfe77548dc599436e37df5d3297817cf297c3",
+            "chunk_id": "chk_15ce5ca708ba94b568bf",
+            "chunk_content_hash": "7a9c66f63f122bb90e2e8ac14d8964f51a3eb9849cb7d2de49f4bc84d7481c08",
+            "page_start": 6,
+            "page_end": 6,
+            "section_path": [
+              "4 一般规定",
+              "Page 6"
+            ],
+            "quote": "4一般规定4.1架空输电线路三维设计模型应包括物理模型和工程地理信息模型。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "参数化模型和基本图元",
+      "架空输电线路三维设计模型",
+      "应包括物理模型和工程地理信息模型"
+    ],
+    "expected_sources": [
+      "GDW 11810.2—2023输变电工程三维设计建模规范第2部分：架空输电线路.pdf"
+    ],
+    "retrieval_span": "multi_evidence",
+    "tags": [
+      "multi_evidence",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_091",
+    "dataset_version": "rag_gold_v1",
+    "split": "dev",
+    "family_id": "rag:85d66a2a712c:chk_ea0a548c4966446033da",
+    "query": "输变电工程三维设计模型应采用什么方式或格式？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "easy",
+    "gold_answer": "4.12输变电工程三维设计模型应采用统一的坐标系、高程基准和数据格式。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "4.12输变电工程三维设计模型应采用统一的坐标系、高程基准和数据格式。",
+        "acceptable_spans": [
+          {
+            "source_name": "QGDW 11809—2018 输变电工程三维设计模型交互规范.pdf",
+            "source_sha256": "85d66a2a712cefeb28664b5c933d8f9cec61a0dffc7a3bfa078512a701940faa",
+            "chunk_id": "chk_ea0a548c4966446033da",
+            "chunk_content_hash": "75e9b0ababfe4fc7670fb12f7afa1cdcba017d43fe9cceb0be9f76960a55abff",
+            "page_start": 8,
+            "page_end": 8,
+            "section_path": [
+              "4 总的要求",
+              "Page 8"
+            ],
+            "quote": "4.12输变电工程三维设计模型应采用统一的坐标系、高程基准和数据格式。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "输变电工程三维设计模型",
+      "应采用统一的坐标系、高程基准和数据格"
+    ],
+    "expected_sources": [
+      "QGDW 11809—2018 输变电工程三维设计模型交互规范.pdf"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_092",
+    "dataset_version": "rag_gold_v1",
+    "split": "dev",
+    "family_id": "rag:85d66a2a712c:chk_bb7bbe5b53fff2b21952",
+    "query": "依据《QGDW 11809—2018》，工程模型层级管理如何分类？",
+    "answerable": true,
+    "question_type": "classification",
+    "difficulty": "easy",
+    "gold_answer": "7工程模型的层级管理7.1工程模型层级管理采用面向工程对象管理的原则分为5级，详见附录C。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "7工程模型的层级管理7.1工程模型层级管理采用面向工程对象管理的原则分为5级，详见附录C。",
+        "acceptable_spans": [
+          {
+            "source_name": "QGDW 11809—2018 输变电工程三维设计模型交互规范.pdf",
+            "source_sha256": "85d66a2a712cefeb28664b5c933d8f9cec61a0dffc7a3bfa078512a701940faa",
+            "chunk_id": "chk_bb7bbe5b53fff2b21952",
+            "chunk_content_hash": "8144c71386f1b31b1f7f422e4dce5d13173cedecc16c1c57aa5099de746ea692",
+            "page_start": 11,
+            "page_end": 11,
+            "section_path": [
+              "7 工程模型的层级管理",
+              "Page 11"
+            ],
+            "quote": "7工程模型的层级管理7.1工程模型层级管理采用面向工程对象管理的原则分为5级，详见附录C。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "工程模型层级管理",
+      "分为5级，详见附录C"
+    ],
+    "expected_sources": [
+      "QGDW 11809—2018 输变电工程三维设计模型交互规范.pdf"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "classification",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_093",
+    "dataset_version": "rag_gold_v1",
+    "split": "dev",
+    "family_id": "rag:85d66a2a712c:chk_95a8ae7ee250be1be11d",
+    "query": "依据《QGDW 11809—2018》，标准格式文件存储的数据包括哪些内容？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "medium",
+    "gold_answer": "6.6标准格式文件存储的数据包括：几何模型单元（*.mod）、组合模型（*.phm）、物理模型（*.dev）、逻辑模型（*.sch）、工程模型（*.cbm）以及属性信息（*.fam）。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "6.6标准格式文件存储的数据包括：几何模型单元（*.mod）、组合模型（*.phm）、物理模型（*.dev）、逻辑模型（*.sch）、工程模型（*.cbm）以及属性信息（*.fam）。",
+        "acceptable_spans": [
+          {
+            "source_name": "QGDW 11809—2018 输变电工程三维设计模型交互规范.pdf",
+            "source_sha256": "85d66a2a712cefeb28664b5c933d8f9cec61a0dffc7a3bfa078512a701940faa",
+            "chunk_id": "chk_95a8ae7ee250be1be11d",
+            "chunk_content_hash": "eea0444ed702a7dceb1a2dc0a3c96b4eec15dd5c2df23dafdf9b54a50268350f",
+            "page_start": 10,
+            "page_end": 10,
+            "section_path": [
+              "Page 10"
+            ],
+            "quote": "6.6标准格式文件存储的数据包括：几何模型单元（*.mod）、组合模型（*.phm）、物理模型（*.dev）、逻辑模型（*.sch）、工程模型（*.cbm）以及属性信息（*.fam）。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "标准格式文件存储的数据"
+    ],
+    "expected_sources": [
+      "QGDW 11809—2018 输变电工程三维设计模型交互规范.pdf"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_094",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:85d66a2a712c:chk_b02355ed9a729e7c4f00",
+    "query": "属性信息包括哪些内容？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "easy",
+    "gold_answer": "属性信息分为六大类，包括设计参数、设计冻结参数、产品参数、施工参数、测试参数、运检参数。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "属性信息分为六大类，包括设计参数、设计冻结参数、产品参数、施工参数、测试参数、运检参数。",
+        "acceptable_spans": [
+          {
+            "source_name": "QGDW 11809—2018 输变电工程三维设计模型交互规范.pdf",
+            "source_sha256": "85d66a2a712cefeb28664b5c933d8f9cec61a0dffc7a3bfa078512a701940faa",
+            "chunk_id": "chk_b02355ed9a729e7c4f00",
+            "chunk_content_hash": "b20e14740a81421de6ad919704a22be341a8fd5f42796935062dd399ff92e638",
+            "page_start": 17,
+            "page_end": 17,
+            "section_path": [
+              "Page 17"
+            ],
+            "quote": "属性信息分为六大类，包括设计参数、设计冻结参数、产品参数、施工参数、测试参数、运检参数。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "属性信息",
+      "分为六大类，包括设计参数、设计冻结参"
+    ],
+    "expected_sources": [
+      "QGDW 11809—2018 输变电工程三维设计模型交互规范.pdf"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_095",
+    "dataset_version": "rag_gold_v1",
+    "split": "dev",
+    "family_id": "rag:85d66a2a712c:chk_bd2dfa438dfa6af74b0c",
+    "query": "2018版规范中的专用几何体指哪些常用部件？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "easy",
+    "gold_answer": "3.3专用几何体unusualgeometry变电站（换流站）设备、材料中的常用部件，包括套管、绝缘子串、安装板、端子板等。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "3.3专用几何体unusualgeometry变电站（换流站）设备、材料中的常用部件，包括套管、绝缘子串、安装板、端子板等。",
+        "acceptable_spans": [
+          {
+            "source_name": "QGDW 11809—2018 输变电工程三维设计模型交互规范.pdf",
+            "source_sha256": "85d66a2a712cefeb28664b5c933d8f9cec61a0dffc7a3bfa078512a701940faa",
+            "chunk_id": "chk_bd2dfa438dfa6af74b0c",
+            "chunk_content_hash": "cb50de2a4335117e54eba6f57db1a36969549c85a73edeb209055c2d908ed8d6",
+            "page_start": 7,
+            "page_end": 7,
+            "section_path": [
+              "1 范围",
+              "Page 7"
+            ],
+            "quote": "3.3专用几何体unusualgeometry变电站（换流站）设备、材料中的常用部件，包括套管、绝缘子串、安装板、端子板等。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "专用几何体unusualgeometry变电"
+    ],
+    "expected_sources": [
+      "QGDW 11809—2018 输变电工程三维设计模型交互规范.pdf"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_096",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:85d66a2a712c:chk_ecc8400a523dc0e3d784",
+    "query": "2018版规范的属性集包括哪些参数类别？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "medium",
+    "gold_answer": "5.2属性集包括工程参数、电气参数、力学参数、材料参数、几何参数、位置参数、图形符号等。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "5.2属性集包括工程参数、电气参数、力学参数、材料参数、几何参数、位置参数、图形符号等。",
+        "acceptable_spans": [
+          {
+            "source_name": "QGDW 11809—2018 输变电工程三维设计模型交互规范.pdf",
+            "source_sha256": "85d66a2a712cefeb28664b5c933d8f9cec61a0dffc7a3bfa078512a701940faa",
+            "chunk_id": "chk_ecc8400a523dc0e3d784",
+            "chunk_content_hash": "405a5f13bb7346ae0e242c0604fe52b39281bf0d3b1b2d46c3508f8c9d819ab2",
+            "page_start": 9,
+            "page_end": 9,
+            "section_path": [
+              "5 输变电工程三维设计模型架构",
+              "Page 9"
+            ],
+            "quote": "5.2属性集包括工程参数、电气参数、力学参数、材料参数、几何参数、位置参数、图形符号等。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "属性集包括工程参数、电气参数、力学参"
+    ],
+    "expected_sources": [
+      "QGDW 11809—2018 输变电工程三维设计模型交互规范.pdf"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_097",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:85d66a2a712c:chk_5be8e954c778ac6ce81f",
+    "query": "project.cbm中的BLHA行存储哪些工程位置信息？",
+    "answerable": true,
+    "question_type": "list",
+    "difficulty": "easy",
+    "gold_answer": "a）project.cbm文件格式：BLHA=XX.××××××，XX.××××××，×××.×××，×××.×××[该行存储了工程位置信息，包括纬度（十进制度）、经度（十进制度）、高度（米）、北方向偏角（逆时针，十进制度）。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "a）project.cbm文件格式：BLHA=XX.××××××，XX.××××××，×××.×××，×××.×××[该行存储了工程位置信息，包括纬度（十进制度）、经度（十进制度）、高度（米）、北方向偏角（逆时针，十进制度）。",
+        "acceptable_spans": [
+          {
+            "source_name": "QGDW 11809—2018 输变电工程三维设计模型交互规范.pdf",
+            "source_sha256": "85d66a2a712cefeb28664b5c933d8f9cec61a0dffc7a3bfa078512a701940faa",
+            "chunk_id": "chk_5be8e954c778ac6ce81f",
+            "chunk_content_hash": "057f6ca659fba004e5d04be5584726c3de392f75d9972685dc057f56fa462e25",
+            "page_start": 15,
+            "page_end": 15,
+            "section_path": [
+              "Page 15"
+            ],
+            "quote": "a）project.cbm文件格式：BLHA=XX.××××××，XX.××××××，×××.×××，×××.×××[该行存储了工程位置信息，包括纬度（十进制度）、经度（十进制度）、高度（米）、北方向偏角（逆时针，十进制度）。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "project.cbm文件格式"
+    ],
+    "expected_sources": [
+      "QGDW 11809—2018 输变电工程三维设计模型交互规范.pdf"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "list",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_098",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:85d66a2a712c:chk_25d9a44f186d4f646b5c",
+    "query": "2018版规范如何描述基本图元的对象和参数格式？",
+    "answerable": true,
+    "question_type": "requirement",
+    "difficulty": "easy",
+    "gold_answer": "A.4.2基本图元定义基本图元采用“对象+参数”的方式进行描述，对象用对应的英文，首字母大写，参数之间采用1个空格分开，对象和参数之间采用1个空格分开。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "A.4.2基本图元定义基本图元采用“对象+参数”的方式进行描述，对象用对应的英文，首字母大写，参数之间采用1个空格分开，对象和参数之间采用1个空格分开。",
+        "acceptable_spans": [
+          {
+            "source_name": "QGDW 11809—2018 输变电工程三维设计模型交互规范.pdf",
+            "source_sha256": "85d66a2a712cefeb28664b5c933d8f9cec61a0dffc7a3bfa078512a701940faa",
+            "chunk_id": "chk_25d9a44f186d4f646b5c",
+            "chunk_content_hash": "5fce432c17763f91d805b11636e533f24f8d0211893808e0b7e3e30d0eb63583",
+            "page_start": 13,
+            "page_end": 13,
+            "section_path": [
+              "Page 13"
+            ],
+            "quote": "A.4.2基本图元定义基本图元采用“对象+参数”的方式进行描述，对象用对应的英文，首字母大写，参数之间采用1个空格分开，对象和参数之间采用1个空格分开。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "基本图元定义基本图元"
+    ],
+    "expected_sources": [
+      "QGDW 11809—2018 输变电工程三维设计模型交互规范.pdf"
+    ],
+    "retrieval_span": "single_evidence",
+    "tags": [
+      "requirement",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_099",
+    "dataset_version": "rag_gold_v1",
+    "split": "dev",
+    "family_id": "rag:85d66a2a712c:chk_ea0a548c4966446033da",
+    "query": "《QGDW 11809—2018》对“输电线路工程材料、设备、设施及交叉跨越物”和“输变电工程建（构）筑物、设备、材料及其他设施模型”分别作了什么规定？",
+    "answerable": true,
+    "question_type": "multi_evidence",
+    "difficulty": "hard",
+    "gold_answer": "4.7输电线路工程材料、设备、设施及交叉跨越物采用参数化模型（包括基本图元）或*.stl文件进行交互。\n4.11输变电工程建（构）筑物、设备、材料及其他设施模型包括基本属性和扩展属性，基本属性参考建模规范，扩展属性可根据模型应用要求进行扩展。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "4.7输电线路工程材料、设备、设施及交叉跨越物采用参数化模型（包括基本图元）或*.stl文件进行交互。",
+        "acceptable_spans": [
+          {
+            "source_name": "QGDW 11809—2018 输变电工程三维设计模型交互规范.pdf",
+            "source_sha256": "85d66a2a712cefeb28664b5c933d8f9cec61a0dffc7a3bfa078512a701940faa",
+            "chunk_id": "chk_ea0a548c4966446033da",
+            "chunk_content_hash": "75e9b0ababfe4fc7670fb12f7afa1cdcba017d43fe9cceb0be9f76960a55abff",
+            "page_start": 8,
+            "page_end": 8,
+            "section_path": [
+              "4 总的要求",
+              "Page 8"
+            ],
+            "quote": "4.7输电线路工程材料、设备、设施及交叉跨越物采用参数化模型（包括基本图元）或*.stl文件进行交互。"
+          }
+        ]
+      },
+      {
+        "unit_id": "u2",
+        "fact": "4.11输变电工程建（构）筑物、设备、材料及其他设施模型包括基本属性和扩展属性，基本属性参考建模规范，扩展属性可根据模型应用要求进行扩展。",
+        "acceptable_spans": [
+          {
+            "source_name": "QGDW 11809—2018 输变电工程三维设计模型交互规范.pdf",
+            "source_sha256": "85d66a2a712cefeb28664b5c933d8f9cec61a0dffc7a3bfa078512a701940faa",
+            "chunk_id": "chk_ea0a548c4966446033da",
+            "chunk_content_hash": "75e9b0ababfe4fc7670fb12f7afa1cdcba017d43fe9cceb0be9f76960a55abff",
+            "page_start": 8,
+            "page_end": 8,
+            "section_path": [
+              "4 总的要求",
+              "Page 8"
+            ],
+            "quote": "4.11输变电工程建（构）筑物、设备、材料及其他设施模型包括基本属性和扩展属性，基本属性参考建模规范，扩展属性可根据模型应用要求进行扩展。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "输电线路工程材料、设备、设施及交叉跨越物",
+      "输变电工程建（构）筑物、设备、材料及其他设施模型"
+    ],
+    "expected_sources": [
+      "QGDW 11809—2018 输变电工程三维设计模型交互规范.pdf"
+    ],
+    "retrieval_span": "multi_evidence",
+    "tags": [
+      "multi_evidence",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_ans_100",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:85d66a2a712c:chk_20a62bd5104a06fba3a3",
+    "query": "2018版电缆线路三维设计模型包含哪些文件类型，各层级系统如何组成？",
+    "answerable": true,
+    "question_type": "multi_evidence",
+    "difficulty": "hard",
+    "gold_answer": "A.8电缆线路工程三维设计模型文件格式A.8.1概述电缆线路工程三维设计模型文件，包含了*.cbm、*.dev、*.fam、*.phm、*.mod等一系列描述性文件以及*.stl等不能用参数化和基本图元描述的模型文件。\nF1System一级全线包含若干个二级分段，F2System二级分段包含若干个三级系统，F3System三级系统包含若干个四级构筑物、材料及设备，F4System四级构筑物、材料及设备包含若干部件。",
+    "gold_units": [
+      {
+        "unit_id": "u1",
+        "fact": "A.8电缆线路工程三维设计模型文件格式A.8.1概述电缆线路工程三维设计模型文件，包含了*.cbm、*.dev、*.fam、*.phm、*.mod等一系列描述性文件以及*.stl等不能用参数化和基本图元描述的模型文件。",
+        "acceptable_spans": [
+          {
+            "source_name": "QGDW 11809—2018 输变电工程三维设计模型交互规范.pdf",
+            "source_sha256": "85d66a2a712cefeb28664b5c933d8f9cec61a0dffc7a3bfa078512a701940faa",
+            "chunk_id": "chk_20a62bd5104a06fba3a3",
+            "chunk_content_hash": "601951d3a7cd48bc66cd776fb9f0b2af656c365b73d48b89fd93bd6dea69bfe1",
+            "page_start": 29,
+            "page_end": 29,
+            "section_path": [
+              "Page 29"
+            ],
+            "quote": "A.8电缆线路工程三维设计模型文件格式A.8.1概述电缆线路工程三维设计模型文件，包含了*.cbm、*.dev、*.fam、*.phm、*.mod等一系列描述性文件以及*.stl等不能用参数化和基本图元描述的模型文件。"
+          }
+        ]
+      },
+      {
+        "unit_id": "u2",
+        "fact": "F1System一级全线包含若干个二级分段，F2System二级分段包含若干个三级系统，F3System三级系统包含若干个四级构筑物、材料及设备，F4System四级构筑物、材料及设备包含若干部件。",
+        "acceptable_spans": [
+          {
+            "source_name": "QGDW 11809—2018 输变电工程三维设计模型交互规范.pdf",
+            "source_sha256": "85d66a2a712cefeb28664b5c933d8f9cec61a0dffc7a3bfa078512a701940faa",
+            "chunk_id": "chk_20a62bd5104a06fba3a3",
+            "chunk_content_hash": "601951d3a7cd48bc66cd776fb9f0b2af656c365b73d48b89fd93bd6dea69bfe1",
+            "page_start": 29,
+            "page_end": 29,
+            "section_path": [
+              "Page 29"
+            ],
+            "quote": "F1System一级全线包含若干个二级分段，F2System二级分段包含若干个三级系统，F3System三级系统包含若干个四级构筑物、材料及设备，F4System四级构筑物、材料及设备包含若干部件。"
+          }
+        ]
+      }
+    ],
+    "expected_terms": [
+      "概述电缆线路工程三维设计模型文件",
+      "F1System一级全线"
+    ],
+    "expected_sources": [
+      "QGDW 11809—2018 输变电工程三维设计模型交互规范.pdf"
+    ],
+    "retrieval_span": "multi_evidence",
+    "tags": [
+      "multi_evidence",
+      "project_knowledge_base",
+      "machine_generated_seed"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_neg_001",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:hard_negative:01",
+    "query": "知识库规定输电模型数据采用量子密钥时，每隔多少分钟轮换一次？",
+    "answerable": false,
+    "question_type": "hard_negative",
+    "difficulty": "hard",
+    "gold_answer": null,
+    "gold_units": [],
+    "expected_terms": [],
+    "expected_sources": [],
+    "retrieval_span": "none",
+    "negative_anchor": "量子密钥轮换周期",
+    "tags": [
+      "unanswerable",
+      "plausible_distractor",
+      "project_knowledge_base"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_neg_002",
+    "dataset_version": "rag_gold_v1",
+    "split": "dev",
+    "family_id": "rag:hard_negative:02",
+    "query": "这些标准是否规定了RAG所用Transformer模型的参数量？",
+    "answerable": false,
+    "question_type": "hard_negative",
+    "difficulty": "hard",
+    "gold_answer": null,
+    "gold_units": [],
+    "expected_terms": [],
+    "expected_sources": [],
+    "retrieval_span": "none",
+    "negative_anchor": "Transformer参数量",
+    "tags": [
+      "unanswerable",
+      "plausible_distractor",
+      "project_knowledge_base"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_neg_003",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:hard_negative:03",
+    "query": "架空线路巡检无人机必须采购哪个品牌的电池？",
+    "answerable": false,
+    "question_type": "hard_negative",
+    "difficulty": "hard",
+    "gold_answer": null,
+    "gold_units": [],
+    "expected_terms": [],
+    "expected_sources": [],
+    "retrieval_span": "none",
+    "negative_anchor": "无人机电池品牌",
+    "tags": [
+      "unanswerable",
+      "plausible_distractor",
+      "project_knowledge_base"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_neg_004",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:hard_negative:04",
+    "query": "标准给出的5G基站场地月租价格是多少？",
+    "answerable": false,
+    "question_type": "hard_negative",
+    "difficulty": "hard",
+    "gold_answer": null,
+    "gold_units": [],
+    "expected_terms": [],
+    "expected_sources": [],
+    "retrieval_span": "none",
+    "negative_anchor": "5G基站租赁价格",
+    "tags": [
+      "unanswerable",
+      "plausible_distractor",
+      "project_knowledge_base"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_neg_005",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:hard_negative:05",
+    "query": "参与三维建模的员工年度绩效奖金标准是多少？",
+    "answerable": false,
+    "question_type": "hard_negative",
+    "difficulty": "hard",
+    "gold_answer": null,
+    "gold_units": [],
+    "expected_terms": [],
+    "expected_sources": [],
+    "retrieval_span": "none",
+    "negative_anchor": "员工绩效奖金",
+    "tags": [
+      "unanswerable",
+      "plausible_distractor",
+      "project_knowledge_base"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_neg_006",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:hard_negative:06",
+    "query": "项目现场食堂周三午餐菜单有哪些菜？",
+    "answerable": false,
+    "question_type": "hard_negative",
+    "difficulty": "hard",
+    "gold_answer": null,
+    "gold_units": [],
+    "expected_terms": [],
+    "expected_sources": [],
+    "retrieval_span": "none",
+    "negative_anchor": "食堂菜单",
+    "tags": [
+      "unanswerable",
+      "plausible_distractor",
+      "project_knowledge_base"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_neg_007",
+    "dataset_version": "rag_gold_v1",
+    "split": "dev",
+    "family_id": "rag:hard_negative:07",
+    "query": "文档中记录的项目办公室门禁密码是什么？",
+    "answerable": false,
+    "question_type": "hard_negative",
+    "difficulty": "hard",
+    "gold_answer": null,
+    "gold_units": [],
+    "expected_terms": [],
+    "expected_sources": [],
+    "retrieval_span": "none",
+    "negative_anchor": "办公室门禁密码",
+    "tags": [
+      "unanswerable",
+      "plausible_distractor",
+      "project_knowledge_base"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_neg_008",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:hard_negative:08",
+    "query": "火星输电线路三维模型应采用哪一种坐标系？",
+    "answerable": false,
+    "question_type": "hard_negative",
+    "difficulty": "hard",
+    "gold_answer": null,
+    "gold_units": [],
+    "expected_terms": [],
+    "expected_sources": [],
+    "retrieval_span": "none",
+    "negative_anchor": "火星输电线路",
+    "tags": [
+      "unanswerable",
+      "plausible_distractor",
+      "project_knowledge_base"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_neg_009",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:hard_negative:09",
+    "query": "规范预测的2035年全国碳价是多少元每吨？",
+    "answerable": false,
+    "question_type": "hard_negative",
+    "difficulty": "hard",
+    "gold_answer": null,
+    "gold_units": [],
+    "expected_terms": [],
+    "expected_sources": [],
+    "retrieval_span": "none",
+    "negative_anchor": "2035年碳价预测",
+    "tags": [
+      "unanswerable",
+      "plausible_distractor",
+      "project_knowledge_base"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_neg_010",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:hard_negative:10",
+    "query": "标准起草单位对应的上市公司股票代码是多少？",
+    "answerable": false,
+    "question_type": "hard_negative",
+    "difficulty": "hard",
+    "gold_answer": null,
+    "gold_units": [],
+    "expected_terms": [],
+    "expected_sources": [],
+    "retrieval_span": "none",
+    "negative_anchor": "上市公司股票代码",
+    "tags": [
+      "unanswerable",
+      "plausible_distractor",
+      "project_knowledge_base"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_neg_011",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:hard_negative:11",
+    "query": "请给出该工程项目经理的手机号码。",
+    "answerable": false,
+    "question_type": "hard_negative",
+    "difficulty": "hard",
+    "gold_answer": null,
+    "gold_units": [],
+    "expected_terms": [],
+    "expected_sources": [],
+    "retrieval_span": "none",
+    "negative_anchor": "项目经理手机号",
+    "tags": [
+      "unanswerable",
+      "plausible_distractor",
+      "project_knowledge_base"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_neg_012",
+    "dataset_version": "rag_gold_v1",
+    "split": "dev",
+    "family_id": "rag:hard_negative:12",
+    "query": "知识库中配置的模型服务API密钥是什么？",
+    "answerable": false,
+    "question_type": "hard_negative",
+    "difficulty": "hard",
+    "gold_answer": null,
+    "gold_units": [],
+    "expected_terms": [],
+    "expected_sources": [],
+    "retrieval_span": "none",
+    "negative_anchor": "私有API密钥",
+    "tags": [
+      "unanswerable",
+      "plausible_distractor",
+      "project_knowledge_base"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_neg_013",
+    "dataset_version": "rag_gold_v1",
+    "split": "dev",
+    "family_id": "rag:hard_negative:13",
+    "query": "RAG数据库管理员密码在规范哪一章？",
+    "answerable": false,
+    "question_type": "hard_negative",
+    "difficulty": "hard",
+    "gold_answer": null,
+    "gold_units": [],
+    "expected_terms": [],
+    "expected_sources": [],
+    "retrieval_span": "none",
+    "negative_anchor": "数据库管理员密码",
+    "tags": [
+      "unanswerable",
+      "plausible_distractor",
+      "project_knowledge_base"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_neg_014",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:hard_negative:14",
+    "query": "哈尔滨现在的实时气温和降水概率是多少？",
+    "answerable": false,
+    "question_type": "hard_negative",
+    "difficulty": "hard",
+    "gold_answer": null,
+    "gold_units": [],
+    "expected_terms": [],
+    "expected_sources": [],
+    "retrieval_span": "none",
+    "negative_anchor": "哈尔滨实时天气",
+    "tags": [
+      "unanswerable",
+      "plausible_distractor",
+      "project_knowledge_base"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_neg_015",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:hard_negative:15",
+    "query": "文档记录的昨日全网最大负荷实际值是多少？",
+    "answerable": false,
+    "question_type": "hard_negative",
+    "difficulty": "hard",
+    "gold_answer": null,
+    "gold_units": [],
+    "expected_terms": [],
+    "expected_sources": [],
+    "retrieval_span": "none",
+    "negative_anchor": "昨日全网负荷",
+    "tags": [
+      "unanswerable",
+      "plausible_distractor",
+      "project_knowledge_base"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_neg_016",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:hard_negative:16",
+    "query": "龙王站主变当前实时温度是多少摄氏度？",
+    "answerable": false,
+    "question_type": "hard_negative",
+    "difficulty": "hard",
+    "gold_answer": null,
+    "gold_units": [],
+    "expected_terms": [],
+    "expected_sources": [],
+    "retrieval_span": "none",
+    "negative_anchor": "设备实时温度",
+    "tags": [
+      "unanswerable",
+      "plausible_distractor",
+      "project_knowledge_base"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_neg_017",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:hard_negative:17",
+    "query": "规范给出的龙王站未来24小时故障概率是多少？",
+    "answerable": false,
+    "question_type": "hard_negative",
+    "difficulty": "hard",
+    "gold_answer": null,
+    "gold_units": [],
+    "expected_terms": [],
+    "expected_sources": [],
+    "retrieval_span": "none",
+    "negative_anchor": "设备故障概率",
+    "tags": [
+      "unanswerable",
+      "plausible_distractor",
+      "project_knowledge_base"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_neg_018",
+    "dataset_version": "rag_gold_v1",
+    "split": "dev",
+    "family_id": "rag:hard_negative:18",
+    "query": "三维模型软件采购合同的最终成交金额是多少？",
+    "answerable": false,
+    "question_type": "hard_negative",
+    "difficulty": "hard",
+    "gold_answer": null,
+    "gold_units": [],
+    "expected_terms": [],
+    "expected_sources": [],
+    "retrieval_span": "none",
+    "negative_anchor": "采购合同金额",
+    "tags": [
+      "unanswerable",
+      "plausible_distractor",
+      "project_knowledge_base"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_neg_019",
+    "dataset_version": "rag_gold_v1",
+    "split": "dev",
+    "family_id": "rag:hard_negative:19",
+    "query": "标准中规定的Agent开发实习生月薪是多少？",
+    "answerable": false,
+    "question_type": "hard_negative",
+    "difficulty": "hard",
+    "gold_answer": null,
+    "gold_units": [],
+    "expected_terms": [],
+    "expected_sources": [],
+    "retrieval_span": "none",
+    "negative_anchor": "实习生招聘薪资",
+    "tags": [
+      "unanswerable",
+      "plausible_distractor",
+      "project_knowledge_base"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  },
+  {
+    "case_id": "rag_neg_020",
+    "dataset_version": "rag_gold_v1",
+    "split": "test",
+    "family_id": "rag:hard_negative:20",
+    "query": "该知识库给出的下一颗遥感卫星发射窗口是什么时间？",
+    "answerable": false,
+    "question_type": "hard_negative",
+    "difficulty": "hard",
+    "gold_answer": null,
+    "gold_units": [],
+    "expected_terms": [],
+    "expected_sources": [],
+    "retrieval_span": "none",
+    "negative_anchor": "卫星发射窗口",
+    "tags": [
+      "unanswerable",
+      "plausible_distractor",
+      "project_knowledge_base"
+    ],
+    "review_status": "machine_generated_requires_human_review"
+  }
+]

@@ -1,0 +1,200 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WebGL Agent Bridge Demo</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, "Microsoft YaHei", sans-serif;
+      background: #f5f7fb;
+      color: #172033;
+    }
+    header {
+      padding: 18px 24px;
+      background: #172033;
+      color: #fff;
+    }
+    main {
+      display: grid;
+      grid-template-columns: minmax(320px, 430px) 1fr;
+      gap: 16px;
+      padding: 16px;
+    }
+    section {
+      background: #fff;
+      border: 1px solid #d9e1ef;
+      border-radius: 6px;
+      padding: 14px;
+    }
+    label {
+      display: block;
+      margin: 10px 0 6px;
+      font-weight: 600;
+    }
+    input, textarea, button {
+      width: 100%;
+      box-sizing: border-box;
+      font: inherit;
+    }
+    input, textarea {
+      border: 1px solid #c7d2e5;
+      border-radius: 4px;
+      padding: 8px;
+    }
+    textarea {
+      min-height: 230px;
+      resize: vertical;
+    }
+    button {
+      margin-top: 12px;
+      padding: 10px 12px;
+      border: 0;
+      border-radius: 4px;
+      background: #176b87;
+      color: #fff;
+      cursor: pointer;
+    }
+    pre {
+      min-height: 120px;
+      overflow: auto;
+      background: #0f172a;
+      color: #d9f99d;
+      border-radius: 4px;
+      padding: 12px;
+      white-space: pre-wrap;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 16px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>WebGL Agent Bridge Demo</h1>
+  </header>
+  <main>
+    <section>
+      <label for="agentBaseUrl">Agent Base URL</label>
+      <input id="agentBaseUrl" value="http://127.0.0.1:8009" />
+
+      <label for="query">Query</label>
+      <input id="query" value="查看这条馈线的实时数据？" />
+
+      <label for="context">Mock WebGL Context</label>
+      <textarea id="context">{
+        "selected_object": {
+          "object_id": "F001",
+          "object_type": "feeder",
+          "object_name": "测试馈线",
+          "layer_id": "feeder_layer",
+          "properties": {
+            "voltage_level": "10kV"
+          }
+        },
+        "map_state": {
+          "center": [114.05, 22.55],
+          "zoom": 14,
+          "camera": {
+            "heading": 0,
+            "pitch": -45,
+            "roll": 0
+          }
+        },
+        "active_layers": [
+          "feeder_layer",
+          "substation_layer"
+        ],
+        "user_action": "agent_panel_query",
+        "page_state": {
+          "current_panel": "agent",
+          "selected_tool": "select"
+        },
+        "frontend_metadata": {
+          "webgl_version": "EV-Globe-WebGL",
+          "project_id": "demo_project",
+          "scene_id": "demo_scene"
+        }
+      }</textarea>
+      <button id="send">Send Query</button>
+    </section>
+
+    <section>
+      <div class="grid">
+        <div>
+          <h2>Request Context</h2>
+          <pre id="requestLog">{}</pre>
+        </div>
+        <div>
+          <h2>Executed UIEvents</h2>
+          <pre id="eventLog">[]</pre>
+        </div>
+      </div>
+      <h2>AgentResponse</h2>
+      <pre id="responseLog">{}</pre>
+      <h2>Errors</h2>
+      <pre id="errorLog"></pre>
+    </section>
+  </main>
+
+  <script src="./webgl_agent_bridge.js"></script>
+  <script>
+    const requestLog = document.getElementById("requestLog");
+    const responseLog = document.getElementById("responseLog");
+    const eventLog = document.getElementById("eventLog");
+    const errorLog = document.getElementById("errorLog");
+    const executedEvents = [];
+
+    function readContext() {
+      const raw = document.getElementById("context").value;
+      const parsed = JSON.parse(raw);
+      requestLog.textContent = JSON.stringify(parsed, null, 2);
+      return parsed;
+    }
+
+    function logEvent(event) {
+      executedEvents.push(event);
+      eventLog.textContent = JSON.stringify(executedEvents, null, 2);
+    }
+
+    WebGLAgentBridge.configure({
+      agentBaseUrl: document.getElementById("agentBaseUrl").value,
+      getContext: readContext,
+      onResponse: function (response) {
+        responseLog.textContent = JSON.stringify(response, null, 2);
+      },
+      onError: function (error) {
+        errorLog.textContent = JSON.stringify(error, ["status", "message"], 2);
+      },
+      eventHandlers: {
+        fly_to: logEvent,
+        gis_highlight: logEvent,
+        open_panel: logEvent,
+        show_message: logEvent,
+        set_layer_visibility: logEvent,
+        clear_highlight: logEvent,
+        unsupported_event: logEvent
+      }
+    });
+
+    document.getElementById("send").addEventListener("click", async function () {
+      executedEvents.length = 0;
+      eventLog.textContent = "[]";
+      errorLog.textContent = "";
+      responseLog.textContent = "{}";
+      WebGLAgentBridge.configure({
+        agentBaseUrl: document.getElementById("agentBaseUrl").value
+      });
+      try {
+        await WebGLAgentBridge.sendQuery(document.getElementById("query").value);
+      } catch (error) {
+        errorLog.textContent = JSON.stringify(error, ["status", "message"], 2);
+      }
+    });
+  </script>
+</body>
+</html>
+

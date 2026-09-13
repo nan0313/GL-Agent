@@ -1,0 +1,3859 @@
+{
+  "status": "completed",
+  "metric_scope": "retrieval_and_answerability_only",
+  "generated_at": "2026-09-06T12:19:54.756607+00:00",
+  "dataset": "G:\\JN_work\\gy\\ev_agent\\evaluation\\datasets\\rag_gold_v1.json",
+  "dataset_version": "rag_gold_v1",
+  "split": "all",
+  "top_k": 5,
+  "case_count": 120,
+  "answerable_count": 100,
+  "hard_negative_count": 20,
+  "review_gate": {
+    "required_human_locked": false,
+    "unlocked_case_count": 120,
+    "safe_for_resume_claim": false
+  },
+  "index": {
+    "provider": "local_rag_v3",
+    "index_version": "ragidx_db3e08ee60805f9f8e2a",
+    "docs_count": 10,
+    "chunks_count": 662
+  },
+  "metrics_by_k": {
+    "1": {
+      "evidence_recall": 0.245,
+      "evidence_recall_percent": 24.5,
+      "hit_rate": 0.25,
+      "hit_rate_percent": 25.0,
+      "complete_hit_rate": 0.24,
+      "complete_hit_rate_percent": 24.0
+    },
+    "3": {
+      "evidence_recall": 0.42,
+      "evidence_recall_percent": 42.0,
+      "hit_rate": 0.42,
+      "hit_rate_percent": 42.0,
+      "complete_hit_rate": 0.42,
+      "complete_hit_rate_percent": 42.0
+    },
+    "5": {
+      "evidence_recall": 0.53,
+      "evidence_recall_percent": 53.0,
+      "hit_rate": 0.53,
+      "hit_rate_percent": 53.0,
+      "complete_hit_rate": 0.53,
+      "complete_hit_rate_percent": 53.0
+    }
+  },
+  "hard_negative": {
+    "no_answer_accuracy": 0.95,
+    "no_answer_accuracy_percent": 95.0
+  },
+  "latency": {
+    "mean_ms": 2268.85,
+    "max_ms": 12399.98,
+    "total_seconds": 272.3
+  },
+  "metric_definition": {
+    "evidence_recall_at_k": "Per answerable question: matched gold evidence units / all gold evidence units; macro averaged.",
+    "hit_at_k": "Share of answerable questions with at least one matched gold evidence unit.",
+    "complete_hit_at_k": "Share of answerable questions with every gold evidence unit matched.",
+    "no_answer_accuracy": "Share of hard negatives rejected with no final evidence and a non-answerable decision.",
+    "citation_correctness": "Not measured here; semantic claim-to-citation support requires a generated answer and a separate human or judge annotation."
+  },
+  "answerable_results": [
+    {
+      "case_id": "rag_ans_001",
+      "query": "三维模型数字文件移交如何分类？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_48b4974bcf8063a9dcd2",
+        "chk_12d56b70570aac3fb811",
+        "chk_ffb2e575a0e3073ae351",
+        "chk_1dc9c9075e8ae995f6f6",
+        "chk_f61c65e847e82ff96065"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 12399.98
+    },
+    {
+      "case_id": "rag_ans_002",
+      "query": "输变电工程编码包括哪些内容？",
+      "gold_unit_count": 1,
+      "retrieved_count": 0,
+      "retrieved_chunk_ids": [],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "ambiguous",
+      "latency_ms": 836.56
+    },
+    {
+      "case_id": "rag_ans_003",
+      "query": "二次系统数字化模型的文件存储结构、格式和命名应遵循哪项标准？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_a7e268ee579df635081e",
+        "chk_48b4974bcf8063a9dcd2",
+        "chk_dc2d89d8e64538e84ad3",
+        "chk_ab091a981ef9bf73634c",
+        "chk_f742e3107624e74a8c50"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 646.98
+    },
+    {
+      "case_id": "rag_ans_004",
+      "query": "各阶段移交的地理信息数据精度应满足哪些层级的标准？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_913e5b5897ce3f191421",
+        "chk_12509f44ef5b86b5956c",
+        "chk_ab091a981ef9bf73634c",
+        "chk_2ba9f01d89bd3289927e",
+        "chk_ec0e7df36b9ea45481eb"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 1
+        }
+      ],
+      "evidence_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 2752.75
+    },
+    {
+      "case_id": "rag_ans_005",
+      "query": "电网专题数据包括哪些内容？",
+      "gold_unit_count": 1,
+      "retrieved_count": 0,
+      "retrieved_chunk_ids": [],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "insufficient_evidence",
+      "latency_ms": 2637.92
+    },
+    {
+      "case_id": "rag_ans_006",
+      "query": "装配模型描述哪些实际尺寸、安装或加工信息？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_985e3abf5dfe5010e9db",
+        "chk_15ce5ca708ba94b568bf",
+        "chk_606a412a901f483a9a3d",
+        "chk_fbab058c7f4d3b8bd344",
+        "chk_690f9488c55efce2f1fb"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 1583.09
+    },
+    {
+      "case_id": "rag_ans_007",
+      "query": "交流电压等级应采用什么方式或格式？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_7d0008fc36d0ab853df9",
+        "chk_2d9d809702cb9a0ec50a",
+        "chk_61688702308fc6a766d0",
+        "chk_48fecd789828533041d6",
+        "chk_436ae484963a4e83b8ae"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 4
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": true
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 5568.66
+    },
+    {
+      "case_id": "rag_ans_008",
+      "query": "未注明日期的引用文件应使用哪个版本？",
+      "gold_unit_count": 1,
+      "retrieved_count": 0,
+      "retrieved_chunk_ids": [],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "insufficient_evidence",
+      "latency_ms": 2479.62
+    },
+    {
+      "case_id": "rag_ans_009",
+      "query": "《三维模型数字文件移交标准第一分册》对“三维模型数字文件移交”和“移交数据的来源、保存、传递及应用”分别作了什么规定？",
+      "gold_unit_count": 2,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_ca55ef92631deac9a706",
+        "chk_fbab058c7f4d3b8bd344",
+        "chk_7d06ea314fd6fe7756d6",
+        "chk_b930cbb10432997beeab",
+        "chk_fb138dc4fe55b3da50e4"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 1
+        },
+        {
+          "unit_id": "u2",
+          "first_hit_rank": 1
+        }
+      ],
+      "evidence_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 1492.05
+    },
+    {
+      "case_id": "rag_ans_010",
+      "query": "《三维模型数字文件移交标准第一分册》对“三维设计模型的文件存储结构、格式与命名规则”和“三维设计模型”分别作了什么规定？",
+      "gold_unit_count": 2,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_37be1207f9a72eaf16c3",
+        "chk_671e47508cddfdfa3f79",
+        "chk_ca55ef92631deac9a706",
+        "chk_48fecd789828533041d6",
+        "chk_985e3abf5dfe5010e9db"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        },
+        {
+          "unit_id": "u2",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 1440.97
+    },
+    {
+      "case_id": "rag_ans_011",
+      "query": "输电工程三维设计模型、激光点云数据应采用什么方式或格式？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_37be1207f9a72eaf16c3",
+        "chk_b3359568a38150f0bb93",
+        "chk_fbab058c7f4d3b8bd344",
+        "chk_4cebdfb45bfca6235e47",
+        "chk_1959d2769145261e0c48"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 2
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 542.72
+    },
+    {
+      "case_id": "rag_ans_012",
+      "query": "架空线路GIM文件的存储域应包含哪些类别文件，如何排列？",
+      "gold_unit_count": 1,
+      "retrieved_count": 0,
+      "retrieved_chunk_ids": [],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "insufficient_evidence",
+      "latency_ms": 4366.22
+    },
+    {
+      "case_id": "rag_ans_013",
+      "query": "通用模型和产品模型包括哪些内容？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_37be1207f9a72eaf16c3",
+        "chk_f0a5cc1c9b1ece3d5a79",
+        "chk_666497168cbeffef6459",
+        "chk_fbab058c7f4d3b8bd344",
+        "chk_1959d2769145261e0c48"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 1998.26
+    },
+    {
+      "case_id": "rag_ans_014",
+      "query": "架空线路调度编码应遵循什么要求？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_b3359568a38150f0bb93",
+        "chk_770d1b0cb7e9dbc17169",
+        "chk_7d69379b5643f041b4bd",
+        "chk_c92b53bdd3a7e050c8bb",
+        "chk_75771b53dcaf674649da"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 1
+        }
+      ],
+      "evidence_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 5639.13
+    },
+    {
+      "case_id": "rag_ans_015",
+      "query": "依据《三维模型数字文件移交标准第三分册》，对于长短腿应满足什么要求？",
+      "gold_unit_count": 1,
+      "retrieved_count": 3,
+      "retrieved_chunk_ids": [
+        "chk_193e95486e6e680f187a",
+        "chk_ffb2e575a0e3073ae351",
+        "chk_2a3715c27503a4a9886e"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 2367.88
+    },
+    {
+      "case_id": "rag_ans_016",
+      "query": "塔脚板定位坐标系的x轴方向向量有什么要求？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_dba64193b7512d08c9c7",
+        "chk_985e3abf5dfe5010e9db",
+        "chk_9a9c90cc8158493cdb73",
+        "chk_4eeb2d13ddeabffb4972",
+        "chk_72621593701d03545bb0"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 4
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": true
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 525.32
+    },
+    {
+      "case_id": "rag_ans_017",
+      "query": "架空线路设备模型的CBM文件夹入口文件是什么，格式依据是什么？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_57fa9a11101728342710",
+        "chk_37be1207f9a72eaf16c3",
+        "chk_b75dddaaa23a037f495a",
+        "chk_b21755ec7e3ead0d9d27",
+        "chk_cdde1239967295a5131c"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 6114.63
+    },
+    {
+      "case_id": "rag_ans_018",
+      "query": "依据《三维模型数字文件移交标准第三分册》，电网专题数据包括哪些内容？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_193e95486e6e680f187a",
+        "chk_2a3715c27503a4a9886e",
+        "chk_ffb2e575a0e3073ae351",
+        "chk_ab091a981ef9bf73634c",
+        "chk_da38ceb91f1dafc6a54b"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 2208.39
+    },
+    {
+      "case_id": "rag_ans_019",
+      "query": "《三维模型数字文件移交标准第三分册》对“坐标系y轴x、坐标系y轴y、坐标系y轴z为塔…”和“坐标系z轴x、坐标系z轴y、坐标系z轴z为塔…”分别作了什么规定？",
+      "gold_unit_count": 2,
+      "retrieved_count": 3,
+      "retrieved_chunk_ids": [
+        "chk_4eeb2d13ddeabffb4972",
+        "chk_b3359568a38150f0bb93",
+        "chk_276e05ff6aaca3a04223"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 1
+        },
+        {
+          "unit_id": "u2",
+          "first_hit_rank": 1
+        }
+      ],
+      "evidence_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 2291.14
+    },
+    {
+      "case_id": "rag_ans_020",
+      "query": "《三维模型数字文件移交标准第三分册》对“通用模型和产品模型”和“通用模型”分别作了什么规定？",
+      "gold_unit_count": 2,
+      "retrieved_count": 3,
+      "retrieved_chunk_ids": [
+        "chk_ffb2e575a0e3073ae351",
+        "chk_b3359568a38150f0bb93",
+        "chk_67890f49569e5476397e"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 2
+        },
+        {
+          "unit_id": "u2",
+          "first_hit_rank": 2
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 2175.06
+    },
+    {
+      "case_id": "rag_ans_021",
+      "query": "依据《三维模型数字文件移交标准第二分册》，变电站（换流站）工程三维设计模型、激光点云应采用什么方式或格式？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_baea966ad9dfc17e2653",
+        "chk_96cae39dde57d602c829",
+        "chk_10fd44681020aecfc644",
+        "chk_954eb5d4fe41c04f1150",
+        "chk_96e8f749db54ab8ce5b6"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 2
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 948.75
+    },
+    {
+      "case_id": "rag_ans_022",
+      "query": "变电站GIM文件的存储域应包含哪些文件类型，如何排列？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_37be1207f9a72eaf16c3",
+        "chk_1959d2769145261e0c48",
+        "chk_b75dddaaa23a037f495a",
+        "chk_c36580612cf6eab4a586",
+        "chk_985e3abf5dfe5010e9db"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 2570.22
+    },
+    {
+      "case_id": "rag_ans_023",
+      "query": "工程模型层级管理如何分类？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_b75dddaaa23a037f495a",
+        "chk_690f9488c55efce2f1fb",
+        "chk_34461e3cdd585e3ebae9",
+        "chk_37c8823909c9c2a7aed0",
+        "chk_bb7bbe5b53fff2b21952"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 4
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": true
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 468.62
+    },
+    {
+      "case_id": "rag_ans_024",
+      "query": "依据《三维模型数字文件移交标准第二分册》，电压等级参数的赋值应采用什么方式或格式？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_baea966ad9dfc17e2653",
+        "chk_8ff0f84cfd97f0faf368",
+        "chk_a7e268ee579df635081e",
+        "chk_954eb5d4fe41c04f1150",
+        "chk_ae81d0c1e4cc5e8bae02"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 1168.36
+    },
+    {
+      "case_id": "rag_ans_025",
+      "query": "建构筑物及设施模型应采用什么方式或格式？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_180683b8db0a55b1ace7",
+        "chk_15ce5ca708ba94b568bf",
+        "chk_98b4280510923b2a1ee9",
+        "chk_fbab058c7f4d3b8bd344",
+        "chk_2faf4ec386ea8e27f204"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 3
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 1499.34
+    },
+    {
+      "case_id": "rag_ans_026",
+      "query": "基本图元应采用什么方式或格式？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_4904dc49a6efdf005f5b",
+        "chk_985e3abf5dfe5010e9db",
+        "chk_1959d2769145261e0c48",
+        "chk_294154a3af41d6df8b08",
+        "chk_2059eab6e3b06c463ab1"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 4
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": true
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 473.46
+    },
+    {
+      "case_id": "rag_ans_027",
+      "query": "依据《三维模型数字文件移交标准第二分册》，SDD可视化图形文件包括哪些内容？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_baea966ad9dfc17e2653",
+        "chk_d7ecd4f2422d7c574da9",
+        "chk_a7e268ee579df635081e",
+        "chk_80c2f04bdaacd54fd4eb",
+        "chk_37c8823909c9c2a7aed0"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 2
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 845.02
+    },
+    {
+      "case_id": "rag_ans_028",
+      "query": "模型扩展时应采用什么方式或格式？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_180683b8db0a55b1ace7",
+        "chk_a7e268ee579df635081e",
+        "chk_3a890feb20f6e2b8704c",
+        "chk_ffb2e575a0e3073ae351",
+        "chk_4904dc49a6efdf005f5b"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 1768.6
+    },
+    {
+      "case_id": "rag_ans_029",
+      "query": "《三维模型数字文件移交标准第二分册》对“主要电气设备三维模型应以本规范中规定的基本图…”和“装配模型”分别作了什么规定？",
+      "gold_unit_count": 2,
+      "retrieved_count": 0,
+      "retrieved_chunk_ids": [],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        },
+        {
+          "unit_id": "u2",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "insufficient_evidence",
+      "latency_ms": 1435.2
+    },
+    {
+      "case_id": "rag_ans_030",
+      "query": "常开触点CKCD和常闭触点CBCD元件各包含几个连接点？",
+      "gold_unit_count": 2,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_0bb09aa923935f56fe31",
+        "chk_d458b6586191757d3d2d",
+        "chk_b5099bee46827fc5a871",
+        "chk_ca634bc385ea35828ff1",
+        "chk_fc419d1397f38c90d6da"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 1
+        },
+        {
+          "unit_id": "u2",
+          "first_hit_rank": 1
+        }
+      ],
+      "evidence_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 562.3
+    },
+    {
+      "case_id": "rag_ans_031",
+      "query": "依据《三维模型数字文件移交标准第五分册》，输变电工程编码包括哪些内容？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_1dc9c9075e8ae995f6f6",
+        "chk_fbab058c7f4d3b8bd344",
+        "chk_011179ee556e959615f2",
+        "chk_2a3715c27503a4a9886e",
+        "chk_9276943174e197bf2a38"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 823.07
+    },
+    {
+      "case_id": "rag_ans_032",
+      "query": "一次移交包括哪些内容？",
+      "gold_unit_count": 1,
+      "retrieved_count": 0,
+      "retrieved_chunk_ids": [],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "insufficient_evidence",
+      "latency_ms": 2973.39
+    },
+    {
+      "case_id": "rag_ans_033",
+      "query": "设计单位制作的工程三维设计移交成果应包括哪些内容？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_37be1207f9a72eaf16c3",
+        "chk_ca55ef92631deac9a706",
+        "chk_7627a44279fae8f53d4a",
+        "chk_12d56b70570aac3fb811",
+        "chk_985e3abf5dfe5010e9db"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 2486.55
+    },
+    {
+      "case_id": "rag_ans_034",
+      "query": "导地线的通用模型和产品模型应如何参数化描述，线上附件如何建模？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_ac122a227e625c34552e",
+        "chk_666497168cbeffef6459",
+        "chk_0f471388f992e3759020",
+        "chk_b3359568a38150f0bb93",
+        "chk_48b6e82fa52ee04b3378"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 2
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 1507.56
+    },
+    {
+      "case_id": "rag_ans_035",
+      "query": "数据质量结果报告包含哪些部分？",
+      "gold_unit_count": 1,
+      "retrieved_count": 0,
+      "retrieved_chunk_ids": [],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "insufficient_evidence",
+      "latency_ms": 4456.09
+    },
+    {
+      "case_id": "rag_ans_036",
+      "query": "入库后的工程三维设计成果应如何更新维护？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_dc2d89d8e64538e84ad3",
+        "chk_40b63b1b703c9847b8bb",
+        "chk_6e6a3673f73fab3d4e7a",
+        "chk_7d69379b5643f041b4bd",
+        "chk_985e3abf5dfe5010e9db"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 2
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 2079.85
+    },
+    {
+      "case_id": "rag_ans_037",
+      "query": "三维设计模型按建模精细度分为哪两类？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_37be1207f9a72eaf16c3",
+        "chk_15ce5ca708ba94b568bf",
+        "chk_ecc8400a523dc0e3d784",
+        "chk_b3359568a38150f0bb93",
+        "chk_985e3abf5dfe5010e9db"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 2349.57
+    },
+    {
+      "case_id": "rag_ans_038",
+      "query": "输配变电工程三维模型数字文件管理在执行时需要遵循哪些要求？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_37be1207f9a72eaf16c3",
+        "chk_1dc9c9075e8ae995f6f6",
+        "chk_ca55ef92631deac9a706",
+        "chk_ffb2e575a0e3073ae351",
+        "chk_9276943174e197bf2a38"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 431.96
+    },
+    {
+      "case_id": "rag_ans_039",
+      "query": "《三维模型数字文件移交标准第五分册》对“通用模型和产品模型”和“按照三维设计系列标准移交的三维模型”分别作了什么规定？",
+      "gold_unit_count": 2,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_666497168cbeffef6459",
+        "chk_68675da1a3e8d5a61d87",
+        "chk_1dc9c9075e8ae995f6f6",
+        "chk_ffb2e575a0e3073ae351",
+        "chk_b3359568a38150f0bb93"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 1
+        },
+        {
+          "unit_id": "u2",
+          "first_hit_rank": 1
+        }
+      ],
+      "evidence_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 745.3
+    },
+    {
+      "case_id": "rag_ans_040",
+      "query": "线路工程不同标段中央子午线可能不同时，移交过程应如何处理坐标？",
+      "gold_unit_count": 2,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_30412d5f50b5225fe14e",
+        "chk_180683b8db0a55b1ace7",
+        "chk_a4dcb3884b6b255bf12d",
+        "chk_b3359568a38150f0bb93",
+        "chk_b17375f3fc786fba78c3"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 1
+        },
+        {
+          "unit_id": "u2",
+          "first_hit_rank": 1
+        }
+      ],
+      "evidence_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 4474.69
+    },
+    {
+      "case_id": "rag_ans_041",
+      "query": "初步设计路径优化报告包括哪些内容？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_5261daec3656677b29af",
+        "chk_7d6134743d371e2365a7",
+        "chk_7866d6944488e854310c",
+        "chk_d5376704512441191e0d",
+        "chk_4b659ee4bc519fbe5944"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 2417.28
+    },
+    {
+      "case_id": "rag_ans_042",
+      "query": "依据《三维模型数字文件移交标准第六分册》，施工图设计优化报告包括哪些内容？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_e5cc0deb981b882a2e9e",
+        "chk_ea8562f080fa018c2eeb",
+        "chk_12d56b70570aac3fb811",
+        "chk_7d6134743d371e2365a7",
+        "chk_bb1d0fc7d3accc37d9c4"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 5
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": true
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 1783.76
+    },
+    {
+      "case_id": "rag_ans_043",
+      "query": "倾斜模型应采用什么方式进行精度校准？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_4904dc49a6efdf005f5b",
+        "chk_2bbd83109afd9cc90da0",
+        "chk_294154a3af41d6df8b08",
+        "chk_48fecd789828533041d6",
+        "chk_00b364b7ef371bdddba5"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 1272.77
+    },
+    {
+      "case_id": "rag_ans_044",
+      "query": "变电站高精度三维激光点云可由哪些设备采集，成果包含哪些设施位置信息？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_7d6134743d371e2365a7",
+        "chk_fbab058c7f4d3b8bd344",
+        "chk_96cae39dde57d602c829",
+        "chk_ab091a981ef9bf73634c",
+        "chk_62b961018c7c420bfaf1"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 1
+        }
+      ],
+      "evidence_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 3609.88
+    },
+    {
+      "case_id": "rag_ans_045",
+      "query": "数字采集处理中，应如何检查倾斜模型精度以保证准确性？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_2bbd83109afd9cc90da0",
+        "chk_43b66b8606248ccfef22",
+        "chk_a1b702c40c101fea42a0",
+        "chk_298991db0e787abeffd8",
+        "chk_4cebdfb45bfca6235e47"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 1
+        }
+      ],
+      "evidence_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 2408.46
+    },
+    {
+      "case_id": "rag_ans_046",
+      "query": "点云精度校准应采用什么方式或格式？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_4904dc49a6efdf005f5b",
+        "chk_3a890feb20f6e2b8704c",
+        "chk_96cae39dde57d602c829",
+        "chk_69914768b17cf7c6aa2f",
+        "chk_00b364b7ef371bdddba5"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 1648.62
+    },
+    {
+      "case_id": "rag_ans_047",
+      "query": "点云数据预处理完成后，精度校准需要完成哪些工作？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_3a890feb20f6e2b8704c",
+        "chk_bb660521a407b5d2c0f1",
+        "chk_34d0829c37d0d9a45ccf",
+        "chk_a1b702c40c101fea42a0",
+        "chk_e6c7e53ac9ea254c3a09"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 1
+        }
+      ],
+      "evidence_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 2062.39
+    },
+    {
+      "case_id": "rag_ans_048",
+      "query": "依据《三维模型数字文件移交标准第六分册》，数据的来源、保存、传递及应用应满足什么要求？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_ea8562f080fa018c2eeb",
+        "chk_679bdd57d7134e09dbe9",
+        "chk_e5cc0deb981b882a2e9e",
+        "chk_ca55ef92631deac9a706",
+        "chk_fbab058c7f4d3b8bd344"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 2
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 1738.55
+    },
+    {
+      "case_id": "rag_ans_049",
+      "query": "《三维模型数字文件移交标准第六分册》对“激光点云数据模型文件”和“生成DEM模型”分别作了什么规定？",
+      "gold_unit_count": 2,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_7d6134743d371e2365a7",
+        "chk_32bf967c64dbb2589b7d",
+        "chk_3a890feb20f6e2b8704c",
+        "chk_ab091a981ef9bf73634c",
+        "chk_193e95486e6e680f187a"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 1
+        },
+        {
+          "unit_id": "u2",
+          "first_hit_rank": 2
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.5,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 1736.05
+    },
+    {
+      "case_id": "rag_ans_050",
+      "query": "《三维模型数字文件移交标准第六分册》对“生成DEM模型”和“DOM分辨率优于0.1m”分别作了什么规定？",
+      "gold_unit_count": 2,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_3a890feb20f6e2b8704c",
+        "chk_2bbd83109afd9cc90da0",
+        "chk_4cebdfb45bfca6235e47",
+        "chk_f38ad71f679211611d94",
+        "chk_671e47508cddfdfa3f79"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 1
+        },
+        {
+          "unit_id": "u2",
+          "first_hit_rank": 1
+        }
+      ],
+      "evidence_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 1719.07
+    },
+    {
+      "case_id": "rag_ans_051",
+      "query": "依据《三维模型数字文件移交标准第四分册》，基本图元应采用什么方式或格式？",
+      "gold_unit_count": 1,
+      "retrieved_count": 3,
+      "retrieved_chunk_ids": [
+        "chk_2059eab6e3b06c463ab1",
+        "chk_bad0620692382cbdb444",
+        "chk_386407cf53894984d275"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 1
+        }
+      ],
+      "evidence_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 2208.5
+    },
+    {
+      "case_id": "rag_ans_052",
+      "query": "通用模型和产品模型应采用什么方式或格式？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_180683b8db0a55b1ace7",
+        "chk_f0a5cc1c9b1ece3d5a79",
+        "chk_666497168cbeffef6459",
+        "chk_606a412a901f483a9a3d",
+        "chk_2faf4ec386ea8e27f204"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 1381.08
+    },
+    {
+      "case_id": "rag_ans_053",
+      "query": "电缆线路中的避雷器模型应如何建模，参照哪一分册？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_ed147523d85c200d1007",
+        "chk_b345f3e53a13b41044ad",
+        "chk_954eb5d4fe41c04f1150",
+        "chk_fbab058c7f4d3b8bd344",
+        "chk_96e8f749db54ab8ce5b6"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 1
+        }
+      ],
+      "evidence_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 4928.19
+    },
+    {
+      "case_id": "rag_ans_054",
+      "query": "依据《三维模型数字文件移交标准第四分册》，影像和数字高程模型应采用什么方式或格式？",
+      "gold_unit_count": 1,
+      "retrieved_count": 3,
+      "retrieved_chunk_ids": [
+        "chk_590da5113035dbd1a4a1",
+        "chk_386407cf53894984d275",
+        "chk_011179ee556e959615f2"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 2
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 2042.6
+    },
+    {
+      "case_id": "rag_ans_055",
+      "query": "电缆线路工程材料、设备、设施及交叉跨越物应采用什么方式或格式？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_39171f2e29198f981408",
+        "chk_b3359568a38150f0bb93",
+        "chk_386407cf53894984d275",
+        "chk_8f52e330ff341e7cc121",
+        "chk_75771b53dcaf674649da"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 1
+        }
+      ],
+      "evidence_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 1574.89
+    },
+    {
+      "case_id": "rag_ans_056",
+      "query": "接地箱、护层保护箱和交叉互联箱的模型应如何建立？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_ed147523d85c200d1007",
+        "chk_ac122a227e625c34552e",
+        "chk_666497168cbeffef6459",
+        "chk_0f471388f992e3759020",
+        "chk_e31066bd18d4fe59abaa"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 1
+        }
+      ],
+      "evidence_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 2285.18
+    },
+    {
+      "case_id": "rag_ans_057",
+      "query": "依据《三维模型数字文件移交标准第四分册》，对于本标准未列出的工作井应采用什么方式或格式？",
+      "gold_unit_count": 1,
+      "retrieved_count": 0,
+      "retrieved_chunk_ids": [],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "insufficient_evidence",
+      "latency_ms": 2002.47
+    },
+    {
+      "case_id": "rag_ans_058",
+      "query": "电缆通道模型包括哪些内容？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_3338493cf781e3730b3f",
+        "chk_fbab058c7f4d3b8bd344",
+        "chk_0dada1ebeaed543b6628",
+        "chk_ed147523d85c200d1007",
+        "chk_2faf4ec386ea8e27f204"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 3561.85
+    },
+    {
+      "case_id": "rag_ans_059",
+      "query": "《三维模型数字文件移交标准第四分册》对“接线端子板的尺寸、角度及开孔尺寸”和“终端塔(杆、站)建模主要”分别作了什么规定？",
+      "gold_unit_count": 2,
+      "retrieved_count": 3,
+      "retrieved_chunk_ids": [
+        "chk_96e8f749db54ab8ce5b6",
+        "chk_590da5113035dbd1a4a1",
+        "chk_011179ee556e959615f2"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 1
+        },
+        {
+          "unit_id": "u2",
+          "first_hit_rank": 1
+        }
+      ],
+      "evidence_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 2185.96
+    },
+    {
+      "case_id": "rag_ans_060",
+      "query": "电缆线路设施模型标识符和地理坐标系精度分别有什么要求？",
+      "gold_unit_count": 2,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_985e3abf5dfe5010e9db",
+        "chk_180683b8db0a55b1ace7",
+        "chk_dba64193b7512d08c9c7",
+        "chk_ca55ef92631deac9a706",
+        "chk_39171f2e29198f981408"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 5
+        },
+        {
+          "unit_id": "u2",
+          "first_hit_rank": 5
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": true
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 606.8
+    },
+    {
+      "case_id": "rag_ans_061",
+      "query": "如何用Parameter元素描述Equipment或SubEquipment设备对象的属性？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_900c17e34a5d64a3c155",
+        "chk_b2504a867b06a0f681e2",
+        "chk_bb9a3778efad65b05c18",
+        "chk_3aae8892ccc75ccaa344",
+        "chk_f6ad3c921530ef78406c"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 1
+        }
+      ],
+      "evidence_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 1321.56
+    },
+    {
+      "case_id": "rag_ans_062",
+      "query": "电气图形元素应在何处定义，其属性和样例分别参照哪里？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_180683b8db0a55b1ace7",
+        "chk_72621593701d03545bb0",
+        "chk_606a412a901f483a9a3d",
+        "chk_913e5b5897ce3f191421",
+        "chk_77581bfbc987ac9de7ba"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 2
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 3089.5
+    },
+    {
+      "case_id": "rag_ans_063",
+      "query": "成套类或组合类电气设备内的导线应如何表示？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_3338493cf781e3730b3f",
+        "chk_c92b53bdd3a7e050c8bb",
+        "chk_c59d0a0766dbd3f076f1",
+        "chk_173aac7d5e75d977d6f2",
+        "chk_2faf4ec386ea8e27f204"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 4291.59
+    },
+    {
+      "case_id": "rag_ans_064",
+      "query": "装置物理描述应表达哪些信息，模型结构依据什么？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_985e3abf5dfe5010e9db",
+        "chk_e36b361db9645b27ff67",
+        "chk_15ce5ca708ba94b568bf",
+        "chk_a7e268ee579df635081e",
+        "chk_690f9488c55efce2f1fb"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 2
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 2196.22
+    },
+    {
+      "case_id": "rag_ans_065",
+      "query": "PartTemplate元素表示什么，它可以包含哪些子元素？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_e64294f14d9fb3fecebc",
+        "chk_6a62a470b67c3b539a9a",
+        "chk_6562cff3c22ec0afa5e7",
+        "chk_86d7eb961e1f4c88ae98",
+        "chk_1697c37426f2b8f92e46"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 3
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 4134.81
+    },
+    {
+      "case_id": "rag_ans_066",
+      "query": "Component元素表示什么，可以包含多少个ComponentPin元素？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_5bb5677c73a997388a08",
+        "chk_bbea3d47f9f81f83cfbe",
+        "chk_6a62a470b67c3b539a9a",
+        "chk_4904dc49a6efdf005f5b",
+        "chk_180683b8db0a55b1ace7"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 3
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 4202.55
+    },
+    {
+      "case_id": "rag_ans_067",
+      "query": "站级物理描述表达哪些连接关系，模型结构和示例参照哪里？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_3338493cf781e3730b3f",
+        "chk_e36b361db9645b27ff67",
+        "chk_15ce5ca708ba94b568bf",
+        "chk_606a412a901f483a9a3d",
+        "chk_2faf4ec386ea8e27f204"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 3055.12
+    },
+    {
+      "case_id": "rag_ans_068",
+      "query": "工程逻辑模型包括哪些内容？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_d5376704512441191e0d",
+        "chk_d9b38fc7876cd73688b2",
+        "chk_825515917d45dbf3fd8b",
+        "chk_37be1207f9a72eaf16c3",
+        "chk_19ba6434428c05e913a0"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 2
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 1069.39
+    },
+    {
+      "case_id": "rag_ans_069",
+      "query": "《DL/T 2765-2024》对“输变电工程逻辑模型中间隔、安装区域、设备的编…”和“输变电工程逻辑模型文件应具备开放性、兼容性”分别作了什么规定？",
+      "gold_unit_count": 2,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_d5376704512441191e0d",
+        "chk_6abce80c5ffc5057ca9b",
+        "chk_825515917d45dbf3fd8b",
+        "chk_d9b38fc7876cd73688b2",
+        "chk_dc2d89d8e64538e84ad3"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 1
+        },
+        {
+          "unit_id": "u2",
+          "first_hit_rank": 1
+        }
+      ],
+      "evidence_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 1002.87
+    },
+    {
+      "case_id": "rag_ans_070",
+      "query": "工程电气设备如何引用Symbol元素，间隔下的母线、导线和网络线如何表示？",
+      "gold_unit_count": 2,
+      "retrieved_count": 0,
+      "retrieved_chunk_ids": [],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        },
+        {
+          "unit_id": "u2",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "insufficient_evidence",
+      "latency_ms": 2760.12
+    },
+    {
+      "case_id": "rag_ans_071",
+      "query": "GDW 11809—2023规定三维设计成果采用什么地理坐标系统和高程基准？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_985e3abf5dfe5010e9db",
+        "chk_7627a44279fae8f53d4a",
+        "chk_b3359568a38150f0bb93",
+        "chk_ca55ef92631deac9a706",
+        "chk_690f9488c55efce2f1fb"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 1
+        }
+      ],
+      "evidence_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 2274.49
+    },
+    {
+      "case_id": "rag_ans_072",
+      "query": "输变电工程三维设计模型框架分为哪四个层次？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_37be1207f9a72eaf16c3",
+        "chk_ecc8400a523dc0e3d784",
+        "chk_efd6eb8dd7f3612d5ebc",
+        "chk_3deee1cccc28cb1742b0",
+        "chk_985e3abf5dfe5010e9db"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 1
+        }
+      ],
+      "evidence_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 964.02
+    },
+    {
+      "case_id": "rag_ans_073",
+      "query": "POINT0.MATRIX(n)矩阵应包括和排除哪些姿态参数？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_4b659ee4bc519fbe5944",
+        "chk_3d10a3381fe9ed5cc2a7",
+        "chk_be7b6fa1a4dbcfad66af",
+        "chk_96c9d8b1b699bdee5d56",
+        "chk_603009e92c42c59f3f92"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 2
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 2487.02
+    },
+    {
+      "case_id": "rag_ans_074",
+      "query": "变电工程设备及安装材料的几何模型应如何构建和交互？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_37be1207f9a72eaf16c3",
+        "chk_985e3abf5dfe5010e9db",
+        "chk_ecc8400a523dc0e3d784",
+        "chk_180683b8db0a55b1ace7",
+        "chk_95a8ae7ee250be1be11d"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 4
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": true
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 831.75
+    },
+    {
+      "case_id": "rag_ans_075",
+      "query": "涉及电压等级的信息应如何统一描述？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_4904dc49a6efdf005f5b",
+        "chk_d5376704512441191e0d",
+        "chk_b938eea913f91bbcbbae",
+        "chk_2d9d809702cb9a0ec50a",
+        "chk_00b364b7ef371bdddba5"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 1
+        }
+      ],
+      "evidence_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 2112.53
+    },
+    {
+      "case_id": "rag_ans_076",
+      "query": "变电工程模型按哪些层级分为5级？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_37be1207f9a72eaf16c3",
+        "chk_fbab058c7f4d3b8bd344",
+        "chk_efd6eb8dd7f3612d5ebc",
+        "chk_ecc8400a523dc0e3d784",
+        "chk_985e3abf5dfe5010e9db"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 594.44
+    },
+    {
+      "case_id": "rag_ans_077",
+      "query": "BLHA字段中纬度、经度、高程和北方向偏角分别保留几位小数？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_dba64193b7512d08c9c7",
+        "chk_5261daec3656677b29af",
+        "chk_9a9c90cc8158493cdb73",
+        "chk_67c4f6028248100f3c82",
+        "chk_34d59836711e6318e83d"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 2
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 660.64
+    },
+    {
+      "case_id": "rag_ans_078",
+      "query": "依据《GDW 11809—2023》，专业的分级应满足什么要求？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_985e3abf5dfe5010e9db",
+        "chk_8f969eb3076acf37ff2a",
+        "chk_ac3d0a124165db6146e3",
+        "chk_7d69379b5643f041b4bd",
+        "chk_b3359568a38150f0bb93"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 2709.63
+    },
+    {
+      "case_id": "rag_ans_079",
+      "query": "《GDW 11809—2023》对“输变电工程设备、材料、建（构）筑物及其它设施模型”和“地理信息模型数据格式”分别作了什么规定？",
+      "gold_unit_count": 2,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_985e3abf5dfe5010e9db",
+        "chk_37be1207f9a72eaf16c3",
+        "chk_3deee1cccc28cb1742b0",
+        "chk_75771b53dcaf674649da",
+        "chk_690f9488c55efce2f1fb"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 1
+        },
+        {
+          "unit_id": "u2",
+          "first_hit_rank": 1
+        }
+      ],
+      "evidence_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 724.69
+    },
+    {
+      "case_id": "rag_ans_080",
+      "query": "GDW 11809—2023中的组件类包括哪些类别，工程模型由哪些信息构成？",
+      "gold_unit_count": 2,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_37be1207f9a72eaf16c3",
+        "chk_690f9488c55efce2f1fb",
+        "chk_985e3abf5dfe5010e9db",
+        "chk_1959d2769145261e0c48",
+        "chk_ac3d0a124165db6146e3"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 1
+        },
+        {
+          "unit_id": "u2",
+          "first_hit_rank": 1
+        }
+      ],
+      "evidence_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 4291.61
+    },
+    {
+      "case_id": "rag_ans_081",
+      "query": "依据《GDW 11810.2—2023》，杆塔建模包括哪些内容？",
+      "gold_unit_count": 1,
+      "retrieved_count": 0,
+      "retrieved_chunk_ids": [],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "ambiguous",
+      "latency_ms": 2572.52
+    },
+    {
+      "case_id": "rag_ans_082",
+      "query": "物理模型细度包括哪些内容？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_985e3abf5dfe5010e9db",
+        "chk_3f5d488b615379741e4b",
+        "chk_690f9488c55efce2f1fb",
+        "chk_37be1207f9a72eaf16c3",
+        "chk_1959d2769145261e0c48"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 737.23
+    },
+    {
+      "case_id": "rag_ans_083",
+      "query": "其他设施通用模型及产品模型应包括哪两类细度？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_0dada1ebeaed543b6628",
+        "chk_985e3abf5dfe5010e9db",
+        "chk_606a412a901f483a9a3d",
+        "chk_fbab058c7f4d3b8bd344",
+        "chk_690f9488c55efce2f1fb"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 2986.67
+    },
+    {
+      "case_id": "rag_ans_084",
+      "query": "依据《GDW 11810.2—2023》，架空输电线路工程三维设计模型应满足什么要求？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_37be1207f9a72eaf16c3",
+        "chk_985e3abf5dfe5010e9db",
+        "chk_690f9488c55efce2f1fb",
+        "chk_173aac7d5e75d977d6f2",
+        "chk_7d69379b5643f041b4bd"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 4
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": true
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 2343.52
+    },
+    {
+      "case_id": "rag_ans_085",
+      "query": "杆塔产品模型推荐采用何种建模方式，应包含哪些信息？",
+      "gold_unit_count": 1,
+      "retrieved_count": 0,
+      "retrieved_chunk_ids": [],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "insufficient_evidence",
+      "latency_ms": 2355.76
+    },
+    {
+      "case_id": "rag_ans_086",
+      "query": "监测装置建模包括哪些内容？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_0dada1ebeaed543b6628",
+        "chk_985e3abf5dfe5010e9db",
+        "chk_fbab058c7f4d3b8bd344",
+        "chk_954eb5d4fe41c04f1150",
+        "chk_dd2a2acc7a6ad2f517c2"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 1
+        }
+      ],
+      "evidence_recall": {
+        "1": 1.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": true,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 2019.84
+    },
+    {
+      "case_id": "rag_ans_087",
+      "query": "地理信息模型反映哪些要素信息，其空间范围包括和不包括什么？",
+      "gold_unit_count": 1,
+      "retrieved_count": 0,
+      "retrieved_chunk_ids": [],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "insufficient_evidence",
+      "latency_ms": 1954.37
+    },
+    {
+      "case_id": "rag_ans_088",
+      "query": "杆塔与基础连接构件模型包括哪些构件，参数不足时使用什么格式？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_5261daec3656677b29af",
+        "chk_0f471388f992e3759020",
+        "chk_e36b361db9645b27ff67",
+        "chk_a7e268ee579df635081e",
+        "chk_603009e92c42c59f3f92"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 2040.24
+    },
+    {
+      "case_id": "rag_ans_089",
+      "query": "基础通用模型和产品模型分别应包含什么，采用什么建模方式？",
+      "gold_unit_count": 2,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_180683b8db0a55b1ace7",
+        "chk_666497168cbeffef6459",
+        "chk_f0a5cc1c9b1ece3d5a79",
+        "chk_96e8f749db54ab8ce5b6",
+        "chk_2faf4ec386ea8e27f204"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        },
+        {
+          "unit_id": "u2",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 1847.01
+    },
+    {
+      "case_id": "rag_ans_090",
+      "query": "参数化模型和基本图元采用什么文件格式，架空线路三维设计模型包含哪两类模型？",
+      "gold_unit_count": 2,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_4904dc49a6efdf005f5b",
+        "chk_15ce5ca708ba94b568bf",
+        "chk_2059eab6e3b06c463ab1",
+        "chk_97a7638784623dc14596",
+        "chk_00b364b7ef371bdddba5"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 2
+        },
+        {
+          "unit_id": "u2",
+          "first_hit_rank": 2
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 1.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "complete_hit": {
+        "1": false,
+        "3": true,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 488.1
+    },
+    {
+      "case_id": "rag_ans_091",
+      "query": "输变电工程三维设计模型应采用什么方式或格式？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_37be1207f9a72eaf16c3",
+        "chk_ecc8400a523dc0e3d784",
+        "chk_fbab058c7f4d3b8bd344",
+        "chk_ffb2e575a0e3073ae351",
+        "chk_985e3abf5dfe5010e9db"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 613.72
+    },
+    {
+      "case_id": "rag_ans_092",
+      "query": "依据《QGDW 11809—2018》，工程模型层级管理如何分类？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_b75dddaaa23a037f495a",
+        "chk_3338493cf781e3730b3f",
+        "chk_690f9488c55efce2f1fb",
+        "chk_bb7bbe5b53fff2b21952",
+        "chk_37c8823909c9c2a7aed0"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 4
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": true
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 467.85
+    },
+    {
+      "case_id": "rag_ans_093",
+      "query": "依据《QGDW 11809—2018》，标准格式文件存储的数据包括哪些内容？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_3338493cf781e3730b3f",
+        "chk_57fa9a11101728342710",
+        "chk_3f5d488b615379741e4b",
+        "chk_37be1207f9a72eaf16c3",
+        "chk_3d10a3381fe9ed5cc2a7"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 3368.09
+    },
+    {
+      "case_id": "rag_ans_094",
+      "query": "属性信息包括哪些内容？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_985e3abf5dfe5010e9db",
+        "chk_900c17e34a5d64a3c155",
+        "chk_080b80bf6b412fa7742c",
+        "chk_96cae39dde57d602c829",
+        "chk_690f9488c55efce2f1fb"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 2746.18
+    },
+    {
+      "case_id": "rag_ans_095",
+      "query": "2018版规范中的专用几何体指哪些常用部件？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_dc2d89d8e64538e84ad3",
+        "chk_1697c37426f2b8f92e46",
+        "chk_c59d0a0766dbd3f076f1",
+        "chk_bd2dfa438dfa6af74b0c",
+        "chk_77581bfbc987ac9de7ba"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 4
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": true
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 3761.62
+    },
+    {
+      "case_id": "rag_ans_096",
+      "query": "2018版规范的属性集包括哪些参数类别？",
+      "gold_unit_count": 1,
+      "retrieved_count": 0,
+      "retrieved_chunk_ids": [],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "insufficient_evidence",
+      "latency_ms": 4105.82
+    },
+    {
+      "case_id": "rag_ans_097",
+      "query": "project.cbm中的BLHA行存储哪些工程位置信息？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_dba64193b7512d08c9c7",
+        "chk_c36580612cf6eab4a586",
+        "chk_57fa9a11101728342710",
+        "chk_67c4f6028248100f3c82",
+        "chk_cdde1239967295a5131c"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 665.41
+    },
+    {
+      "case_id": "rag_ans_098",
+      "query": "2018版规范如何描述基本图元的对象和参数格式？",
+      "gold_unit_count": 1,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_4904dc49a6efdf005f5b",
+        "chk_985e3abf5dfe5010e9db",
+        "chk_97a7638784623dc14596",
+        "chk_294154a3af41d6df8b08",
+        "chk_25d9a44f186d4f646b5c"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": 5
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 1.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": true
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": true
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 665.45
+    },
+    {
+      "case_id": "rag_ans_099",
+      "query": "《QGDW 11809—2018》对“输电线路工程材料、设备、设施及交叉跨越物”和“输变电工程建（构）筑物、设备、材料及其他设施模型”分别作了什么规定？",
+      "gold_unit_count": 2,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_37be1207f9a72eaf16c3",
+        "chk_ecc8400a523dc0e3d784",
+        "chk_75771b53dcaf674649da",
+        "chk_08d6fe5eee8585795029",
+        "chk_985e3abf5dfe5010e9db"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        },
+        {
+          "unit_id": "u2",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 723.49
+    },
+    {
+      "case_id": "rag_ans_100",
+      "query": "2018版电缆线路三维设计模型包含哪些文件类型，各层级系统如何组成？",
+      "gold_unit_count": 2,
+      "retrieved_count": 5,
+      "retrieved_chunk_ids": [
+        "chk_37be1207f9a72eaf16c3",
+        "chk_ecc8400a523dc0e3d784",
+        "chk_a7e268ee579df635081e",
+        "chk_386407cf53894984d275",
+        "chk_985e3abf5dfe5010e9db"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        },
+        {
+          "unit_id": "u2",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 5609.49
+    }
+  ],
+  "hard_negative_results": [
+    {
+      "case_id": "rag_neg_001",
+      "query": "知识库规定输电模型数据采用量子密钥时，每隔多少分钟轮换一次？",
+      "no_answer_correct": true,
+      "answerability_status": "insufficient_evidence",
+      "decision_reason": "LOW_QUERY_COVERAGE",
+      "final_evidence_count": 0,
+      "retrieved_count": 0,
+      "latency_ms": 2661.85
+    },
+    {
+      "case_id": "rag_neg_002",
+      "query": "这些标准是否规定了RAG所用Transformer模型的参数量？",
+      "no_answer_correct": false,
+      "answerability_status": "answerable",
+      "decision_reason": "SUPPORTED_TERM_MATCH",
+      "final_evidence_count": 5,
+      "retrieved_count": 5,
+      "latency_ms": 2499.22
+    },
+    {
+      "case_id": "rag_neg_003",
+      "query": "架空线路巡检无人机必须采购哪个品牌的电池？",
+      "no_answer_correct": true,
+      "answerability_status": "insufficient_evidence",
+      "decision_reason": "LOW_QUERY_COVERAGE",
+      "final_evidence_count": 0,
+      "retrieved_count": 0,
+      "latency_ms": 6439.26
+    },
+    {
+      "case_id": "rag_neg_004",
+      "query": "标准给出的5G基站场地月租价格是多少？",
+      "no_answer_correct": true,
+      "answerability_status": "insufficient_evidence",
+      "decision_reason": "LOW_QUERY_COVERAGE",
+      "final_evidence_count": 0,
+      "retrieved_count": 0,
+      "latency_ms": 3749.2
+    },
+    {
+      "case_id": "rag_neg_005",
+      "query": "参与三维建模的员工年度绩效奖金标准是多少？",
+      "no_answer_correct": true,
+      "answerability_status": "insufficient_evidence",
+      "decision_reason": "LOW_QUERY_COVERAGE",
+      "final_evidence_count": 0,
+      "retrieved_count": 0,
+      "latency_ms": 1810.4
+    },
+    {
+      "case_id": "rag_neg_006",
+      "query": "项目现场食堂周三午餐菜单有哪些菜？",
+      "no_answer_correct": true,
+      "answerability_status": "insufficient_evidence",
+      "decision_reason": "LOW_QUERY_COVERAGE",
+      "final_evidence_count": 0,
+      "retrieved_count": 0,
+      "latency_ms": 1328.53
+    },
+    {
+      "case_id": "rag_neg_007",
+      "query": "文档中记录的项目办公室门禁密码是什么？",
+      "no_answer_correct": true,
+      "answerability_status": "insufficient_evidence",
+      "decision_reason": "LOW_QUERY_COVERAGE",
+      "final_evidence_count": 0,
+      "retrieved_count": 0,
+      "latency_ms": 2588.14
+    },
+    {
+      "case_id": "rag_neg_008",
+      "query": "火星输电线路三维模型应采用哪一种坐标系？",
+      "no_answer_correct": true,
+      "answerability_status": "ambiguous",
+      "decision_reason": "CONFLICTING_RETRIEVAL",
+      "final_evidence_count": 0,
+      "retrieved_count": 0,
+      "latency_ms": 668.91
+    },
+    {
+      "case_id": "rag_neg_009",
+      "query": "规范预测的2035年全国碳价是多少元每吨？",
+      "no_answer_correct": true,
+      "answerability_status": "insufficient_evidence",
+      "decision_reason": "LOW_QUERY_COVERAGE",
+      "final_evidence_count": 0,
+      "retrieved_count": 0,
+      "latency_ms": 1891.6
+    },
+    {
+      "case_id": "rag_neg_010",
+      "query": "标准起草单位对应的上市公司股票代码是多少？",
+      "no_answer_correct": true,
+      "answerability_status": "insufficient_evidence",
+      "decision_reason": "LOW_QUERY_COVERAGE",
+      "final_evidence_count": 0,
+      "retrieved_count": 0,
+      "latency_ms": 2138.24
+    },
+    {
+      "case_id": "rag_neg_011",
+      "query": "请给出该工程项目经理的手机号码。",
+      "no_answer_correct": true,
+      "answerability_status": "insufficient_evidence",
+      "decision_reason": "LOW_QUERY_COVERAGE",
+      "final_evidence_count": 0,
+      "retrieved_count": 0,
+      "latency_ms": 664.11
+    },
+    {
+      "case_id": "rag_neg_012",
+      "query": "知识库中配置的模型服务API密钥是什么？",
+      "no_answer_correct": true,
+      "answerability_status": "insufficient_evidence",
+      "decision_reason": "LOW_QUERY_COVERAGE",
+      "final_evidence_count": 0,
+      "retrieved_count": 0,
+      "latency_ms": 1798.53
+    },
+    {
+      "case_id": "rag_neg_013",
+      "query": "RAG数据库管理员密码在规范哪一章？",
+      "no_answer_correct": true,
+      "answerability_status": "insufficient_evidence",
+      "decision_reason": "LOW_QUERY_COVERAGE",
+      "final_evidence_count": 0,
+      "retrieved_count": 0,
+      "latency_ms": 3647.4
+    },
+    {
+      "case_id": "rag_neg_014",
+      "query": "哈尔滨现在的实时气温和降水概率是多少？",
+      "no_answer_correct": true,
+      "answerability_status": "insufficient_evidence",
+      "decision_reason": "LOW_QUERY_COVERAGE",
+      "final_evidence_count": 0,
+      "retrieved_count": 0,
+      "latency_ms": 1662.1
+    },
+    {
+      "case_id": "rag_neg_015",
+      "query": "文档记录的昨日全网最大负荷实际值是多少？",
+      "no_answer_correct": true,
+      "answerability_status": "insufficient_evidence",
+      "decision_reason": "LOW_QUERY_COVERAGE",
+      "final_evidence_count": 0,
+      "retrieved_count": 0,
+      "latency_ms": 3267.26
+    },
+    {
+      "case_id": "rag_neg_016",
+      "query": "龙王站主变当前实时温度是多少摄氏度？",
+      "no_answer_correct": true,
+      "answerability_status": "insufficient_evidence",
+      "decision_reason": "LOW_QUERY_COVERAGE",
+      "final_evidence_count": 0,
+      "retrieved_count": 0,
+      "latency_ms": 1745.33
+    },
+    {
+      "case_id": "rag_neg_017",
+      "query": "规范给出的龙王站未来24小时故障概率是多少？",
+      "no_answer_correct": true,
+      "answerability_status": "insufficient_evidence",
+      "decision_reason": "LOW_QUERY_COVERAGE",
+      "final_evidence_count": 0,
+      "retrieved_count": 0,
+      "latency_ms": 3058.39
+    },
+    {
+      "case_id": "rag_neg_018",
+      "query": "三维模型软件采购合同的最终成交金额是多少？",
+      "no_answer_correct": true,
+      "answerability_status": "insufficient_evidence",
+      "decision_reason": "LOW_QUERY_COVERAGE",
+      "final_evidence_count": 0,
+      "retrieved_count": 0,
+      "latency_ms": 1646.17
+    },
+    {
+      "case_id": "rag_neg_019",
+      "query": "标准中规定的Agent开发实习生月薪是多少？",
+      "no_answer_correct": true,
+      "answerability_status": "insufficient_evidence",
+      "decision_reason": "LOW_QUERY_COVERAGE",
+      "final_evidence_count": 0,
+      "retrieved_count": 0,
+      "latency_ms": 3299.21
+    },
+    {
+      "case_id": "rag_neg_020",
+      "query": "该知识库给出的下一颗遥感卫星发射窗口是什么时间？",
+      "no_answer_correct": true,
+      "answerability_status": "insufficient_evidence",
+      "decision_reason": "LOW_QUERY_COVERAGE",
+      "final_evidence_count": 0,
+      "retrieved_count": 0,
+      "latency_ms": 1541.26
+    }
+  ]
+}

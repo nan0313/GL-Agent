@@ -1,0 +1,11 @@
+llm:
+  planner_provider: qwen
+
+qwen:
+  enabled: true
+  base_url: "https://dashscope.aliyuncs.com/compatible-mode/v1"
+  model: "qwen-plus"
+  api_key: "sk-your-qwen-api-key"
+  timeout_seconds: 30
+  enable_thinking: false
+  temperature: 0

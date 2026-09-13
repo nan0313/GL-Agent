@@ -1,0 +1,49 @@
+anchors:
+  - anchor_id: placeholder_search_object
+    anchor_name: Placeholder Search Object
+    description: Development placeholder for object search or map positioning.
+    scenario: placeholder_debug
+    object_types:
+      - generic_object
+    required_params:
+      - keyword
+    optional_params:
+      - object_type
+    permission_roles:
+      - developer
+      - operator
+    call_type: mock
+    adapter_type: mock
+    endpoint: null
+    method: null
+    ui_event_type: fly_to
+    output_type:
+      - list
+      - ui_event
+    status: mock
+    fallback: []
+
+  - anchor_id: placeholder_open_panel
+    anchor_name: Placeholder Open Panel
+    description: Development placeholder for opening a frontend business panel.
+    scenario: placeholder_debug
+    object_types:
+      - generic_object
+    required_params:
+      - panel_id
+    optional_params:
+      - object_id
+    permission_roles:
+      - developer
+      - operator
+    call_type: frontend_event
+    adapter_type: frontend_event
+    endpoint: null
+    method: null
+    ui_event_type: open_panel
+    output_type:
+      - panel
+      - ui_event
+    status: mock
+    fallback:
+      - placeholder_search_object

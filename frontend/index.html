@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <title>EV Agent</title>
+  <link rel="stylesheet" href="/frontend/customer_agent.css">
+</head>
+<body>
+  <noscript>请启用 JavaScript 以使用 EV Agent。</noscript>
+  <script src="/frontend/customer_agent_app.js"></script>
+  <script>
+    (function () {
+      fetch('/api/agent/health', { cache: 'no-store' })
+        .then(function (response) { return response.ok ? response.json() : {}; })
+        .then(function (health) {
+          window.EVCustomerAgentApp.start({ agentBaseUrl: '' }, { raw: health, online: true });
+        })
+        .catch(function () {
+          window.EVCustomerAgentApp.start({ agentBaseUrl: '' }, { online: false });
+        });
+    })();
+  </script>
+</body>
+</html>

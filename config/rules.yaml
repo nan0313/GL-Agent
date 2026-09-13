@@ -1,0 +1,30 @@
+safety:
+  high_risk_keywords:
+    - 分闸
+    - 合闸
+    - 停电
+    - 送电
+    - 倒闸
+    - 拉开开关
+    - 闭合开关
+    - 修改保护定值
+    - 下发调度指令
+    - 远程控制
+    - 负荷转供执行
+  high_risk_patterns:
+    - name: 拉开.*开关
+      all_keywords:
+        - 拉开
+        - 开关
+    - name: 闭合.*开关
+      all_keywords:
+        - 闭合
+        - 开关
+  default_block_message: 该请求涉及生产控制操作，Agent 不执行此类操作，请按电网生产规程由具备权限的人员处理。
+
+roles:
+  default_roles:
+    - 普通用户
+    - 运维人员
+    - 调度人员
+    - 管理人员

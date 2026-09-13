@@ -1,0 +1,43 @@
+# RAG-only example configuration. Runtime values may also be supplied through
+# RAG_* environment variables. This file contains no secrets or machine paths.
+enabled: true
+knowledge_roots:
+  - docs/knowledge
+database_path: data/rag/rag.sqlite3
+index_path: data/rag_index
+allowed_file_types: [.md, .markdown, .txt, .pdf, .docx, .html, .htm, .csv]
+max_file_size: 10485760
+chunk_target_chars: 1000
+chunk_max_chars: 1600
+chunk_overlap_chars: 140
+chunk_min_chars: 120
+lexical_enabled: true
+# Keep dense disabled until tools/setup_rag_models.py reports ready. Then set
+# RAG_DENSE_ENABLED=true and RAG_EMBEDDING_PROVIDER=sentence_transformers.
+dense_enabled: false
+embedding_provider: sentence_transformers
+embedding_model: BAAI/bge-small-zh-v1.5
+embedding_device: cpu
+embedding_batch_size: 16
+vector_backend: python_cosine_fallback
+# Select hnsw only after the optional hnswlib dependency is installed and
+# migration validation has completed. Python cosine remains the small-scale fallback.
+hnsw_space: cosine
+hnsw_m: 16
+hnsw_ef_construction: 200
+hnsw_ef_search: 64
+hnsw_max_elements: 0
+hnsw_resize_factor: 2.0
+hybrid_enabled: true
+rrf_k: 60
+dense_min_similarity: 0.05
+candidate_limit: 24
+rerank_enabled: true
+rerank_provider: lightweight
+rerank_model: ""
+rerank_candidate_limit: 20
+top_k: 3
+per_document_limit: 2
+minimum_relevance: 2.0
+max_evidence_chars: 360
+max_total_evidence_chars: 3000

@@ -1,0 +1,87 @@
+{
+  "schema_version": 1,
+  "source_count": 10,
+  "source_purpose": "authorized_active_business_knowledge",
+  "sources": [
+    {
+      "filename": "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交.docx",
+      "path": "docs/knowledge/active/35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交.docx",
+      "sha256": "BDD8D1AF16CAD7332B924D84D4A581338D2156FDCDF92CFD8EB68BF19F3DA78A",
+      "size": 4741480,
+      "source_purpose": "authorized_active_business_knowledge",
+      "type": "docx"
+    },
+    {
+      "filename": "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路.docx",
+      "path": "docs/knowledge/active/35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路.docx",
+      "sha256": "99C581EE332F622E6B321ACFAE1D759FDD8A03996F35BEAB4FD2E11C26941AC1",
+      "size": 1590344,
+      "source_purpose": "authorized_active_business_knowledge",
+      "type": "docx"
+    },
+    {
+      "filename": "35kV及以上输变电工程三维模型数字文件移交标准第二分册：变电站（换流站）.docx",
+      "path": "docs/knowledge/active/35kV及以上输变电工程三维模型数字文件移交标准第二分册：变电站（换流站）.docx",
+      "sha256": "2E55965BF43E94852254CBC7B0C6243DC4AD76E1F6E9587FC974F8E1E63DA17D",
+      "size": 3372608,
+      "source_purpose": "authorized_active_business_knowledge",
+      "type": "docx"
+    },
+    {
+      "filename": "35kV及以上输变电工程三维模型数字文件移交标准第五分册：模型及文件管理.docx",
+      "path": "docs/knowledge/active/35kV及以上输变电工程三维模型数字文件移交标准第五分册：模型及文件管理.docx",
+      "sha256": "E41E7EBD12D0572B7293029CE1A1F41CC7570F99DEEE4316A2334AB4004019A8",
+      "size": 1327534,
+      "source_purpose": "authorized_active_business_knowledge",
+      "type": "docx"
+    },
+    {
+      "filename": "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用.docx",
+      "path": "docs/knowledge/active/35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用.docx",
+      "sha256": "009865B8DC3722E444DE43397D7A8BC93674F97898BA4E35ADF5580D94CD9965",
+      "size": 313490,
+      "source_purpose": "authorized_active_business_knowledge",
+      "type": "docx"
+    },
+    {
+      "filename": "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路.docx",
+      "path": "docs/knowledge/active/35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路.docx",
+      "sha256": "45AD9A6BB0D9EC3030DD06B06F495AF491013D357FB99D5392E99F00D8A55A01",
+      "size": 1475060,
+      "source_purpose": "authorized_active_business_knowledge",
+      "type": "docx"
+    },
+    {
+      "filename": "DL／T 2765-2024 《输变电工程逻辑模型规范》.pdf",
+      "path": "docs/knowledge/active/DL／T 2765-2024 《输变电工程逻辑模型规范》.pdf",
+      "sha256": "588C3138EDCA687436F906824426174E49DF2DAA314E77439BEA4B16D635EC64",
+      "size": 2107773,
+      "source_purpose": "authorized_active_business_knowledge",
+      "type": "pdf"
+    },
+    {
+      "filename": "GDW 11809—2023输变电工程三维设计模型数据交互规范.pdf",
+      "path": "docs/knowledge/active/GDW 11809—2023输变电工程三维设计模型数据交互规范.pdf",
+      "sha256": "5D28524A950798570F3F7C333C11F5269153B5D86D19C72C6A907A73C54C09FA",
+      "size": 2962688,
+      "source_purpose": "authorized_active_business_knowledge",
+      "type": "pdf"
+    },
+    {
+      "filename": "GDW 11810.2—2023输变电工程三维设计建模规范第2部分：架空输电线路.pdf",
+      "path": "docs/knowledge/active/GDW 11810.2—2023输变电工程三维设计建模规范第2部分：架空输电线路.pdf",
+      "sha256": "F8E553B57284505B2F54A68C1E7CFE77548DC599436E37DF5D3297817CF297C3",
+      "size": 1906814,
+      "source_purpose": "authorized_active_business_knowledge",
+      "type": "pdf"
+    },
+    {
+      "filename": "QGDW 11809—2018 输变电工程三维设计模型交互规范.pdf",
+      "path": "docs/knowledge/active/QGDW 11809—2018 输变电工程三维设计模型交互规范.pdf",
+      "sha256": "85D66A2A712CEFEB28664B5C933D8F9CEC61A0DFFC7A3BFA078512A701940FAA",
+      "size": 9916829,
+      "source_purpose": "authorized_active_business_knowledge",
+      "type": "pdf"
+    }
+  ]
+}

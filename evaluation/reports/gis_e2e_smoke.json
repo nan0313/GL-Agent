@@ -1,0 +1,195 @@
+{
+  "status": "completed",
+  "generated_at": "2026-09-06T08:18:14.433Z",
+  "dataset": "G:\\JN_work\\gy\\ev_agent\\evaluation\\datasets\\gis_e2e_v1.jsonl",
+  "dataset_version": "gis_e2e_v1",
+  "split": "all",
+  "case_count": 1,
+  "review_gate": {
+    "required_human_locked": false,
+    "unlocked_case_count": 1,
+    "safe_for_resume_claim": false
+  },
+  "environment": {
+    "url": "http://127.0.0.1:8090/ApplicationVue/dist/index_agent.html#/index",
+    "agent_base_url": "http://127.0.0.1:8009",
+    "chrome": "C:\\Program Files\\Google\\Chrome\\Application\\chrome.exe",
+    "headed": true,
+    "runtime_selection_name": "黑龙江省",
+    "transport": "direct"
+  },
+  "metrics": {
+    "executable_count": 1,
+    "executable_success_count": 1,
+    "e2e_task_success_rate": 1,
+    "e2e_task_success_rate_percent": 100,
+    "abnormal_count": 0,
+    "abnormal_correct_count": 0,
+    "expected_handling_accuracy": null,
+    "expected_handling_accuracy_percent": null
+  },
+  "metric_definition": {
+    "e2e_task_success_rate": "Strict all-or-nothing pass: runtime preconditions, stateful setup, expected UI-event sequence, successful WebGL bridge receipts, mapped postconditions, and final handling must all pass.",
+    "verification_level": "Real Chrome browser fetch + production UI-event queue + WebGL bridge receipt/runtime state; debug-panel rendering is bypassed.",
+    "visual_audit": "Visual/geometric tolerances should be manually audited before locking the dataset."
+  },
+  "elapsed_seconds": 21.3,
+  "results": [
+    {
+      "case_id": "gis_pos_037",
+      "split": "test",
+      "case_type": "executable",
+      "category": "camera_read",
+      "success": true,
+      "precheck": {
+        "pass": true,
+        "checks": {
+          "debug_panel": true,
+          "bridge": true,
+          "source_anchors": true,
+          "expected_handlers": true,
+          "viewer_available": true
+        },
+        "missing_handlers": [],
+        "runtime_match_count": 0,
+        "selected_object": null
+      },
+      "setup": {
+        "required": false,
+        "pass": true,
+        "turns": []
+      },
+      "turns": [
+        {
+          "runtime_state": "completed",
+          "response_finished": true,
+          "active_task": {
+            "request_id": "gis-eval-request-1788682684899-368c8300b86d",
+            "trace_id": "trace_fb257d36ebeb4acba28e342e3400339e",
+            "status": "success"
+          },
+          "current_object": null,
+          "current_admin_region": null,
+          "buffer_count": 0,
+          "buffer_query_count": 0,
+          "answer": "已生成读取 WebGL 相机状态的事件。",
+          "route_type": "anchor_task",
+          "ui_events": [
+            {
+              "type": "get_camera_state",
+              "status": "success",
+              "error_code": null,
+              "error": null,
+              "payload": {
+                "panel_type": "camera_state",
+                "source_entry": "window.viewer.camera"
+              },
+              "result": {
+                "task_id": "gis-eval-task-1788682693310",
+                "trace_id": null,
+                "request_id": "gis-eval-request-1788682684899-368c8300b86d",
+                "event_id": "gis-eval-request-1788682684899-368c8300b86d:-:gis-eval-task-1788682693310:get_camera_state:1",
+                "type": "get_camera_state",
+                "event_type": "get_camera_state",
+                "status": "success",
+                "success": true,
+                "payload": {
+                  "panel_type": "camera_state",
+                  "source_entry": "window.viewer.camera"
+                },
+                "result": {
+                  "source": "real_public_runtime",
+                  "anchor": "window.viewer.camera",
+                  "longitude": 110.684138,
+                  "latitude": 33.26860699999999,
+                  "height": 5000000.000000002,
+                  "heading": 359.99999999999943,
+                  "pitch": -85.94366926962358,
+                  "roll": 360,
+                  "center": [
+                    110.68413789250151,
+                    36.41089477825366
+                  ]
+                },
+                "error_code": null,
+                "error": null,
+                "started_at": 1788682693411,
+                "completed_at": 1788682693411,
+                "duration_ms": 0
+              }
+            }
+          ]
+        }
+      ],
+      "assessment": {
+        "success": true,
+        "preconditions_pass": true,
+        "setup_pass": true,
+        "event_sequence_pass": true,
+        "receipt_pass": true,
+        "postconditions_pass": true,
+        "handling_pass": true,
+        "expected_event_types": [
+          "get_camera_state"
+        ],
+        "actual_event_types": [
+          "get_camera_state"
+        ],
+        "postcondition_results": [
+          {
+            "name": "camera_state_matches_viewer",
+            "pass": true,
+            "strategy": "successful WebGL bridge receipt for get_camera_state"
+          }
+        ],
+        "events": [
+          {
+            "type": "get_camera_state",
+            "status": "success",
+            "error_code": null,
+            "error": null,
+            "payload": {
+              "panel_type": "camera_state",
+              "source_entry": "window.viewer.camera"
+            },
+            "result": {
+              "task_id": "gis-eval-task-1788682693310",
+              "trace_id": null,
+              "request_id": "gis-eval-request-1788682684899-368c8300b86d",
+              "event_id": "gis-eval-request-1788682684899-368c8300b86d:-:gis-eval-task-1788682693310:get_camera_state:1",
+              "type": "get_camera_state",
+              "event_type": "get_camera_state",
+              "status": "success",
+              "success": true,
+              "payload": {
+                "panel_type": "camera_state",
+                "source_entry": "window.viewer.camera"
+              },
+              "result": {
+                "source": "real_public_runtime",
+                "anchor": "window.viewer.camera",
+                "longitude": 110.684138,
+                "latitude": 33.26860699999999,
+                "height": 5000000.000000002,
+                "heading": 359.99999999999943,
+                "pitch": -85.94366926962358,
+                "roll": 360,
+                "center": [
+                  110.68413789250151,
+                  36.41089477825366
+                ]
+              },
+              "error_code": null,
+              "error": null,
+              "started_at": 1788682693411,
+              "completed_at": 1788682693411,
+              "duration_ms": 0
+            }
+          }
+        ]
+      },
+      "latency_ms": 8638,
+      "error": null
+    }
+  ]
+}

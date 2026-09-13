@@ -1,0 +1,45 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="ev-agent-base-url" content="http://127.0.0.1:8009" />
+  <meta name="ev-agent-environment" content="development" />
+  <title>EV WebGL Agent Real Integration Example</title>
+</head>
+<body>
+  <h1>EV WebGL Agent Real Integration Example</h1>
+  <p>鐪熷疄 WebGL 椤甸潰鍙渶瑕佸湪 viewer 鍒濆鍖栧畬鎴愬墠鍚庡紩鍏ヤ笁娈佃剼鏈紱bootstrap 浼氱瓑寰?window.viewer銆?/p>
+
+  <script>
+    var environment = document.querySelector('meta[name="ev-agent-environment"]').content || "development";
+    window.EV_AGENT_CONFIG = {
+      agentBaseUrl: window.EV_AGENT_BASE_URL || document.querySelector('meta[name="ev-agent-base-url"]').content || (environment === "production" ? window.location.origin : "http://127.0.0.1:8009"),
+      environment: environment,
+      debug: true,
+      showPanel: true
+    };
+    window.__EV_AGENT_SCRIPT_BASE_URL__ = window.EV_AGENT_CONFIG.agentBaseUrl.replace(/\/+$/, "");
+  </script>
+  <script>
+    ["webgl_agent_bridge.js", "webgl_ev_cesium_adapter.js", "webgl_agent_bootstrap.js"].forEach(function (name) {
+      var script = document.createElement("script");
+      script.src = window.__EV_AGENT_SCRIPT_BASE_URL__ + "/" + name;
+      document.head.appendChild(script);
+    });
+  </script>
+
+  <script>
+    window.addEventListener("agent:open-panel", function (event) {
+      console.log("[Agent open_panel event]", event.detail);
+    });
+
+    // 娴忚鍣ㄦ帶鍒跺彴鍙墽琛岋細
+    // EVWebGLAgentAdapter.sendQuery("浣犺兘鍋氫粈涔堬紵")
+    // EVWebGLAgentAdapter.sendQuery("淇濇姢瀹氬€兼槸浠€涔堬紵")
+    // EVWebGLAgentAdapter.sendQuery("鏌ョ湅杩欎釜瀵硅薄鐨勫疄鏃舵暟鎹?)
+    // EVWebGLAgentAdapter.sendQuery("甯垜鎷夊紑杩欎釜寮€鍏?)
+  </script>
+</body>
+</html>
+

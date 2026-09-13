@@ -1,0 +1,127 @@
+{
+  "manifest_version": "project_eval_datasets_v1",
+  "generated_from": {
+    "gis": [
+      "app/integrations/webgl/contract.py",
+      "app/skills/deterministic_webgl_anchor_skill.py",
+      "app/dialogue/orchestrator.py",
+      "frontend/ev_agent_ui_event_queue.js"
+    ],
+    "rag": {
+      "database": "runtime/rag/rag.sqlite3",
+      "corpus_fingerprint": "4d3dad6fabde3eda745b8068ba684fec4b1f89a7e5fe2a5f8cd7b9dc878fae6e",
+      "source_count": 10,
+      "chunk_count": 662,
+      "sources": [
+        {
+          "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交.docx",
+          "source_sha256": "bdd8d1af16cad7332b924d84d4a581338d2156fdcdf92cfd8eb68bf19f3da78a",
+          "chunk_count": 19,
+          "section_count": 1,
+          "selected_case_count": 10
+        },
+        {
+          "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路.docx",
+          "source_sha256": "99c581ee332f622e6b321acfae1d759fdd8a03996f35beab4fd2e11c26941ac1",
+          "chunk_count": 43,
+          "section_count": 1,
+          "selected_case_count": 10
+        },
+        {
+          "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第二分册：变电站（换流站）.docx",
+          "source_sha256": "2e55965bf43e94852254cbc7b0c6243dc4ad76e1f6e9587fc974f8e1e63da17d",
+          "chunk_count": 175,
+          "section_count": 68,
+          "selected_case_count": 10
+        },
+        {
+          "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第五分册：模型及文件管理.docx",
+          "source_sha256": "e41e7ebd12d0572b7293029ce1a1f41cc7570f99deee4316a2334ab4004019a8",
+          "chunk_count": 24,
+          "section_count": 23,
+          "selected_case_count": 10
+        },
+        {
+          "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用.docx",
+          "source_sha256": "009865b8dc3722e444de43397d7a8bc93674f97898ba4e35adf5580d94cd9965",
+          "chunk_count": 21,
+          "section_count": 1,
+          "selected_case_count": 10
+        },
+        {
+          "source_name": "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路.docx",
+          "source_sha256": "45ad9a6bb0d9ec3030dd06b06f495af491013d357fb99d5392e99f00d8a55a01",
+          "chunk_count": 39,
+          "section_count": 1,
+          "selected_case_count": 10
+        },
+        {
+          "source_name": "DL／T 2765-2024 《输变电工程逻辑模型规范》.pdf",
+          "source_sha256": "588c3138edca687436f906824426174e49df2daa314e77439bea4b16d635ec64",
+          "chunk_count": 65,
+          "section_count": 58,
+          "selected_case_count": 10
+        },
+        {
+          "source_name": "GDW 11809—2023输变电工程三维设计模型数据交互规范.pdf",
+          "source_sha256": "5d28524a950798570f3f7c333c11f5269153b5d86d19c72c6a907a73c54c09fa",
+          "chunk_count": 103,
+          "section_count": 91,
+          "selected_case_count": 10
+        },
+        {
+          "source_name": "GDW 11810.2—2023输变电工程三维设计建模规范第2部分：架空输电线路.pdf",
+          "source_sha256": "f8e553b57284505b2f54a68c1e7cfe77548dc599436e37df5d3297817cf297c3",
+          "chunk_count": 63,
+          "section_count": 64,
+          "selected_case_count": 10
+        },
+        {
+          "source_name": "QGDW 11809—2018 输变电工程三维设计模型交互规范.pdf",
+          "source_sha256": "85d66a2a712cefeb28664b5c933d8f9cec61a0dffc7a3bfa078512a701940faa",
+          "chunk_count": 110,
+          "section_count": 111,
+          "selected_case_count": 10
+        }
+      ]
+    },
+    "router": [
+      "app/agent/router.py",
+      "app/llm/qwen_router.py",
+      "app/schemas/route.py"
+    ]
+  },
+  "datasets": {
+    "gis_e2e_v1.jsonl": {
+      "case_count": 80,
+      "executable_count": 60,
+      "abnormal_count": 20,
+      "sha256": "3544ba67e7d7d64131c7c08cfa1eae27830ef68399e9c17c6b9d5a5f893190d9"
+    },
+    "rag_gold_v1.json": {
+      "case_count": 120,
+      "answerable_count": 100,
+      "unanswerable_count": 20,
+      "multi_evidence_count": 20,
+      "sha256": "8d347b88e3cbcea73272e03a66ca66dd4af4df4f3f041881a3e3abc7ba088b4a"
+    },
+    "router_v1.jsonl": {
+      "case_count": 300,
+      "label_counts": {
+        "anchor_task": 60,
+        "rag_qa": 60,
+        "document_task": 60,
+        "general_chat": 60,
+        "unknown": 60
+      },
+      "boundary_count": 120,
+      "sha256": "8b8aa114e01910e784f7121dccd774ab7c2a8b0c171a45f6829339d45ab5cfaa"
+    }
+  },
+  "important": [
+    "These are project-grounded seed datasets, not yet human-locked gold sets.",
+    "Human review is required before using any metric on a resume.",
+    "GIS placeholders must be bound to a unique runtime WebGL object before execution.",
+    "RAG evidence is copied from the current indexed corpus and tied to source/chunk hashes."
+  ]
+}

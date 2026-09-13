@@ -1,0 +1,14 @@
+EV WebGL Agent Portable Final
+================================
+
+1. 将整个目录放到本机可写、剩余空间充足的位置。
+2. 双击 INSTALL.cmd，等待输出 FIRST_RUN_READY。
+3. 双击 START.cmd。
+4. 双击 STATUS.cmd，确认 Agent、WebGL、release、RAG/HNSW 正常。
+5. 浏览器打开：
+   http://127.0.0.1:8090/ApplicationVue/dist/index_agent.html#/index
+6. 使用完毕后双击 STOP.cmd。
+
+安装不要求系统 Python、Conda或互联网。Qwen 未配置不属于安装失败。
+
+安全提示：本包包含授权业务资料，请使用受控介质传输，不要上传到公共网盘或公共代码仓库。

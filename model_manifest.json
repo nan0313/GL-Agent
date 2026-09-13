@@ -1,0 +1,101 @@
+{
+  "files": [
+    {
+      "path": "models/bge-small-zh-v1.5/.gitattributes",
+      "sha256": "11AD7EFA24975EE4B0C3C3A38ED18737F0658A5F75A0A96787B576A78A023361",
+      "size": 1519
+    },
+    {
+      "path": "models/bge-small-zh-v1.5/1_Pooling/config.json",
+      "sha256": "AAA8861589F80C961A03CC86C7EEAEF7605C1676B9AB55329D33A304738769C6",
+      "size": 190
+    },
+    {
+      "path": "models/bge-small-zh-v1.5/README.md",
+      "sha256": "C48A4EEEA77F6B1D38B48EC1C5B8D4F86D5550CC43FA345A0DB1B2CA1D082369",
+      "size": 27670
+    },
+    {
+      "path": "models/bge-small-zh-v1.5/config.json",
+      "sha256": "3853A7979202C348751B753E36F579C41D8DA7D36AF617D3D907E1FC9B441F2A",
+      "size": 776
+    },
+    {
+      "path": "models/bge-small-zh-v1.5/config_sentence_transformers.json",
+      "sha256": "940D5F50DB195FA6E5E6A4F122C095F77880DE259D74B14A65779ED48BDD7C56",
+      "size": 124
+    },
+    {
+      "path": "models/bge-small-zh-v1.5/model.safetensors",
+      "sha256": "354763B9B1357BC9C44F62C6BE2276321081ED2567773608C0D0785B61D5A026",
+      "size": 95827648
+    },
+    {
+      "path": "models/bge-small-zh-v1.5/modules.json",
+      "sha256": "84E40C8E006C9B1D6C122E02CBA9B02458120B5FB0C87B746C41E0207CF642CF",
+      "size": 349
+    },
+    {
+      "path": "models/bge-small-zh-v1.5/pytorch_model.bin",
+      "sha256": "7C5FE667BBED05DC10E246E229B701AD266FE4D95AB946E9E5AA402056611B88",
+      "size": 95842633
+    },
+    {
+      "path": "models/bge-small-zh-v1.5/sentence_bert_config.json",
+      "sha256": "84E39FDA68CCBFF05BFA723AE9C0E70E23E2EC373B76E0F8C6E71AF72A693CBF",
+      "size": 52
+    },
+    {
+      "path": "models/bge-small-zh-v1.5/special_tokens_map.json",
+      "sha256": "B6D346BE366A7D1D48332DBC9FDF3BF8960B5D879522B7799DDBA59E76237EE3",
+      "size": 125
+    },
+    {
+      "path": "models/bge-small-zh-v1.5/tokenizer.json",
+      "sha256": "48CEA5D44424912A6FD1EA647BF4FE50B55AB8B1E5879C3275F80E339E8FAE26",
+      "size": 439125
+    },
+    {
+      "path": "models/bge-small-zh-v1.5/tokenizer_config.json",
+      "sha256": "E6F3B96DB926A37D4039995FBF5AD17DE158DFB8F6343D607E4DBAAD18D75F5A",
+      "size": 367
+    },
+    {
+      "path": "models/bge-small-zh-v1.5/vocab.txt",
+      "sha256": "45BBAC6B341C319ADC98A532532882E91A9CEFC0329AA57BAC9AE761C27B291C",
+      "size": 109540
+    }
+  ],
+  "models": [
+    {
+      "classification": "REQUIRED",
+      "device": "cpu",
+      "embedding_dimension": 512,
+      "file_count": 13,
+      "id": "required-bge-zh-v1.5",
+      "internet_requirement": "none",
+      "loader_module": "sentence_transformers.SentenceTransformer",
+      "main_weight_files": [
+        {
+          "path": "models/bge-small-zh-v1.5/model.safetensors",
+          "sha256": "354763B9B1357BC9C44F62C6BE2276321081ED2567773608C0D0785B61D5A026",
+          "size": 95827648
+        },
+        {
+          "path": "models/bge-small-zh-v1.5/pytorch_model.bin",
+          "sha256": "7C5FE667BBED05DC10E246E229B701AD266FE4D95AB946E9E5AA402056611B88",
+          "size": 95842633
+        }
+      ],
+      "model_name": "BAAI/bge-small-zh-v1.5",
+      "notes": "Loaded with local_files_only=True; model cache is not used.",
+      "primary_weight_sha256": "354763B9B1357BC9C44F62C6BE2276321081ED2567773608C0D0785B61D5A026",
+      "purpose": "dense_embedding",
+      "required": true,
+      "source_locator": "ModelsRoot/bge-small-zh-v1.5",
+      "target_path": "models/bge-small-zh-v1.5",
+      "total_size": 192250118
+    }
+  ],
+  "schema_version": 1
+}

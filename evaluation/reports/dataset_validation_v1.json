@@ -1,0 +1,115 @@
+{
+  "status": "passed",
+  "datasets": {
+    "gis": {
+      "case_count": 80,
+      "executable_count": 60,
+      "abnormal_count": 20,
+      "handling_counts": {
+        "clarify": 13,
+        "execute": 60,
+        "not_found": 2,
+        "reject": 5
+      },
+      "category_counts": {
+        "admin_multiturn": 2,
+        "ambiguous_target": 1,
+        "buffer_multistep": 1,
+        "camera_read": 2,
+        "clear_buffer": 1,
+        "clear_highlight": 2,
+        "create_buffer": 5,
+        "find_and_locate": 2,
+        "find_object": 4,
+        "highlight_admin_region": 2,
+        "highlight_buffer_results": 1,
+        "highlight_object": 3,
+        "invalid_parameter": 5,
+        "layer_read": 4,
+        "layer_visibility": 4,
+        "locate_admin_region": 2,
+        "locate_buffer": 1,
+        "locate_coordinates": 4,
+        "locate_highlight_admin": 2,
+        "locate_highlight_properties": 2,
+        "locate_object": 3,
+        "missing_context": 2,
+        "missing_parameter": 4,
+        "nearby_objects": 4,
+        "object_not_found": 2,
+        "query_buffer": 1,
+        "read_admin_properties": 2,
+        "read_properties": 2,
+        "reset_view": 2,
+        "screenshot": 2,
+        "unsafe_operation": 5,
+        "unsupported_capability": 1
+      },
+      "split_counts": {
+        "dev": 21,
+        "test": 59
+      },
+      "multi_turn_count": 2,
+      "family_count": 49,
+      "sha256": "3544ba67e7d7d64131c7c08cfa1eae27830ef68399e9c17c6b9d5a5f893190d9"
+    },
+    "rag": {
+      "case_count": 120,
+      "answerable_count": 100,
+      "unanswerable_count": 20,
+      "multi_evidence_count": 20,
+      "gold_evidence_span_count": 120,
+      "covered_source_count": 10,
+      "covered_sources": [
+        "35kV及以上输变电工程三维模型数字文件移交标准第一分册：模型及文件移交.docx",
+        "35kV及以上输变电工程三维模型数字文件移交标准第三分册：架空线路.docx",
+        "35kV及以上输变电工程三维模型数字文件移交标准第二分册：变电站（换流站）.docx",
+        "35kV及以上输变电工程三维模型数字文件移交标准第五分册：模型及文件管理.docx",
+        "35kV及以上输变电工程三维模型数字文件移交标准第六分册：数字采集处理及应用.docx",
+        "35kV及以上输变电工程三维模型数字文件移交标准第四分册：电力电缆线路.docx",
+        "DL／T 2765-2024 《输变电工程逻辑模型规范》.pdf",
+        "GDW 11809—2023输变电工程三维设计模型数据交互规范.pdf",
+        "GDW 11810.2—2023输变电工程三维设计建模规范第2部分：架空输电线路.pdf",
+        "QGDW 11809—2018 输变电工程三维设计模型交互规范.pdf"
+      ],
+      "question_type_counts": {
+        "classification": 5,
+        "hard_negative": 20,
+        "list": 37,
+        "multi_evidence": 20,
+        "numeric": 3,
+        "requirement": 35
+      },
+      "split_counts": {
+        "dev": 33,
+        "test": 87
+      },
+      "sha256": "8d347b88e3cbcea73272e03a66ca66dd4af4df4f3f041881a3e3abc7ba088b4a"
+    },
+    "router": {
+      "case_count": 300,
+      "label_counts": {
+        "anchor_task": 60,
+        "document_task": 60,
+        "general_chat": 60,
+        "rag_qa": 60,
+        "unknown": 60
+      },
+      "boundary_count": 120,
+      "boundary_ratio": 0.4,
+      "gold_model_required_count": 120,
+      "gold_rule_eligible_count": 180,
+      "split_counts": {
+        "dev": 58,
+        "test": 242
+      },
+      "family_count": 119,
+      "sha256": "8b8aa114e01910e784f7121dccd774ab7c2a8b0c171a45f6829339d45ab5cfaa"
+    }
+  },
+  "errors": [],
+  "warnings": [
+    "All three datasets are project-grounded seeds and still require a human lock/review pass.",
+    "A passed report proves structure and provenance, not model or Agent quality."
+  ]
+}

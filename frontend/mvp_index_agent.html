@@ -1,0 +1,99 @@
+﻿<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="ev-agent-enabled" content="true">
+  <meta name="ev-agent-base-url" content="http://127.0.0.1:8009">
+  <meta name="ev-agent-environment" content="development">
+  <title>EV Globe Agent Enabled</title>
+  <style>
+    html,
+    body {
+      height: 100%;
+      margin: 0;
+      background: #061428;
+      color: #eaf6ff;
+      font-family: Arial, "Microsoft YaHei", sans-serif;
+    }
+
+    #map {
+      height: 100%;
+      display: grid;
+      place-items: center;
+      background:
+        linear-gradient(rgba(14, 47, 82, .72), rgba(4, 12, 24, .9)),
+        repeating-linear-gradient(90deg, rgba(56, 189, 248, .1) 0 1px, transparent 1px 64px),
+        repeating-linear-gradient(0deg, rgba(56, 189, 248, .08) 0 1px, transparent 1px 64px);
+    }
+
+    .hint {
+      max-width: 560px;
+      padding: 18px 22px;
+      border: 1px solid rgba(83, 177, 245, .35);
+      background: rgba(5, 18, 36, .72);
+      border-radius: 8px;
+      line-height: 1.7;
+    }
+  </style>
+</head>
+<body>
+  <main id="map">
+    <div class="hint">
+      <strong>EV Agent enabled page</strong><br>
+      This page explicitly enables the EV Agent bootstrap. In the real EV-Globe page,
+      load the same meta marker after the WebGL viewer scripts.
+    </div>
+  </main>
+  <script>
+    var environment = document.querySelector('meta[name="ev-agent-environment"]').content || "development";
+    window.EV_AGENT_CONFIG = {
+      agentBaseUrl: window.EV_AGENT_BASE_URL || document.querySelector('meta[name="ev-agent-base-url"]').content || (environment === "production" ? window.location.origin : "http://127.0.0.1:8009"),
+      environment: environment,
+      debug: true,
+      showPanel: true,
+      healthTimeoutMs: 1800
+    };
+    window.viewer = {
+      entities: {
+        values: [],
+        getById: function () { return null; }
+      },
+      dataSources: {
+        length: 0,
+        get: function () { return null; }
+      },
+      imageryLayers: {
+        length: 0,
+        get: function () { return null; }
+      },
+      scene: {
+        canvas: {
+          toDataURL: function () { return "data:image/png;base64,"; }
+        },
+        primitives: {
+          length: 0,
+          get: function () { return null; }
+        }
+      },
+      camera: {
+        flyTo: function () {},
+        computeViewRectangle: function () { return null; },
+        positionCartographic: {
+          longitude: 0,
+          latitude: 0,
+          height: 1000
+        }
+      }
+    };
+  </script>
+  <script src="http://127.0.0.1:8009/frontend/webgl_selected_object_bridge.js"></script>
+  <script src="http://127.0.0.1:8009/frontend/webgl_ev_pick_patch.js"></script>
+  <script src="http://127.0.0.1:8009/frontend/webgl_agent_bridge.js"></script>
+  <script src="http://127.0.0.1:8009/frontend/webgl_ev_cesium_adapter.js"></script>
+  <script src="http://127.0.0.1:8009/frontend/ev_agent_stream_client.js"></script>
+  <script src="http://127.0.0.1:8009/frontend/ev_agent_ui_event_queue.js"></script>
+  <script src="http://127.0.0.1:8009/frontend/webgl_agent_bootstrap.js"></script>
+</body>
+</html>
+

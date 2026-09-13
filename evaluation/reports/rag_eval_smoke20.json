@@ -1,0 +1,157 @@
+{
+  "status": "completed",
+  "metric_scope": "retrieval_and_answerability_only",
+  "generated_at": "2026-09-06T07:35:03.784097+00:00",
+  "dataset": "G:\\JN_work\\gy\\ev_agent\\evaluation\\datasets\\rag_gold_v1.json",
+  "dataset_version": "rag_gold_v1",
+  "split": "all",
+  "top_k": 20,
+  "case_count": 2,
+  "answerable_count": 2,
+  "hard_negative_count": 0,
+  "review_gate": {
+    "required_human_locked": false,
+    "unlocked_case_count": 2,
+    "safe_for_resume_claim": false
+  },
+  "index": {
+    "provider": "local_rag_v3",
+    "index_version": "ragidx_db3e08ee60805f9f8e2a",
+    "docs_count": 10,
+    "chunks_count": 662
+  },
+  "metrics_by_k": {
+    "1": {
+      "evidence_recall": 0.0,
+      "evidence_recall_percent": 0.0,
+      "hit_rate": 0,
+      "hit_rate_percent": 0.0,
+      "complete_hit_rate": 0,
+      "complete_hit_rate_percent": 0.0
+    },
+    "3": {
+      "evidence_recall": 0.0,
+      "evidence_recall_percent": 0.0,
+      "hit_rate": 0,
+      "hit_rate_percent": 0.0,
+      "complete_hit_rate": 0,
+      "complete_hit_rate_percent": 0.0
+    },
+    "5": {
+      "evidence_recall": 0.0,
+      "evidence_recall_percent": 0.0,
+      "hit_rate": 0,
+      "hit_rate_percent": 0.0,
+      "complete_hit_rate": 0,
+      "complete_hit_rate_percent": 0.0
+    },
+    "20": {
+      "evidence_recall": 0.0,
+      "evidence_recall_percent": 0.0,
+      "hit_rate": 0,
+      "hit_rate_percent": 0.0,
+      "complete_hit_rate": 0,
+      "complete_hit_rate_percent": 0.0
+    }
+  },
+  "hard_negative": {
+    "no_answer_accuracy": null,
+    "no_answer_accuracy_percent": null
+  },
+  "latency": {
+    "mean_ms": 9391.37,
+    "max_ms": 17691.06,
+    "total_seconds": 18.78
+  },
+  "metric_definition": {
+    "evidence_recall_at_k": "Per answerable question: matched gold evidence units / all gold evidence units; macro averaged.",
+    "hit_at_k": "Share of answerable questions with at least one matched gold evidence unit.",
+    "complete_hit_at_k": "Share of answerable questions with every gold evidence unit matched.",
+    "no_answer_accuracy": "Share of hard negatives rejected with no final evidence and a non-answerable decision.",
+    "citation_correctness": "Not measured here; semantic claim-to-citation support requires a generated answer and a separate human or judge annotation."
+  },
+  "answerable_results": [
+    {
+      "case_id": "rag_ans_001",
+      "query": "三维模型数字文件移交如何分类？",
+      "gold_unit_count": 1,
+      "retrieved_count": 14,
+      "retrieved_chunk_ids": [
+        "chk_48b4974bcf8063a9dcd2",
+        "chk_12d56b70570aac3fb811",
+        "chk_ffb2e575a0e3073ae351",
+        "chk_1dc9c9075e8ae995f6f6",
+        "chk_f61c65e847e82ff96065",
+        "chk_ca55ef92631deac9a706",
+        "chk_24869926413bef365a4b",
+        "chk_12509f44ef5b86b5956c",
+        "chk_193e95486e6e680f187a",
+        "chk_ab091a981ef9bf73634c",
+        "chk_679bdd57d7134e09dbe9",
+        "chk_b930cbb10432997beeab",
+        "chk_386407cf53894984d275",
+        "chk_baea966ad9dfc17e2653"
+      ],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "20": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false,
+        "20": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false,
+        "20": false
+      },
+      "answerability_status": "answerable",
+      "latency_ms": 17691.06
+    },
+    {
+      "case_id": "rag_ans_002",
+      "query": "输变电工程编码包括哪些内容？",
+      "gold_unit_count": 1,
+      "retrieved_count": 0,
+      "retrieved_chunk_ids": [],
+      "unit_ranks": [
+        {
+          "unit_id": "u1",
+          "first_hit_rank": null
+        }
+      ],
+      "evidence_recall": {
+        "1": 0.0,
+        "3": 0.0,
+        "5": 0.0,
+        "20": 0.0
+      },
+      "hit": {
+        "1": false,
+        "3": false,
+        "5": false,
+        "20": false
+      },
+      "complete_hit": {
+        "1": false,
+        "3": false,
+        "5": false,
+        "20": false
+      },
+      "answerability_status": "ambiguous",
+      "latency_ms": 1091.68
+    }
+  ],
+  "hard_negative_results": []
+}

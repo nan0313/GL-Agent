@@ -1,0 +1,1059 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>电网 Agent MVP 测试面板</title>
+  <style>
+    :root {
+      color-scheme: light;
+      font-family: "Microsoft YaHei", Arial, sans-serif;
+      background: #f5f7fb;
+      color: #18212f;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+    }
+
+    header {
+      background: #17324d;
+      color: #fff;
+      padding: 18px 28px;
+    }
+
+    h1 {
+      margin: 0 0 8px;
+      font-size: 24px;
+    }
+
+    .notice {
+      margin: 0;
+      color: #d8e7f5;
+      line-height: 1.6;
+    }
+
+    main {
+      display: grid;
+      grid-template-columns: minmax(320px, 420px) 1fr;
+      gap: 18px;
+      padding: 18px;
+    }
+
+    section {
+      background: #fff;
+      border: 1px solid #d9e2ef;
+      border-radius: 8px;
+      padding: 16px;
+    }
+
+    h2 {
+      margin: 0 0 14px;
+      font-size: 18px;
+    }
+
+    h3 {
+      margin: 14px 0 8px;
+      font-size: 15px;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 4px;
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    input,
+    textarea {
+      width: 100%;
+      border: 1px solid #c7d3e0;
+      border-radius: 6px;
+      padding: 8px 10px;
+      font: inherit;
+    }
+
+    textarea {
+      min-height: 78px;
+      resize: vertical;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    .actions,
+    .examples {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    button {
+      border: 0;
+      border-radius: 6px;
+      background: #1e6bd6;
+      color: #fff;
+      padding: 9px 12px;
+      cursor: pointer;
+      font: inherit;
+    }
+
+    button.secondary {
+      background: #eef3f9;
+      color: #24415f;
+      border: 1px solid #c8d6e6;
+    }
+
+    button:disabled {
+      opacity: .55;
+      cursor: not-allowed;
+    }
+
+    .result-grid,
+    .config-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 10px;
+    }
+
+    .kv {
+      background: #f7f9fc;
+      border: 1px solid #e1e8f0;
+      border-radius: 6px;
+      padding: 10px;
+      min-height: 58px;
+    }
+
+    .kv span {
+      display: block;
+      color: #65758a;
+      font-size: 12px;
+      margin-bottom: 4px;
+    }
+
+    .hint {
+      margin: 10px 0 0;
+      color: #5f6f83;
+      font-size: 13px;
+      line-height: 1.6;
+    }
+
+    pre {
+      overflow: auto;
+      background: #101828;
+      color: #e6edf7;
+      border-radius: 6px;
+      padding: 12px;
+      min-height: 80px;
+      white-space: pre-wrap;
+    }
+
+    ul {
+      padding-left: 20px;
+      line-height: 1.7;
+    }
+
+    .panel-stack {
+      display: grid;
+      gap: 14px;
+    }
+
+    .tag {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: #e9f3ff;
+      color: #165baa;
+      font-size: 12px;
+    }
+
+    .trace-planner {
+      border-left: 4px solid #1e6bd6;
+      padding-left: 10px;
+      margin: 8px 0;
+      color: #163a5d;
+      font-weight: 600;
+    }
+
+    .developer-tabs {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 14px;
+    }
+
+    .developer-tabs button.active {
+      background: #17324d;
+      color: #fff;
+    }
+
+    .knowledge-note,
+    .operation-message {
+      background: #f7f9fc;
+      border: 1px solid #e1e8f0;
+      border-radius: 6px;
+      padding: 10px;
+      color: #43566d;
+      line-height: 1.6;
+      font-size: 13px;
+    }
+
+    .knowledge-toolbar {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 12px 0;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 12px;
+    }
+
+    th,
+    td {
+      border-bottom: 1px solid #e1e8f0;
+      padding: 8px 6px;
+      text-align: left;
+      vertical-align: top;
+      white-space: nowrap;
+    }
+
+    th {
+      color: #52667e;
+      background: #f7f9fc;
+    }
+
+    td .row-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 4px;
+    }
+
+    td button,
+    .citation-ref {
+      padding: 5px 8px;
+      font-size: 12px;
+    }
+
+    .status-pill {
+      display: inline-block;
+      padding: 2px 7px;
+      border-radius: 999px;
+      background: #eef3f9;
+      color: #24415f;
+    }
+
+    .status-pill.status-error,
+    .status-pill.status-rejected,
+    .status-pill.status-failed {
+      background: #fff0f0;
+      color: #a12a2a;
+    }
+
+    .status-pill.status-success,
+    .status-pill.status-active,
+    .status-pill.status-validated {
+      background: #eaf8ef;
+      color: #1c6a3c;
+    }
+
+    .answer-output {
+      white-space: pre-wrap;
+      line-height: 1.7;
+      padding: 12px;
+      background: #101828;
+      color: #e6edf7;
+      border-radius: 6px;
+      min-height: 80px;
+    }
+
+    .citation-ref {
+      border: 1px solid #79b2ef;
+      border-radius: 4px;
+      background: #e9f3ff;
+      color: #165baa;
+      cursor: pointer;
+    }
+
+    .invalid-citation {
+      color: #ff9c9c;
+      text-decoration: underline wavy;
+    }
+
+    .evidence-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .evidence-card {
+      border: 1px solid #d9e2ef;
+      border-radius: 6px;
+      padding: 10px;
+      background: #f7f9fc;
+    }
+
+    .evidence-card.is-focused {
+      border-color: #1e6bd6;
+      box-shadow: 0 0 0 2px rgba(30, 107, 214, .15);
+    }
+
+    .evidence-card h4 {
+      margin: 0 0 5px;
+      color: #17324d;
+    }
+
+    .evidence-card p {
+      margin: 4px 0;
+      color: #52667e;
+      line-height: 1.5;
+    }
+
+    .evidence-card .excerpt {
+      color: #1f2d3d;
+      white-space: pre-wrap;
+    }
+
+    @media (max-width: 860px) {
+      main,
+      .result-grid,
+      .config-grid,
+      .grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>电网 Agent MVP 测试面板</h1>
+    <p class="notice">
+      当前是本地调试页面，不接真实 WebGL，不执行真实生产控制操作。
+    </p>
+  </header>
+
+  <main>
+    <section>
+      <h2>请求输入</h2>
+      <label for="query">用户问题</label>
+      <textarea id="query">查看这个对象的实时数据</textarea>
+
+      <div class="examples">
+        <button class="secondary" data-query="搜索测试设备">搜索测试设备</button>
+        <button class="secondary" data-query="查看这个对象的实时数据">查看实时数据</button>
+        <button class="secondary" data-query="帮我拉开这个开关">高危拦截</button>
+        <button class="secondary" data-query="今天天气怎么样">未知意图</button>
+        <button class="secondary" data-query="帮我看一下当前选中馈线的运行情况">Qwen 语义测试</button>
+        <button class="secondary" data-query="你能做什么？">你能做什么？</button>
+        <button class="secondary" data-query="什么是馈线？">什么是馈线？</button>
+        <button class="secondary" data-query="根据安全规则，为什么不能直接拉开开关？">安全规则 RAG</button>
+        <button class="secondary" data-query="根据知识库解释保护定值是什么">保护定值 RAG</button>
+      </div>
+
+      <div class="grid">
+        <div>
+          <label for="session_id">session_id</label>
+          <input id="session_id" value="s001">
+        </div>
+        <div>
+          <label for="user_id">user_id</label>
+          <input id="user_id" value="u001">
+        </div>
+      </div>
+
+      <label for="role">role</label>
+      <input id="role" value="developer">
+
+      <div class="grid">
+        <div>
+          <label for="object_type">object_type</label>
+          <input id="object_type" value="feeder">
+        </div>
+        <div>
+          <label for="object_id">object_id</label>
+          <input id="object_id" value="F001">
+        </div>
+      </div>
+
+      <label for="object_name">object_name</label>
+      <input id="object_name" value="测试馈线">
+
+      <label for="active_layers">active_layers（逗号分隔）</label>
+      <input id="active_layers" value="馈线">
+
+      <div class="grid">
+        <div>
+          <label for="map_center">map_center（lon,lat）</label>
+          <input id="map_center" value="114.05,22.55">
+        </div>
+        <div>
+          <label for="zoom">zoom</label>
+          <input id="zoom" value="14">
+        </div>
+      </div>
+
+      <div class="actions">
+        <button id="send">发送</button>
+        <button id="trace" class="secondary" disabled>查看 Trace</button>
+      </div>
+    </section>
+
+    <div class="panel-stack">
+      <div class="developer-tabs" role="tablist" aria-label="开发者区域">
+        <button class="tab-button active" data-developer-tab="chat" role="tab" aria-selected="true">对话调试</button>
+        <button class="tab-button secondary" data-developer-tab="knowledge" role="tab" aria-selected="false">知识库</button>
+      </div>
+
+      <section id="rag_management_panel" data-developer-panel="knowledge" hidden>
+        <h2>知识库 <span class="tag">/rag/sources</span></h2>
+        <p class="knowledge-note">请先将已授权、已脱敏资料放入配置知识目录的 staging 文件夹，然后在此执行扫描和校验。本页面不接收浏览器本地路径，也不会自动上传、OCR 或激活资料。</p>
+        <div class="knowledge-toolbar">
+          <button id="kb_refresh" class="secondary">刷新状态</button>
+          <button id="kb_validate">扫描并校验 staging</button>
+          <button id="kb_backup" class="secondary">创建一致性备份</button>
+        </div>
+        <p id="kb_operation_message" class="operation-message" aria-live="polite">尚未执行知识库操作。</p>
+        <div class="config-grid">
+          <div class="kv"><span>RAG available</span><strong id="kb_available">-</strong></div>
+          <div class="kv"><span>lexical</span><strong id="kb_lexical">-</strong></div>
+          <div class="kv"><span>dense</span><strong id="kb_dense">-</strong></div>
+          <div class="kv"><span>active vector backend</span><strong id="kb_backend">-</strong></div>
+          <div class="kv"><span>embedding model</span><strong id="kb_embedding_model">-</strong></div>
+          <div class="kv"><span>active index version</span><strong id="kb_index_version">-</strong></div>
+          <div class="kv"><span>source / document / chunk</span><strong id="kb_counts">-</strong></div>
+          <div class="kv"><span>last build</span><strong id="kb_last_build">-</strong></div>
+          <div class="kv"><span>runtime error</span><strong id="kb_error_code">-</strong></div>
+        </div>
+
+        <h3>Sources</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>name</th><th>type</th><th>source status</th><th>parser</th><th>index</th><th>docs/sections/chunks</th><th>updated/indexed</th><th>error</th><th>操作</th></tr></thead>
+            <tbody id="kb_sources"><tr><td colspan="9">正在加载…</td></tr></tbody>
+          </table>
+        </div>
+        <h3>质量摘要</h3>
+        <pre id="kb_quality">暂无校验结果</pre>
+
+        <h3>Index Jobs</h3>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>job id</th><th>type</th><th>status</th><th>added/modified/deleted/unchanged</th><th>parsed/failed/chunks</th><th>embeddings/cache hits</th><th>duration</th><th>version</th><th>error</th><th>操作</th></tr></thead>
+            <tbody id="kb_jobs"><tr><td colspan="10">正在加载…</td></tr></tbody>
+          </table>
+        </div>
+
+        <h3>Consistency Backups</h3>
+        <p class="hint">备份包含 SQLite RAG 快照、active vector artifact、manifest 和安全 source metadata；不包含原始业务文件、模型缓存或凭据。恢复前会校验 checksum，并保留失败回滚。</p>
+        <div class="table-wrap">
+          <table>
+            <thead><tr><th>backup id</th><th>index version</th><th>backend</th><th>source/docs/chunks</th><th>created</th><th>操作</th></tr></thead>
+            <tbody id="kb_backups"><tr><td colspan="6">正在加载…</td></tr></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section>
+        <h2>当前运行配置 <span class="tag">/debug/config</span></h2>
+        <div class="actions">
+          <button id="debug_config" class="secondary">查看运行配置</button>
+          <button id="debug_skills" class="secondary">查看 Skills</button>
+          <button id="debug_rag" class="secondary">查看 RAG 状态</button>
+        </div>
+        <div class="config-grid">
+          <div class="kv"><span>workflow_provider</span><strong id="cfg_workflow_provider">-</strong></div>
+          <div class="kv"><span>llm_planner_provider</span><strong id="cfg_llm_planner_provider">-</strong></div>
+          <div class="kv"><span>qwen_enabled</span><strong id="cfg_qwen_enabled">-</strong></div>
+          <div class="kv"><span>qwen_model</span><strong id="cfg_qwen_model">-</strong></div>
+          <div class="kv"><span>qwen_secret_status</span><strong id="cfg_qwen_secret_status">-</strong></div>
+          <div class="kv"><span>config_source</span><strong id="cfg_config_source">-</strong></div>
+          <div class="kv"><span>rag_provider</span><strong id="cfg_rag_provider">-</strong></div>
+        </div>
+        <p class="hint" id="planner_hint">
+          如果 llm_planner_provider 不是 qwen，则当前没有调用 Qwen 模型。
+        </p>
+      </section>
+
+      <section>
+        <h2>Skills <span class="tag">/debug/skills</span></h2>
+        <pre id="skills_debug">[]</pre>
+      </section>
+
+      <section>
+        <h2>RAG 状态 <span class="tag">/debug/rag</span></h2>
+        <pre id="rag_debug">[]</pre>
+      </section>
+
+      <section>
+        <h2>AgentResponse <span class="tag">/agent/chat</span></h2>
+        <div class="result-grid">
+          <div class="kv"><span>status</span><strong id="status">-</strong></div>
+          <div class="kv"><span>trace_id</span><strong id="trace_id">-</strong></div>
+          <div class="kv"><span>route_type</span><strong id="route_type">-</strong></div>
+          <div class="kv"><span>skill_id</span><strong id="skill_id">-</strong></div>
+          <div class="kv"><span>intent</span><strong id="intent">-</strong></div>
+          <div class="kv"><span>scenario</span><strong id="scenario">-</strong></div>
+          <div class="kv"><span>latency_ms</span><strong id="skill_latency_ms">-</strong></div>
+          <div class="kv"><span>timeout_exceeded</span><strong id="skill_timeout_exceeded">-</strong></div>
+          <div class="kv"><span>error_type</span><strong id="skill_error_type">-</strong></div>
+          <div class="kv"><span>risk_level</span><strong id="risk_level">-</strong></div>
+          <div class="kv"><span>manual_check_required</span><strong id="manual_check_required">-</strong></div>
+          <div class="kv"><span>answer_status</span><strong id="answer_status">-</strong></div>
+          <div class="kv"><span>retrieval_status</span><strong id="retrieval_status">-</strong></div>
+          <div class="kv"><span>citation_status</span><strong id="citation_status">-</strong></div>
+          <div class="kv"><span>fallback_used</span><strong id="fallback_used">-</strong></div>
+          <div class="kv"><span>rag_provider</span><strong id="rag_provider">-</strong></div>
+          <div class="kv"><span>rag_pipeline_steps</span><strong id="rag_pipeline_steps">-</strong></div>
+        </div>
+        <p class="hint">
+          “今天天气怎么样”返回 unknown 不代表 Qwen 没接上；当前 Agent 只能从已注册 anchors 中规划工具，暂时没有天气工具。
+        </p>
+        <h3>answer</h3>
+        <div id="answer" class="answer-output">-</div>
+        <h3>missing_params</h3>
+        <pre id="missing_params">[]</pre>
+      </section>
+
+      <section>
+        <h2>Tool Calls</h2>
+        <pre id="tool_calls">[]</pre>
+      </section>
+
+      <section>
+        <h2>UI Events</h2>
+        <ul id="ui_events"></ul>
+      </section>
+
+      <section>
+        <h2>Evidence</h2>
+        <div id="evidence_list" class="evidence-list">暂无证据</div>
+      </section>
+
+      <section>
+        <h2>Trace Steps <span class="tag">/trace/{trace_id}</span></h2>
+        <div id="planner_trace" class="trace-planner">skill_dispatch / intent_planning 信息会显示在这里。</div>
+        <pre id="trace_steps">暂无 Trace</pre>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    let lastTraceId = null;
+    const knowledgeState = { sources: [], jobs: [], backups: [], quality: null, busy: {} };
+
+    function escapeHtml(value) {
+      return String(value ?? "").replace(/[&<>\"']/g, character => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        "\"": "&quot;",
+        "'": "&#39;"
+      }[character]));
+    }
+
+    function safeUiError(error) {
+      document.querySelectorAll("[data-job-cancel], [data-backup-action]").forEach(button => { button.disabled = false; });
+      document.querySelectorAll("#kb_backup, #kb_validate, #kb_refresh").forEach(button => { button.disabled = false; });
+      const message = String(error?.message || "");
+      const code = message.match(/RAG_[A-Z0-9_]+/)?.[0];
+      const labels = {
+        RAG_REBUILD_IN_PROGRESS: "索引任务正在运行，请稍后刷新。",
+        RAG_BACKUP_CONFIRM_REQUIRED: "此操作需要二次确认。",
+        RAG_SOURCE_NOT_VALIDATED: "资料必须先完成校验。",
+        RAG_SOURCE_NOT_FOUND: "未找到该知识源。",
+        RAG_BACKUP_CHECKSUM_MISMATCH: "备份校验失败，未执行恢复。"
+      };
+      return labels[code] || (code ? `操作失败（${code}）。` : "操作失败，请稍后重试。");
+    }
+
+    async function requestJson(url, options = {}) {
+      const response = await fetch(url, { cache: "no-store", ...options });
+      const text = await response.text();
+      let data = {};
+      try { data = text ? JSON.parse(text) : {}; } catch (_) { data = {}; }
+      if (!response.ok) throw new Error(String(data.detail || "REQUEST_FAILED"));
+      return data;
+    }
+
+    function managementRole() {
+      return value("role") || "developer";
+    }
+
+    function statusPill(value) {
+      const safe = escapeHtml(value || "-");
+      const className = String(value || "").replace(/[^a-z0-9_-]/gi, "-");
+      return `<span class="status-pill status-${className}">${safe}</span>`;
+    }
+
+    function timestamp(value) {
+      return value ? escapeHtml(String(value).replace("T", " ").replace(/\+00:00$/, "Z")) : "-";
+    }
+
+    function setKnowledgeMessage(message, isError = false) {
+      const node = document.getElementById("kb_operation_message");
+      node.textContent = message;
+      node.style.color = isError ? "#a12a2a" : "#43566d";
+    }
+
+    function renderKnowledgeHealth(health) {
+      setText("kb_available", String(health.available ?? false));
+      setText("kb_lexical", String(health.lexical_available ?? false));
+      setText("kb_dense", String(health.dense_available ?? false));
+      setText("kb_backend", health.active_vector_backend || health.configured_vector_backend || "none");
+      setText("kb_embedding_model", health.embedding_model || "none");
+      setText("kb_index_version", health.active_index_version || "unbuilt");
+      setText("kb_counts", `${health.source_count ?? 0} / ${health.document_count ?? 0} / ${health.chunk_count ?? 0}`);
+      setText("kb_last_build", `${health.last_build_status || "-"} / ${timestamp(health.last_build_at)}`);
+      setText("kb_error_code", health.error_code || health.vector_error_code || "none");
+    }
+
+    function sourceActions(source) {
+      const id = escapeHtml(source.source_id);
+      const name = escapeHtml(source.display_name || source.file_name || source.source_id);
+      const button = (action, label, destructive = false) => `<button class="secondary" data-source-action="${action}" data-source-id="${id}" data-source-name="${name}"${destructive ? " data-destructive=\"true\"" : ""}>${label}</button>`;
+      const state = source.source_status;
+      if (state === "staging") return button("validate", "Validate");
+      if (state === "validated") return button("activate", "Activate");
+      if (state === "active") return button("disable", "Disable", true) + button("reindex", "Reindex");
+      if (state === "disabled") return button("activate", "Reactivate") + button("delete", "Delete", true);
+      if (state === "rejected" || state === "error") return button("view", "错误摘要") + button("delete", "Delete", true);
+      return "-";
+    }
+
+    function renderKnowledgeSources(sources) {
+      const body = document.getElementById("kb_sources");
+      if (!sources.length) {
+        body.innerHTML = '<tr><td colspan="9">暂无 source。请将已授权、已脱敏资料放入 staging 后刷新。</td></tr>';
+        return;
+      }
+      body.innerHTML = sources.map(source => `<tr>
+        <td>${escapeHtml(source.display_name || source.file_name || "-")}</td>
+        <td>${escapeHtml(source.source_type || "-")}</td>
+        <td>${statusPill(source.source_status)}</td>
+        <td>${statusPill(source.parser_status)}</td>
+        <td>${statusPill(source.index_status)}</td>
+        <td>${source.document_count ?? 0} / ${source.section_count ?? 0} / ${source.chunk_count ?? 0}</td>
+        <td>${timestamp(source.updated_at)}<br>${timestamp(source.last_indexed_at)}</td>
+        <td>${escapeHtml(source.error_code || "-")}</td>
+        <td><div class="row-actions">${sourceActions(source)}</div></td>
+      </tr>`).join("");
+    }
+
+    function renderQuality(items) {
+      const summaries = [];
+      (items || []).forEach(item => {
+        const quality = item.quality || {};
+        const warnings = Array.isArray(quality.warnings) ? quality.warnings : [];
+        const qualityStatus = quality.ocr_required
+          ? "需要OCR"
+          : (item.status === "rejected" ? "拒绝" : (warnings.length || item.error_code ? "有警告" : "通过"));
+        summaries.push({
+          source_id: item.source_id,
+          status: item.status || item.source_status,
+          quality_status: qualityStatus,
+          document_count: quality.document_count ?? item.document_count ?? 0,
+          section_count: quality.section_count ?? item.section_count ?? 0,
+          chunk_count: quality.chunk_count ?? item.chunk_count ?? 0,
+          duplicate_ratio: quality.duplicate_ratio ?? null,
+          short_chunk_ratio: quality.short_chunk_ratio ?? null,
+          parse_warning_count: quality.parse_warning_count ?? 0,
+          ocr_required: quality.ocr_required ?? false,
+          warnings,
+          error_code: item.error_code || null
+        });
+      });
+      document.getElementById("kb_quality").textContent = summaries.length ? JSON.stringify(summaries, null, 2) : "暂无校验结果";
+    }
+
+    function renderKnowledgeJobs(jobs) {
+      const body = document.getElementById("kb_jobs");
+      if (!jobs.length) {
+        body.innerHTML = '<tr><td colspan="10">暂无 job。</td></tr>';
+        return;
+      }
+      body.innerHTML = jobs.map(job => {
+        const canCancel = job.status === "running" || job.status === "queued";
+        const cancel = canCancel ? `<button class="secondary" data-job-cancel="${escapeHtml(job.job_id)}">Cancel</button>` : "-";
+        return `<tr><td>${escapeHtml(job.job_id)}</td><td>${escapeHtml(job.mode || "-")}</td><td>${statusPill(job.status)}</td>
+          <td>${job.added ?? 0}/${job.modified ?? 0}/${job.deleted ?? 0}/${job.unchanged ?? 0}</td>
+          <td>${job.parsed ?? 0}/${job.failed ?? 0}/${job.chunk_count ?? 0}</td>
+          <td>${job.embedding_count ?? 0}/${job.cache_hits ?? 0}</td><td>${job.duration_ms ?? 0} ms</td>
+          <td>${escapeHtml(job.version || "-")}</td><td>${escapeHtml(job.error_code || "-")}</td><td>${cancel}</td></tr>`;
+      }).join("");
+    }
+
+    function renderKnowledgeBackups(backups) {
+      const body = document.getElementById("kb_backups");
+      if (!backups.length) {
+        body.innerHTML = '<tr><td colspan="6">暂无备份。</td></tr>';
+        return;
+      }
+      body.innerHTML = backups.map(backup => `<tr>
+        <td>${escapeHtml(backup.backup_id)}</td><td>${escapeHtml(backup.active_index_version || "-")}</td>
+        <td>${escapeHtml(backup.active_vector_backend || "none")}</td>
+        <td>${backup.source_count ?? 0}/${backup.document_count ?? 0}/${backup.chunk_count ?? 0}</td>
+        <td>${timestamp(backup.created_at)}</td>
+        <td><div class="row-actions"><button class="secondary" data-backup-action="validate" data-backup-id="${escapeHtml(backup.backup_id)}">Validate</button>
+          <button class="secondary" data-backup-action="restore" data-backup-id="${escapeHtml(backup.backup_id)}">Restore</button>
+          <button class="secondary" data-backup-action="delete" data-backup-id="${escapeHtml(backup.backup_id)}">Delete</button></div></td>
+      </tr>`).join("");
+    }
+
+    async function refreshKnowledgeBase() {
+      try {
+        const [health, sources, jobs, backups] = await Promise.all([
+          requestJson("/health/rag"), requestJson("/rag/sources"), requestJson("/rag/jobs"), requestJson("/rag/backups")
+        ]);
+        knowledgeState.sources = sources.sources || [];
+        knowledgeState.jobs = jobs.jobs || [];
+        knowledgeState.backups = backups.backups || [];
+        renderKnowledgeHealth(health);
+        renderKnowledgeSources(knowledgeState.sources);
+        renderKnowledgeJobs(knowledgeState.jobs);
+        renderKnowledgeBackups(knowledgeState.backups);
+        const backupButton = document.getElementById("kb_backup");
+        if (backupButton) backupButton.disabled = false;
+        setKnowledgeMessage("状态已刷新。");
+      } catch (error) {
+        setKnowledgeMessage(safeUiError(error), true);
+      }
+    }
+
+    async function validateStaging() {
+      const button = document.getElementById("kb_validate");
+      if (button) button.disabled = true;
+      try {
+        const data = await requestJson("/rag/sources/validate", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ role: managementRole(), area: "staging" }) });
+        renderQuality(data.sources || []);
+        setKnowledgeMessage("staging 扫描和校验完成。");
+        await refreshKnowledgeBase();
+      } catch (error) { setKnowledgeMessage(safeUiError(error), true); }
+      finally { if (button) button.disabled = false; }
+    }
+
+    async function performSourceAction(action, sourceId, sourceName) {
+      const key = `${action}:${sourceId}`;
+      if (knowledgeState.busy[key]) return;
+      if (["disable", "delete"].includes(action) && !window.confirm(`确认${action === "delete" ? "删除" : "停用"} ${sourceName}（${sourceId}）？`)) return;
+      knowledgeState.busy[key] = true;
+      const pendingButtons = Array.from(document.querySelectorAll("[data-source-action]"))
+        .filter(button => button.dataset.sourceId === sourceId);
+      pendingButtons.forEach(button => { button.disabled = true; });
+      try {
+        let url = `/rag/sources/${encodeURIComponent(sourceId)}/${action}`;
+        let options = { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ role: managementRole() }) };
+        if (action === "delete") { url = `/rag/sources/${encodeURIComponent(sourceId)}`; options.method = "DELETE"; }
+        if (action === "view") {
+          const data = await requestJson(`/rag/sources/${encodeURIComponent(sourceId)}`);
+          document.getElementById("kb_quality").textContent = JSON.stringify({ source: data.source || {} }, null, 2);
+        } else {
+          const data = action === "validate"
+            ? await requestJson("/rag/sources/validate", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ role: managementRole(), area: "staging", source_id: sourceId }) })
+            : await requestJson(url, options);
+          if (action === "validate") renderQuality(data.sources || []);
+          setKnowledgeMessage(`${action} 操作完成，正在刷新状态。`);
+          await refreshKnowledgeBase();
+        }
+      } catch (error) { setKnowledgeMessage(safeUiError(error), true); }
+      finally {
+        delete knowledgeState.busy[key];
+        pendingButtons.forEach(button => { button.disabled = false; });
+      }
+    }
+
+    async function cancelKnowledgeJob(jobId) {
+      const button = Array.from(document.querySelectorAll("[data-job-cancel]"))
+        .find(item => item.dataset.jobCancel === jobId);
+      if (button) button.disabled = true;
+      try {
+        await requestJson(`/rag/jobs/${encodeURIComponent(jobId)}/cancel`, { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ role: managementRole() }) });
+        setKnowledgeMessage("job 取消请求已提交。");
+        await refreshKnowledgeBase();
+      } catch (error) { setKnowledgeMessage(safeUiError(error), true); }
+    }
+
+    async function createKnowledgeBackup() {
+      const button = document.getElementById("kb_backup");
+      if (button) button.disabled = true;
+      try {
+        await requestJson("/rag/backups", { method: "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ role: managementRole() }) });
+        setKnowledgeMessage("一致性备份已创建。");
+        await refreshKnowledgeBase();
+      } catch (error) { setKnowledgeMessage(safeUiError(error), true); }
+    }
+
+    async function performBackupAction(action, backupId) {
+      const button = Array.from(document.querySelectorAll("[data-backup-action]"))
+        .find(item => item.dataset.backupId === backupId && item.dataset.backupAction === action);
+      if (button) button.disabled = true;
+      if (["restore", "delete"].includes(action) && !window.confirm(`确认${action === "restore" ? "恢复" : "删除"}备份 ${backupId}？`)) return;
+      try {
+        const url = `/rag/backups/${encodeURIComponent(backupId)}/${action}`;
+        const options = { method: action === "delete" ? "DELETE" : "POST", headers: { "Content-Type": "application/json" }, body: JSON.stringify({ role: managementRole(), confirm: ["restore", "delete"].includes(action) }) };
+        await requestJson(url, options);
+        setKnowledgeMessage(`备份 ${action} 操作完成。`);
+        await refreshKnowledgeBase();
+      } catch (error) { setKnowledgeMessage(safeUiError(error), true); }
+    }
+
+    const uiEventText = {
+      fly_to: "模拟地图飞行定位",
+      gis_highlight: "模拟地图对象高亮",
+      open_panel: "模拟打开业务面板",
+      ask_clarification: "模拟向用户追问参数",
+      safety_block: "模拟安全拦截提示"
+    };
+
+    function value(id) {
+      return document.getElementById(id).value.trim();
+    }
+
+    function parseMapCenter() {
+      const parts = value("map_center").split(",").map(Number);
+      return parts.length === 2 && parts.every(Number.isFinite) ? parts : [114.05, 22.55];
+    }
+
+    function buildPayload() {
+      const selectedObject = value("object_id") ? {
+        object_type: value("object_type"),
+        object_id: value("object_id"),
+        object_name: value("object_name")
+      } : null;
+
+      return {
+        session_id: value("session_id"),
+        user_id: value("user_id"),
+        role: value("role"),
+        query: value("query"),
+        gis_context: {
+          selected_object: selectedObject,
+          active_layers: value("active_layers").split(",").map(item => item.trim()).filter(Boolean),
+          map_center: parseMapCenter(),
+          zoom: Number(value("zoom")) || 14
+        }
+      };
+    }
+
+    function setText(id, text) {
+      document.getElementById(id).textContent = text ?? "-";
+    }
+
+    function renderResponse(data) {
+      lastTraceId = data.trace_id;
+      document.getElementById("trace").disabled = !lastTraceId;
+      setText("status", data.status);
+      setText("trace_id", data.trace_id);
+      setText("route_type", data.route_type);
+      setText("skill_id", data.metadata?.skill_id);
+      setText("intent", data.intent);
+      setText("scenario", data.scenario);
+      setText("skill_latency_ms", data.metadata?.latency_ms);
+      setText("skill_timeout_exceeded", String(data.metadata?.timeout_exceeded ?? false));
+      setText("skill_error_type", data.metadata?.error_type);
+      setText("risk_level", data.risk_level);
+      setText("manual_check_required", String(data.manual_check_required));
+      const rag = data.metadata?.rag || {};
+      setText("answer_status", data.status || "-");
+      setText("retrieval_status", rag.retrieval_status || data.metadata?.retrieval_status || "-");
+      setText("citation_status", rag.citation_validation || data.metadata?.citation_validation || "-");
+      setText("fallback_used", String(rag.fallback_used ?? data.metadata?.fallback_used ?? false));
+      setText("rag_provider", data.metadata?.rag_provider || data.metadata?.provider);
+      setText("rag_pipeline_steps", (data.metadata?.rag_pipeline_steps || data.metadata?.pipeline_steps || []).join(" -> "));
+      renderAnswer(data.answer, data.evidence_list || []);
+      if (data.metadata?.timeout_exceeded) {
+        setText("planner_trace", `Skill timeout exceeded: ${data.metadata.skill_id}, latency_ms=${data.metadata.latency_ms}`);
+      }
+      if (data.metadata?.error_type || data.metadata?.error_summary) {
+        setText("planner_trace", `Skill error: ${data.metadata.error_type || "-"} ${data.metadata.error_summary || ""}`);
+      }
+      setText("missing_params", JSON.stringify(data.missing_params, null, 2));
+      setText("tool_calls", JSON.stringify(data.tool_calls, null, 2));
+      renderEvidence(data.evidence_list || []);
+
+      const list = document.getElementById("ui_events");
+      list.innerHTML = "";
+      (data.ui_events || []).forEach(event => {
+        const li = document.createElement("li");
+        const label = uiEventText[event.type] || "模拟 UI 事件";
+        li.textContent = `${event.type}: ${label} ${JSON.stringify(event.params || event.payload || {})}`;
+        list.appendChild(li);
+      });
+    }
+
+    function renderAnswer(answer, evidenceList) {
+      const root = document.getElementById("answer");
+      const escaped = escapeHtml(answer || "-");
+      root.innerHTML = escaped.replace(/\[E(\d+)\]/g, (_, index) => {
+        const evidence = evidenceList[Number(index) - 1];
+        return evidence ? `<button class="citation-ref" data-evidence-index="${Number(index) - 1}">[E${index}]</button>` : `<span class="invalid-citation">[E${index}]</span>`;
+      });
+      root.querySelectorAll("[data-evidence-index]").forEach(button => {
+        button.addEventListener("click", () => {
+          const card = document.getElementById(`evidence-card-${button.dataset.evidenceIndex}`);
+          if (!card) return;
+          document.querySelectorAll(".evidence-card").forEach(item => item.classList.remove("is-focused"));
+          card.classList.add("is-focused");
+          card.scrollIntoView({ behavior: "smooth", block: "nearest" });
+        });
+      });
+    }
+
+    function renderEvidence(evidenceList) {
+      const root = document.getElementById("evidence_list");
+      if (!evidenceList.length) {
+        root.textContent = "暂无证据";
+        return;
+      }
+      root.innerHTML = evidenceList.map((item, index) => {
+        const source = item.source_name || item.source || item.anchor_id || "-";
+        const title = item.title || item.anchor_name || "-";
+        const excerpt = item.content || item.snippet || item.summary || "";
+        const location = Array.isArray(item.section_path) && item.section_path.length
+          ? item.section_path.join(" / ")
+          : (item.page_start ? `page ${item.page_start}${item.page_end && item.page_end !== item.page_start ? `-${item.page_end}` : ""}` : "-");
+        return `<article class="evidence-card" id="evidence-card-${index}">
+          <h4>[E${index + 1}] ${escapeHtml(title)}</h4>
+          <p>source: ${escapeHtml(source)} · section/page: ${escapeHtml(location)}</p>
+          <p class="excerpt">${escapeHtml(excerpt)}</p>
+        </article>`;
+      }).join("");
+    }
+
+    function renderDebugConfig(data) {
+      setText("cfg_workflow_provider", data.workflow_provider);
+      setText("cfg_llm_planner_provider", data.llm_planner_provider);
+      setText("cfg_qwen_enabled", String(data.qwen_enabled));
+      setText("cfg_qwen_model", data.qwen_model);
+      setText("cfg_qwen_secret_status", data.qwen_api_key_configured ? "已配置（敏感值不展示）" : "未配置");
+      setText("cfg_config_source", data.config_source);
+      setText("cfg_rag_provider", data.rag_provider || "-");
+
+      const hint = data.llm_planner_provider === "qwen"
+        ? "当前 llm_planner_provider=qwen；如果 qwen_enabled=true 且 key 已配置，本次规划会调用 QwenPlanner。"
+        : "如果 llm_planner_provider 不是 qwen，则当前没有调用 Qwen 模型。";
+      setText("planner_hint", hint);
+    }
+
+    function renderTrace(data) {
+      const steps = data.steps || [];
+      const importantSteps = ["safety_precheck", "route_decision", "skill_dispatch", "general_chat", "rag_qa", "intent_planning", "final_response"];
+      const plannerStep = steps.find(step => importantSteps.includes(step.step_name));
+      if (plannerStep) {
+        setText("planner_trace", plannerStep.output_summary || "skill_dispatch 未返回 output_summary");
+      } else {
+        setText("planner_trace", "未找到 skill_dispatch / intent_planning step。");
+      }
+      setText("trace_steps", JSON.stringify(steps.length ? steps : data, null, 2));
+    }
+
+    async function loadDebugRag() {
+      const response = await fetch("/debug/rag");
+      const data = await response.json();
+      setText("rag_debug", JSON.stringify(data, null, 2));
+      setText("cfg_rag_provider", data.provider || "-");
+    }
+
+    async function sendRequest() {
+      const button = document.getElementById("send");
+      button.disabled = true;
+      try {
+        const response = await fetch("/agent/chat", {
+          method: "POST",
+          headers: {"Content-Type": "application/json"},
+          body: JSON.stringify(buildPayload())
+        });
+        const text = await response.text();
+        let data;
+        try {
+          data = JSON.parse(text);
+        } catch (parseError) {
+          setText("answer", `HTTP ${response.status}: ${text.slice(0, 300)}`);
+          return;
+        }
+        renderResponse(data);
+      } catch (error) {
+        setText("answer", `请求失败: ${error}`);
+      } finally {
+        button.disabled = false;
+      }
+    }
+
+    async function loadTrace() {
+      if (!lastTraceId) return;
+      const response = await fetch(`/trace/${lastTraceId}`);
+      const data = await response.json();
+      renderTrace(data);
+    }
+
+    async function loadDebugConfig() {
+      const response = await fetch("/debug/config");
+      const data = await response.json();
+      renderDebugConfig(data);
+    }
+
+    async function loadDebugSkills() {
+      const response = await fetch("/debug/skills");
+      const data = await response.json();
+      setText("skills_debug", JSON.stringify(data.skills || data, null, 2));
+    }
+
+    function switchDeveloperTab(name) {
+      document.querySelectorAll(".panel-stack > section").forEach(panel => {
+        panel.hidden = name === "knowledge" ? panel.id !== "rag_management_panel" : panel.id === "rag_management_panel";
+      });
+      document.querySelectorAll("[data-developer-tab]").forEach(button => {
+        const active = button.dataset.developerTab === name;
+        button.classList.toggle("active", active);
+        button.setAttribute("aria-selected", String(active));
+      });
+      if (name === "knowledge") refreshKnowledgeBase();
+    }
+
+    document.querySelectorAll("[data-developer-tab]").forEach(button => {
+      button.addEventListener("click", () => switchDeveloperTab(button.dataset.developerTab));
+    });
+    document.getElementById("kb_refresh").addEventListener("click", refreshKnowledgeBase);
+    document.getElementById("kb_validate").addEventListener("click", validateStaging);
+    document.getElementById("kb_backup").addEventListener("click", createKnowledgeBackup);
+    document.getElementById("kb_sources").addEventListener("click", event => {
+      const button = event.target.closest("[data-source-action]");
+      if (button) performSourceAction(button.dataset.sourceAction, button.dataset.sourceId, button.dataset.sourceName);
+    });
+    document.getElementById("kb_jobs").addEventListener("click", event => {
+      const button = event.target.closest("[data-job-cancel]");
+      if (button) cancelKnowledgeJob(button.dataset.jobCancel);
+    });
+    document.getElementById("kb_backups").addEventListener("click", event => {
+      const button = event.target.closest("[data-backup-action]");
+      if (button) performBackupAction(button.dataset.backupAction, button.dataset.backupId);
+    });
+
+    document.getElementById("send").addEventListener("click", sendRequest);
+    document.getElementById("trace").addEventListener("click", loadTrace);
+    document.getElementById("debug_config").addEventListener("click", loadDebugConfig);
+    document.getElementById("debug_skills").addEventListener("click", loadDebugSkills);
+    document.getElementById("debug_rag").addEventListener("click", loadDebugRag);
+    document.querySelectorAll("[data-query]").forEach(button => {
+      button.addEventListener("click", () => {
+        document.getElementById("query").value = button.dataset.query;
+      });
+    });
+    loadDebugConfig().catch(() => {});
+    loadDebugSkills().catch(() => {});
+    loadDebugRag().catch(() => {});
+    refreshKnowledgeBase().catch(() => {});
+  </script>
+</body>
+</html>

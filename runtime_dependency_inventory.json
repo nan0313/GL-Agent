@@ -1,0 +1,60 @@
+{
+  "dependencies": [
+    {
+      "classification": "REQUIRED",
+      "id": "bundled-python",
+      "purpose": "offline_runtime",
+      "target": "payload/python/py311-win64.tar.gz"
+    },
+    {
+      "classification": "REQUIRED",
+      "id": "bge-embedding",
+      "purpose": "dense_embedding",
+      "target": "models/bge-small-zh-v1.5"
+    },
+    {
+      "classification": "REQUIRED",
+      "id": "active-knowledge",
+      "purpose": "business_rag",
+      "target": "docs/knowledge/active"
+    },
+    {
+      "classification": "REQUIRED",
+      "id": "webgl-runtime",
+      "purpose": "cesium_webgl_viewer",
+      "target": "vendor/webgl/ApplicationVue/dist"
+    },
+    {
+      "classification": "REQUIRED",
+      "files": [
+        {
+          "path": "vendor/webgl/ApplicationVue/dist/datas/BOUNT_poly.shp",
+          "sha256": "2734CD04B66B121D289DCA88B5CFE56277C340DB01117F6EA8EAF68D017D6A26",
+          "size": 18243288
+        },
+        {
+          "path": "vendor/webgl/ApplicationVue/dist/datas/BOUNT_poly.dbf",
+          "sha256": "F394EEBA2AD03BE7DE50D46FF3B1917CB9EC59614A9D56F26C2CEB01835096C6",
+          "size": 698853
+        },
+        {
+          "path": "vendor/webgl/ApplicationVue/dist/datas/BOUNT_poly.shx",
+          "sha256": "41248222711D80E57E23051AF11216582089AECD8EEF4A450DDB1F0D0DF6B9C1",
+          "size": 27356
+        }
+      ],
+      "id": "admin-regions",
+      "purpose": "deterministic_admin_region_gis",
+      "target": "vendor/webgl/ApplicationVue/dist/datas/BOUNT_poly.shp"
+    },
+    {
+      "classification": "OPTIONAL",
+      "id": "qwen",
+      "mode": "OPTIONAL_EXTERNAL_SERVICE",
+      "purpose": "external_generation",
+      "target": null
+    }
+  ],
+  "package_external_required_dependency_count": 0,
+  "schema_version": 1
+}

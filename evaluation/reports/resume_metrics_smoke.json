@@ -1,0 +1,41 @@
+{
+  "status": "completed",
+  "generated_at": "2026-09-06T08:26:34.263478+00:00",
+  "reports": {
+    "gis": "G:\\JN_work\\gy\\ev_agent\\evaluation\\reports\\gis_e2e_smoke.json",
+    "rag": "G:\\JN_work\\gy\\ev_agent\\evaluation\\reports\\rag_eval_v1.json",
+    "router": "G:\\JN_work\\gy\\ev_agent\\evaluation\\reports\\router_eval_v1.json"
+  },
+  "reports_present": {
+    "gis": true,
+    "rag": true,
+    "router": true
+  },
+  "review_safe_flags": {
+    "gis": false,
+    "rag": false,
+    "router": false
+  },
+  "safe_for_resume_claim": false,
+  "metrics": {
+    "gis_e2e_task_success_rate_percent": 100,
+    "gis_executable_count": 1,
+    "gis_abnormal_handling_accuracy_percent": null,
+    "rag_k": 5,
+    "rag_evidence_recall_percent": 53.0,
+    "rag_hit_rate_percent": 53.0,
+    "rag_complete_hit_rate_percent": 53.0,
+    "rag_answerable_count": 100,
+    "rag_hard_negative_accuracy_percent": 95.0,
+    "router_macro_f1_percent": 66.5,
+    "router_rule_coverage_percent": 74.33,
+    "router_rule_precision_percent": 71.75,
+    "router_projected_llm_call_reduction_percent": 74.33,
+    "router_actual_llm_call_reduction_percent": null,
+    "router_case_count": 300
+  },
+  "notes": [
+    "Projected LLM-call reduction is inferred from deterministic-rule misses; only actual reduction from hybrid mode is suitable for the final claim.",
+    "A report is resume-safe only after the selected cases are human_locked and every runner-specific gate passes."
+  ]
+}
